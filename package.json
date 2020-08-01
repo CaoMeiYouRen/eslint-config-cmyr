@@ -1,0 +1,35 @@
+{
+  "name": "eslint-config-cmyr",
+  "version": "0.1.0",
+  "author": "CaoMeiYouRen",
+  "description": "草梅友仁个人使用的 eslint 检测规范",
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "deploy-beta": "nrm use npm && npm publish --tag beta",
+    "deploy": "nrm use npm && npm publish"
+  },
+  "keywords": [
+    "code",
+    "style",
+    "lint",
+    "eslint",
+    "code style"
+  ],
+  "devDependencies": {
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": ">=3",
+    "@typescript-eslint/parser": ">=3",
+    "eslint": ">=6",
+    "typescript": ">=3"
+  },
+  "peerDependencies": {
+    "eslint": ">=6",
+    "typescript": ">=3",
+    "@typescript-eslint/eslint-plugin": ">=3",
+    "@typescript-eslint/parser": ">=3"
+  }
+}

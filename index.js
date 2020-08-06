@@ -14,6 +14,7 @@ module.exports = {
         'eslint:recommended',
     ],
     plugins: [
+        '@typescript-eslint'
     ],
     parserOptions: {
         ecmaVersion: new Date().getFullYear() - 1,
@@ -75,5 +76,16 @@ module.exports = {
         'no-useless-constructor': [2], // 禁用不必要的构造函数
         'spaced-comment': [2, 'always'], // 要求或禁止在注释前有空白
         'sort-imports': [0],// import 排序
+        '@typescript-eslint/semi': [2, 'never'], // 禁用不必要的分号(typescript扩展支持)
+        '@typescript-eslint/member-delimiter-style': [2, { // 接口和类型定义中禁用不必要的分号(typescript扩展支持)
+            multiline: {
+                delimiter: 'none', // 多行类型定义无分隔符
+                requireLast: false,
+            },
+            singleline: {
+                delimiter: 'comma', // 单行类型定义使用逗号分隔
+                requireLast: false,
+            },
+        }]
     },
 }

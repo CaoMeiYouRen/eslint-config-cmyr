@@ -1,0 +1,219 @@
+{
+    "@typescript-eslint/member-delimiter-style": [
+        2,
+        {
+            "multiline": {
+                "delimiter": "comma",
+                "requireLast": true
+            },
+            "singleline": {
+                "delimiter": "comma",
+                "requireLast": false
+            }
+        }
+    ],
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
+        2
+    ],
+    "@typescript-eslint/no-unnecessary-condition": [
+        2
+    ],
+    "@typescript-eslint/semi": [
+        2,
+        "never"
+    ],
+    "@typescript-eslint/type-annotation-spacing": [
+        2
+    ],
+    "arrow-body-style": [
+        2,
+        "as-needed"
+    ],
+    "arrow-parens": [
+        2,
+        "as-needed",
+        {
+            "requireForBlockBody": true
+        }
+    ],
+    "arrow-spacing": [
+        2,
+        {
+            "before": true,
+            "after": true
+        }
+    ],
+    "block-spacing": [
+        2,
+        "always"
+    ],
+    "brace-style": 2,
+    "comma-dangle": [
+        2,
+        "always-multiline"
+    ],
+    "comma-spacing": [
+        2,
+        {
+            "before": false,
+            "after": true
+        }
+    ],
+    "curly": [
+        2,
+        "all"
+    ],
+    "dot-notation": 0,
+    "eqeqeq": 2,
+    "func-style": [
+        2,
+        "declaration",
+        {
+            "allowArrowFunctions": true
+        }
+    ],
+    "handle-callback-err:": [
+        0,
+        "^(e|err|error)$"
+    ],
+    "implicit-arrow-linebreak": [
+        2,
+        "beside"
+    ],
+    "indent": [
+        2,
+        4,
+        {
+            "SwitchCase": 1
+        }
+    ],
+    "key-spacing": [
+        2,
+        {
+            "beforeColon": false,
+            "afterColon": true
+        }
+    ],
+    "keyword-spacing": [
+        2,
+        {
+            "before": true,
+            "after": true
+        }
+    ],
+    "linebreak-style": [
+        2,
+        "unix"
+    ],
+    "new-cap": 0,
+    "no-buffer-constructor": 2,
+    "no-confusing-arrow": [
+        2,
+        {
+            "allowParens": true
+        }
+    ],
+    "no-console": 0,
+    "no-duplicate-imports": [
+        2
+    ],
+    "no-empty": 0,
+    "no-eval": [
+        2
+    ],
+    "no-extend-native": [
+        2,
+        {
+            "exceptions": []
+        }
+    ],
+    "no-extra-boolean-cast": [
+        2
+    ],
+    "no-extra-parens": [
+        0
+    ],
+    "no-mixed-requires": 2,
+    "no-multi-spaces": [
+        2,
+        {
+            "ignoreEOLComments": true
+        }
+    ],
+    "no-multiple-empty-lines": [
+        0,
+        {
+            "max": 1
+        }
+    ],
+    "no-new-require": 2,
+    "no-new-wrappers": 2,
+    "no-path-concat": 2,
+    "no-redeclare": [
+        2,
+        {
+            "builtinGlobals": true
+        }
+    ],
+    "no-return-assign": [
+        2
+    ],
+    "no-return-await": 2,
+    "no-shadow": 2,
+    "no-trailing-spaces": 0,
+    "no-unneeded-ternary": [
+        2
+    ],
+    "no-unused-vars": 0,
+    "no-use-before-define": [
+        0
+    ],
+    "no-useless-constructor": [
+        0
+    ],
+    "no-useless-return": 0,
+    "no-var": 2,
+    "object-shorthand": 2,
+    "operator-assignment": [
+        2
+    ],
+    "padded-blocks": 0,
+    "prefer-arrow-callback": [
+        2
+    ],
+    "prefer-const": 0,
+    "prefer-template": 2,
+    "quote-props": [
+        2,
+        "as-needed",
+        {
+            "keywords": false,
+            "numbers": true
+        }
+    ],
+    "quotes": [
+        2,
+        "single"
+    ],
+    "semi": [
+        2,
+        "never"
+    ],
+    "semi-style": [
+        2,
+        "last"
+    ],
+    "sort-imports": [
+        0
+    ],
+    "space-before-function-paren": 0,
+    "space-infix-ops": 2,
+    "spaced-comment": [
+        2,
+        "always"
+    ],
+    "template-curly-spacing": [
+        2,
+        "never"
+    ]
+}

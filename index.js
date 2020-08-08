@@ -28,7 +28,7 @@ module.exports = {
         '@typescript-eslint/member-delimiter-style': [2, { // 接口和类型定义中禁用不必要的分号(typescript扩展支持)
             multiline: {
                 delimiter: 'comma', // 多行类型定义使用逗号分隔
-                requireLast: !IS_PROD,
+                requireLast: true,
             },
             singleline: {
                 delimiter: 'comma', // 单行类型定义使用逗号分隔

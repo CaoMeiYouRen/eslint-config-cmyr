@@ -50,7 +50,7 @@ module.exports = {
         'dot-notation': 0, // 强制尽可能地使用点号
         eqeqeq: 2, // 要求使用 === 和 !==
         'func-style': [2, 'declaration', { allowArrowFunctions: true }], // 强制 function 声明或表达式的一致性
-        'handle-callback-err:': [IS_PROD ? 2 : 0, '^(e|err|error)$'], // 强制回调错误处理
+        'handle-callback-err:': [0, '^(e|err|error)$'], // 强制回调错误处理
         'implicit-arrow-linebreak': [2, 'beside'], // 禁止在箭头函数体之前出现换行
         indent: [2, 4, { SwitchCase: 1 }], // 强制使用一致的缩进// case 子句将相对于 switch 语句缩进 4 个空格，即一个tab
         'key-spacing': [2, { beforeColon: false, afterColon: true }], // 强制在对象字面量的键和值之间使用一致的空格

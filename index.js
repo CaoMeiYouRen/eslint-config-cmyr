@@ -35,8 +35,8 @@ module.exports = {
                 requireLast: false,
             },
         }],
-        '@typescript-eslint/no-unnecessary-boolean-literal-compare': [2], // 禁用不必要的布尔值比较
-        '@typescript-eslint/no-unnecessary-condition': [2], // 防止类型总是真或总是假的条件语句
+        // '@typescript-eslint/no-unnecessary-boolean-literal-compare': [2], // 禁用不必要的布尔值比较
+        // '@typescript-eslint/no-unnecessary-condition': [2], // 防止类型总是真或总是假的条件语句
         '@typescript-eslint/semi': [2, 'never'], // 禁用不必要的分号(typescript扩展支持)
         '@typescript-eslint/type-annotation-spacing': [2], // 需要在类型注释前后保持一致的间距。
         'arrow-body-style': [IS_PROD ? 2 : 0, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)

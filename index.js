@@ -42,6 +42,7 @@ module.exports = {
         }],
         '@typescript-eslint/no-explicit-any': [0], // 不允许使用any类型
         '@typescript-eslint/no-extra-parens': [IS_PROD ? 2 : 0], //不允许不必要的括号
+        '@typescript-eslint/no-empty-interface': [0], // 不允许声明空接口
         '@typescript-eslint/no-unused-vars': [IS_PROD ? 2 : 0],// 禁止未使用的变量
         '@typescript-eslint/quotes': [2, 'single'], // 强制使用前后一致的双引号、双引号或单引号
         '@typescript-eslint/semi': [2, 'never'], // 禁用不必要的分号(typescript扩展支持)

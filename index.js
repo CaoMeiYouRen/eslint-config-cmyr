@@ -12,12 +12,14 @@ module.exports = {
     },
     extends: [
         'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking'
     ],
     plugins: [
         '@typescript-eslint'
     ],
     parserOptions: {
-        ecmaVersion: new Date().getFullYear() - 1,
+        ecmaVersion: new Date().getFullYear(),
         sourceType: 'module',
         ecmaFeatures: {
             modules: true,
@@ -25,6 +27,9 @@ module.exports = {
     },
     parser: '@typescript-eslint/parser',
     rules: {
+        '@typescript-eslint/comma-spacing': [2], // 在逗号前后强制使用一致的空格。
+        '@typescript-eslint/indent': [2, 4, { SwitchCase: 1 }], // 强制使用一致的缩进// case 子句将相对于 switch 语句缩进 4 个空格，即一个tab
+        '@typescript-eslint/no-extra-parens': [IS_PROD ? 2 : 0], //不允许不必要的括号
         '@typescript-eslint/member-delimiter-style': [2, { // 接口和类型定义中禁用不必要的分号(typescript扩展支持)
             multiline: {
                 delimiter: 'none', // 多行类型定义不使用分隔符
@@ -35,8 +40,8 @@ module.exports = {
                 requireLast: false,
             },
         }],
-        // '@typescript-eslint/no-unnecessary-boolean-literal-compare': [2], // 禁用不必要的布尔值比较
-        // '@typescript-eslint/no-unnecessary-condition': [2], // 防止类型总是真或总是假的条件语句
+        '@typescript-eslint/no-unused-vars': [IS_PROD ? 2 : 0],// 禁止未使用的变量
+        '@typescript-eslint/quotes': [2, 'single'], // 强制使用前后一致的双引号、双引号或单引号
         '@typescript-eslint/semi': [2, 'never'], // 禁用不必要的分号(typescript扩展支持)
         '@typescript-eslint/type-annotation-spacing': [2], // 需要在类型注释前后保持一致的间距。
         'arrow-body-style': [IS_PROD ? 2 : 0, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)
@@ -60,6 +65,7 @@ module.exports = {
         'no-buffer-constructor': 2, // 禁用 Buffer() 构造函数
         'no-confusing-arrow': [2, { allowParens: true }], // 禁止在可能与比较操作符相混淆的地方使用箭头函数
         'no-console': 0, // 禁止console
+        'no-debugger': [IS_PROD ? 2 : 0], // 禁止debugger
         'no-duplicate-imports': [2], // 禁止模块重复导入
         'no-empty': 0, // 禁止有空代码块
         'no-eval': [2], // 禁用 eval()
@@ -72,6 +78,7 @@ module.exports = {
         'no-new-require': 2, // 禁止调用 require 时使用 new 操作符
         'no-new-wrappers': 2, // 禁止原始包装实例
         'no-path-concat': 2, // 禁止对 __dirname 和 __filename 进行字符串连接
+        'no-plusplus': [0], // 禁止++或--
         'no-redeclare': [2, { builtinGlobals: true }], // 禁止重新声明变量
         'no-return-assign': [2], // 禁止在返回语句中赋值
         'no-return-await': 2, // 禁用不必要的 return await

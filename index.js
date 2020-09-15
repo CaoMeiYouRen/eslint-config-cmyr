@@ -28,8 +28,8 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     rules: {
         '@typescript-eslint/comma-spacing': [2], // 在逗号前后强制使用一致的空格。
+        '@typescript-eslint/explicit-function-return-type': [0], // 要求函数和类方法的显式返回类型
         '@typescript-eslint/indent': [2, 4, { SwitchCase: 1 }], // 强制使用一致的缩进// case 子句将相对于 switch 语句缩进 4 个空格，即一个tab
-        '@typescript-eslint/no-extra-parens': [IS_PROD ? 2 : 0], //不允许不必要的括号
         '@typescript-eslint/member-delimiter-style': [2, { // 接口和类型定义中禁用不必要的分号(typescript扩展支持)
             multiline: {
                 delimiter: 'none', // 多行类型定义不使用分隔符
@@ -40,6 +40,8 @@ module.exports = {
                 requireLast: false,
             },
         }],
+        '@typescript-eslint/no-explicit-any': [0], // 不允许使用any类型
+        '@typescript-eslint/no-extra-parens': [IS_PROD ? 2 : 0], //不允许不必要的括号
         '@typescript-eslint/no-unused-vars': [IS_PROD ? 2 : 0],// 禁止未使用的变量
         '@typescript-eslint/quotes': [2, 'single'], // 强制使用前后一致的双引号、双引号或单引号
         '@typescript-eslint/semi': [2, 'never'], // 禁用不必要的分号(typescript扩展支持)

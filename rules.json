@@ -1,10 +1,23 @@
 {
+    "@typescript-eslint/comma-spacing": [
+        2
+    ],
+    "@typescript-eslint/explicit-function-return-type": [
+        0
+    ],
+    "@typescript-eslint/indent": [
+        2,
+        4,
+        {
+            "SwitchCase": 1
+        }
+    ],
     "@typescript-eslint/member-delimiter-style": [
         2,
         {
             "multiline": {
-                "delimiter": "comma",
-                "requireLast": true
+                "delimiter": "none",
+                "requireLast": false
             },
             "singleline": {
                 "delimiter": "comma",
@@ -12,11 +25,18 @@
             }
         }
     ],
-    "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
-        2
+    "@typescript-eslint/no-explicit-any": [
+        0
     ],
-    "@typescript-eslint/no-unnecessary-condition": [
-        2
+    "@typescript-eslint/no-extra-parens": [
+        0
+    ],
+    "@typescript-eslint/no-unused-vars": [
+        0
+    ],
+    "@typescript-eslint/quotes": [
+        2,
+        "single"
     ],
     "@typescript-eslint/semi": [
         2,
@@ -26,7 +46,7 @@
         2
     ],
     "arrow-body-style": [
-        2,
+        0,
         "as-needed"
     ],
     "arrow-parens": [
@@ -114,6 +134,9 @@
         }
     ],
     "no-console": 0,
+    "no-debugger": [
+        0
+    ],
     "no-duplicate-imports": [
         2
     ],
@@ -149,6 +172,9 @@
     "no-new-require": 2,
     "no-new-wrappers": 2,
     "no-path-concat": 2,
+    "no-plusplus": [
+        0
+    ],
     "no-redeclare": [
         2,
         {

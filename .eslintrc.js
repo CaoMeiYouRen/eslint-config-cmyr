@@ -12,11 +12,8 @@ module.exports = {
     },
     extends: [
         'eslint:recommended',
-        'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking'
     ],
     plugins: [
-        '@typescript-eslint'
     ],
     parserOptions: {
         ecmaVersion: new Date().getFullYear(),
@@ -25,28 +22,7 @@ module.exports = {
             modules: true,
         },
     },
-    parser: '@typescript-eslint/parser',
     rules: {
-        '@typescript-eslint/comma-spacing': [2], // 在逗号前后强制使用一致的空格。
-        '@typescript-eslint/explicit-function-return-type': [0], // 要求函数和类方法的显式返回类型
-        '@typescript-eslint/indent': [2, 4, { SwitchCase: 1 }], // 强制使用一致的缩进// case 子句将相对于 switch 语句缩进 4 个空格，即一个tab
-        '@typescript-eslint/member-delimiter-style': [2, { // 接口和类型定义中禁用不必要的分号(typescript扩展支持)
-            multiline: {
-                delimiter: 'none', // 多行类型定义不使用分隔符
-                requireLast: false,
-            },
-            singleline: {
-                delimiter: 'comma', // 单行类型定义使用逗号分隔
-                requireLast: false,
-            },
-        }],
-        '@typescript-eslint/no-explicit-any': [0], // 不允许使用any类型
-        '@typescript-eslint/no-extra-parens': [IS_PROD ? 2 : 0], //不允许不必要的括号
-        '@typescript-eslint/no-empty-interface': [0], // 不允许声明空接口
-        '@typescript-eslint/no-unused-vars': [IS_PROD ? 2 : 0],// 禁止未使用的变量
-        '@typescript-eslint/quotes': [2, 'single'], // 强制使用前后一致的双引号、双引号或单引号
-        '@typescript-eslint/semi': [2, 'never'], // 禁用不必要的分号(typescript扩展支持)
-        '@typescript-eslint/type-annotation-spacing': [2], // 需要在类型注释前后保持一致的间距。
         'arrow-body-style': [IS_PROD ? 2 : 0, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)
         'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }], // 在可以省略括号的地方强制不使用括号
         'arrow-spacing': [2, { before: true, after: true }], // 要求箭头函数的箭头之前或之后有空格
@@ -74,7 +50,7 @@ module.exports = {
         'no-eval': [2], // 禁用 eval()
         'no-extend-native': [2, { exceptions: [] }], // 禁止扩展原生对象
         'no-extra-boolean-cast': [2], // 禁止不必要的布尔类型转换
-        'no-extra-parens': [IS_PROD ? 2 : 0], //禁止冗余的括号
+        'no-extra-parens': [IS_PROD ? 2 : 0], // 禁止冗余的括号
         'no-mixed-requires': 2, // 禁止混合常规变量声明和 require 调用
         'no-multi-spaces': [2, { ignoreEOLComments: true }], // 禁止出现多个空格
         'no-multiple-empty-lines': [IS_PROD ? 2 : 0, { max: 1 }], // 不允许多个空行
@@ -102,21 +78,11 @@ module.exports = {
         'quote-props': [2, 'as-needed', { keywords: false, numbers: true }], // 当没有严格要求时，禁止对象字面量属性名称使用引号
         quotes: [2, 'single'], // 强制使用一致的反勾号、双引号或单引号double
         semi: [2, 'never'], // 要求或禁止使用分号代替 ASI
-        'semi-style': [2, 'last'],//强制分号出现在句子末尾
-        'sort-imports': [0],// import 排序
-        'space-before-function-paren': 0,//要求或禁止函数圆括号之前有一个空格
+        'semi-style': [2, 'last'], // 强制分号出现在句子末尾
+        'sort-imports': [0], // import 排序
+        'space-before-function-paren': 0, // 要求或禁止函数圆括号之前有一个空格
         'space-infix-ops': 2, // 要求操作符周围有空格
         'spaced-comment': [2, 'always'], // 要求或禁止在注释前有空白
         'template-curly-spacing': [2, 'never'], // 强制模板字符串中空格的使用
     },
 }
-// const fs = require('fs')
-// const { rules } = module.exports
-// const ruleList = Object.entries(rules).sort((a, b) => {
-//     return a[0].localeCompare(b[0])
-// })
-// const obj = {}
-// ruleList.forEach(e => {
-//     obj[e[0]] = e[1]
-// })
-// fs.writeFileSync('rules.json', JSON.stringify(obj, null, 4))

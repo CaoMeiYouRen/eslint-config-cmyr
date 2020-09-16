@@ -4,7 +4,7 @@ module.exports = {
     extends: [
         'plugin:vue/essential',
         '@vue/typescript/recommended',
-        require.resolve('./base'),
+        require.resolve('./index'),
     ],
     plugins: [
         'vue',

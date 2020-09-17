@@ -45,10 +45,11 @@ module.exports = {
             },
         }],
         '@typescript-eslint/no-explicit-any': [0], // 不允许使用any类型
-        '@typescript-eslint/no-extra-parens': [IS_PROD ? 2 : 0], // 不允许不必要的括号
+        '@typescript-eslint/no-extra-parens': [IS_PROD ? 2 : 0, 'all', { enforceForArrowConditionals: false }], // 不允许不必要的括号
         '@typescript-eslint/no-empty-function': [IS_PROD ? 2 : 0], // 禁止空函数
         '@typescript-eslint/no-empty-interface': [0], // 不允许声明空接口
         '@typescript-eslint/no-floating-promises': [0, { ignoreIIFE: true }], // 需要适当地处理类似 promise 的值
+        '@typescript-eslint/no-inferrable-types': [0], // 对于初始化为数字、字符串或布尔值的变量或参数，不允许显式类型声明
         '@typescript-eslint/no-unused-vars': [0], // 禁止未使用的变量
         '@typescript-eslint/no-unsafe-assignment': [0], // 不允许将变量和属性分配给 any
         '@typescript-eslint/no-unsafe-call': [0], // 不允许调用 any
@@ -90,7 +91,7 @@ module.exports = {
         'no-eval': [2], // 禁用 eval()
         'no-extend-native': [2, { exceptions: [] }], // 禁止扩展原生对象
         'no-extra-boolean-cast': [2], // 禁止不必要的布尔类型转换
-        'no-extra-parens': [IS_PROD ? 2 : 0], // 禁止冗余的括号
+        'no-extra-parens': [0], // 禁止冗余的括号
         'no-mixed-requires': 2, // 禁止混合常规变量声明和 require 调用
         'no-multi-spaces': [2, { ignoreEOLComments: true }], // 禁止出现多个空格
         'no-multiple-empty-lines': [IS_PROD ? 2 : 0, { max: 1 }], // 不允许多个空行

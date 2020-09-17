@@ -12,20 +12,11 @@ module.exports = {
     },
     extends: [
         'eslint:recommended',
-        'plugin:node/recommended',
-        'plugin:import/errors',
-        'plugin:import/warnings',
-        'plugin:import/typescript',
-        'plugin:promise/recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
     ],
     plugins: [
         '@typescript-eslint',
-        'node',
-        'promise',
-        'import',
-        'es',
     ],
     parserOptions: {
         parser: '@typescript-eslint/parser',

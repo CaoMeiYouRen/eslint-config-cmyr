@@ -8,6 +8,7 @@ module.exports = {
     ],
     plugins: [
         'vue',
+        'html',
     ],
     parser: 'vue-eslint-parser',
     rules: {

@@ -48,7 +48,7 @@ module.exports = {
         '@typescript-eslint/no-extra-parens': [IS_PROD ? 2 : 0], // 不允许不必要的括号
         '@typescript-eslint/no-empty-function': [IS_PROD ? 2 : 0], // 禁止空函数
         '@typescript-eslint/no-empty-interface': [0], // 不允许声明空接口
-        '@typescript-eslint/no-floating-promises': [2, { ignoreIIFE: true }], // 需要适当地处理类似 promise 的值
+        '@typescript-eslint/no-floating-promises': [0, { ignoreIIFE: true }], // 需要适当地处理类似 promise 的值
         '@typescript-eslint/no-unused-vars': [0], // 禁止未使用的变量
         '@typescript-eslint/no-unsafe-assignment': [0], // 不允许将变量和属性分配给 any
         '@typescript-eslint/no-unsafe-call': [0], // 不允许调用 any

@@ -1,5 +1,5 @@
 'use strict'
-const IS_PROD = process.env.NODE_ENV === 'production'
+const IS_PROD = process.env.NODE_ENV === 'production' ? 2 : 0
 module.exports = {
     extends: [
         'plugin:vue/essential',
@@ -24,9 +24,9 @@ module.exports = {
         'vue/object-curly-spacing': 2,
         'vue/html-indent': [2, 4], // vue中缩进为4
         'vue/html-quotes': [2, 'double'], // vue中用双引号
-        'vue/html-self-closing': [IS_PROD ? 2 : 0], // 自闭合标签
+        'vue/html-self-closing': [IS_PROD], // 自闭合标签
         'vue/require-default-prop': [0],
         'vue/no-unused-vars': 0, // 禁止未使用变量
-        'vue/no-unused-components': [IS_PROD ? 2 : 0], // 禁止未使用的组件
+        'vue/no-unused-components': [IS_PROD], // 禁止未使用的组件
     },
 }

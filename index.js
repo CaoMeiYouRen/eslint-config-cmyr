@@ -13,7 +13,7 @@ module.exports = {
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
     ],
     plugins: [
         '@typescript-eslint',
@@ -29,7 +29,7 @@ module.exports = {
     },
     parser: '@typescript-eslint/parser',
     rules: {
-        '@typescript-eslint/await-thenable': [2], // 不允许等待一个非Thhenable的值
+        // '@typescript-eslint/await-thenable': [2], // 不允许等待一个非Thhenable的值
         '@typescript-eslint/comma-spacing': [2], // 在逗号前后强制使用一致的空格。
         '@typescript-eslint/explicit-function-return-type': [0], // 要求函数和类方法的显式返回类型
         '@typescript-eslint/explicit-module-boundary-types': [0], // 要求导出函数和类的公共类方法的显式返回和参数类型
@@ -48,19 +48,19 @@ module.exports = {
         '@typescript-eslint/no-extra-parens': [IS_PROD, 'all', { enforceForArrowConditionals: false }], // 不允许不必要的括号
         '@typescript-eslint/no-empty-function': [IS_PROD], // 禁止空函数
         '@typescript-eslint/no-empty-interface': [0], // 不允许声明空接口
-        '@typescript-eslint/no-floating-promises': [0, { ignoreIIFE: true }], // 需要适当地处理类似 promise 的值
+        // '@typescript-eslint/no-floating-promises': [0, { ignoreIIFE: true }], // 需要适当地处理类似 promise 的值
         '@typescript-eslint/no-inferrable-types': [0], // 对于初始化为数字、字符串或布尔值的变量或参数，不允许显式类型声明
         '@typescript-eslint/no-unused-vars': [0], // 禁止未使用的变量
-        '@typescript-eslint/no-unsafe-assignment': [0], // 不允许将变量和属性分配给 any
-        '@typescript-eslint/no-unsafe-call': [0], // 不允许调用 any
-        '@typescript-eslint/no-unsafe-member-access': [0], // 不允许成员访问 any 类型变量
-        '@typescript-eslint/no-unsafe-return': [0], // 不允许从函数返回 any
-        '@typescript-eslint/prefer-regexp-exec': [0], // 强制执行RegExp#exec被使用，而不是String#match如果没有提供全局标志
+        // '@typescript-eslint/no-unsafe-assignment': [0], // 不允许将变量和属性分配给 any
+        // '@typescript-eslint/no-unsafe-call': [0], // 不允许调用 any
+        // '@typescript-eslint/no-unsafe-member-access': [0], // 不允许成员访问 any 类型变量
+        // '@typescript-eslint/no-unsafe-return': [0], // 不允许从函数返回 any
+        // '@typescript-eslint/prefer-regexp-exec': [0], // 强制执行RegExp#exec被使用，而不是String#match如果没有提供全局标志
         '@typescript-eslint/quotes': [2, 'single'], // 强制使用前后一致的双引号、双引号或单引号
         '@typescript-eslint/require-await': [IS_PROD], // 不允许没有异步函数的异步函数await表达
         '@typescript-eslint/return-await': [IS_PROD, 'never'], // 禁用不必要的 return await
-        '@typescript-eslint/restrict-template-expressions': [0], // 强制模板文字表达式为字符串类型
-        '@typescript-eslint/restrict-plus-operands': [0], // 当添加两个变量时，操作数必须类型为数字或类型为字符串
+        // '@typescript-eslint/restrict-template-expressions': [0], // 强制模板文字表达式为字符串类型
+        // '@typescript-eslint/restrict-plus-operands': [0], // 当添加两个变量时，操作数必须类型为数字或类型为字符串
         '@typescript-eslint/semi': [2, 'never'], // 禁用不必要的分号(typescript扩展支持)
         '@typescript-eslint/type-annotation-spacing': [2], // 需要在类型注释前后保持一致的间距。
         'arrow-body-style': [IS_PROD, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)

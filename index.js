@@ -57,8 +57,8 @@ module.exports = {
         // '@typescript-eslint/no-unsafe-return': [0], // 不允许从函数返回 any
         // '@typescript-eslint/prefer-regexp-exec': [0], // 强制执行RegExp#exec被使用，而不是String#match如果没有提供全局标志
         '@typescript-eslint/quotes': [2, 'single'], // 强制使用前后一致的双引号、双引号或单引号
-        '@typescript-eslint/require-await': [IS_PROD], // 不允许没有异步函数的异步函数await表达
-        '@typescript-eslint/return-await': [IS_PROD, 'never'], // 禁用不必要的 return await
+        //'@typescript-eslint/require-await': [IS_PROD], // 不允许没有异步函数的异步函数await表达
+        //'@typescript-eslint/return-await': [IS_PROD, 'never'], // 禁用不必要的 return await
         // '@typescript-eslint/restrict-template-expressions': [0], // 强制模板文字表达式为字符串类型
         // '@typescript-eslint/restrict-plus-operands': [0], // 当添加两个变量时，操作数必须类型为数字或类型为字符串
         '@typescript-eslint/semi': [2, 'never'], // 禁用不必要的分号(typescript扩展支持)
@@ -101,7 +101,7 @@ module.exports = {
         'no-plusplus': [0], // 禁止++或--
         'no-redeclare': [2, { builtinGlobals: true }], // 禁止重新声明变量
         'no-return-assign': [2], // 禁止在返回语句中赋值
-        'no-return-await': [0], // 禁用不必要的 return await
+        'no-return-await': [IS_PROD], // 禁用不必要的 return await
         'no-shadow': [2], // 禁止变量声明与外层作用域的变量同名
         'no-trailing-spaces': [0], // 禁用行尾空格
         'no-unneeded-ternary': [2], // 禁止可以在有更简单的可替代的表达式时使用三元操作符

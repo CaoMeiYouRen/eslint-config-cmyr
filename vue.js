@@ -34,7 +34,6 @@ module.exports = {
         'vue/no-unused-components': [IS_PROD], // 禁止未使用的组件
         'vue/no-unused-vars': 0, // 禁止未使用变量
         'vue/object-curly-spacing': 2,
-        'vue/object-property-newline': 2, // 强制将对象的属性放在不同的行上
         'vue/require-default-prop': [0],
         'vue/require-name-property': [2], // 组件必须命名
     },

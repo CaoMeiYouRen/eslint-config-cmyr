@@ -35,7 +35,7 @@ module.exports = {
         'vue/no-unused-vars': 0, // 禁止未使用变量
         'vue/object-curly-spacing': 2,
         'vue/require-default-prop': [0],
-        'vue/require-name-property': [2], // 组件必须命名
+        'vue/require-name-property': [0], // 组件必须命名
     },
 }
 

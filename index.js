@@ -66,7 +66,7 @@ module.exports = {
         // '@typescript-eslint/restrict-template-expressions': [0], // 强制模板文字表达式为字符串类型
         // '@typescript-eslint/restrict-plus-operands': [0], // 当添加两个变量时，操作数必须类型为数字或类型为字符串
         'arrow-body-style': [IS_PROD, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)
-        'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }], // 在可以省略括号的地方强制不使用括号
+        'arrow-parens': [2, 'as-needed', { requireForBlockBody: false }], // 在可以省略括号的地方强制不使用括号
         'arrow-spacing': [2, { before: true, after: true }], // 要求箭头函数的箭头之前或之后有空格
         'block-spacing': [2, 'always'], // 禁止或强制在代码块中开括号前和闭括号后有空格
         'brace-style': 2, // 大括号风格要求
@@ -125,7 +125,11 @@ module.exports = {
         semi: [2, 'never'], // 要求或禁止使用分号代替 ASI
         'semi-style': [2, 'last'], // 强制分号出现在句子末尾
         'sort-imports': [0], // import 排序
-        'space-before-function-paren': [0], // 要求或禁止函数圆括号之前有一个空格
+        'space-before-function-paren': [2, {
+            anonymous: 'never',
+            named: 'never',
+            asyncArrow: 'always',
+        }], // 要求或禁止函数圆括号之前有一个空格
         'space-infix-ops': [2], // 要求操作符周围有空格
         'spaced-comment': [2, 'always'], // 要求或禁止在注释前有空白
         'template-curly-spacing': [2, 'never'], // 强制模板字符串中空格的使用

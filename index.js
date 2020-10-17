@@ -112,6 +112,7 @@ module.exports = {
         'no-useless-constructor': [IS_PROD], // 禁用不必要的构造函数
         'no-useless-return': [IS_PROD], // 禁止多余的 return 语句
         'no-var': [2], // 要求使用 let 或 const 而不是 var
+        'object-curly-spacing': [2, 'always'], // 强制在花括号中使用一致的空格
         'object-shorthand': [2], // 要求或禁止对象字面量中方法和属性使用简写语法
         'object-property-newline': [2, { allowAllPropertiesOnSameLine: true }], // 强制将对象的属性放在不同的行上
         'operator-assignment': [2], // 要求或禁止尽可能地简化赋值操作

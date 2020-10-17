@@ -69,6 +69,7 @@ module.exports = {
         'no-useless-constructor': [IS_PROD ? 2 : 0], // 禁用不必要的构造函数
         'no-useless-return': IS_PROD ? 2 : 0, // 禁止多余的 return 语句
         'no-var': 2, // 要求使用 let 或 const 而不是 var
+        'object-curly-spacing': [2, 'always'],
         'object-shorthand': 2, // 要求或禁止对象字面量中方法和属性使用简写语法
         'operator-assignment': [2], // 要求或禁止尽可能地简化赋值操作
         'padded-blocks': 0, // 要求或禁止块内填充

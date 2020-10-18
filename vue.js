@@ -23,7 +23,10 @@ module.exports = {
         'vue/html-quotes': [2, 'double'], // vue中用双引号
         'vue/html-self-closing': [IS_PROD], // 自闭合标签
         'vue/key-spacing': 2,
-        'vue/match-component-file-name': 2,
+        'vue/match-component-file-name': [2, { // 要求组件名称属性与其文件名匹配
+            extensions: ['jsx', 'tsx', 'vue'],
+            shouldMatchCase: true,
+        }],
         'vue/max-attributes-per-line': [2, { // 每行属性最大数量
             singleline: 2,
             multiline: {
@@ -33,9 +36,10 @@ module.exports = {
         }],
         'vue/no-unused-components': [IS_PROD], // 禁止未使用的组件
         'vue/no-unused-vars': 0, // 禁止未使用变量
+        'vue/no-reserved-component-names': [2], // 不允许在组件定义中使用保留名称
         'vue/object-curly-spacing': 2,
         'vue/require-default-prop': [0],
-        'vue/require-name-property': [0], // 组件必须命名
+        'vue/require-name-property': [2], // 组件必须命名
     },
 }
 

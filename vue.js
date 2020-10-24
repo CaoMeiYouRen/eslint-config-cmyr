@@ -25,7 +25,7 @@ module.exports = {
         'vue/key-spacing': 2,
         'vue/match-component-file-name': [2, { // 要求组件名称属性与其文件名匹配
             extensions: ['jsx', 'tsx', 'vue'],
-            shouldMatchCase: true,
+            shouldMatchCase: false,
         }],
         'vue/max-attributes-per-line': [2, { // 每行属性最大数量
             singleline: 2,

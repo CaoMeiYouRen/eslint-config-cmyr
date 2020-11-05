@@ -8,10 +8,10 @@ module.exports = {
         es6: true,
         commonjs: true,
         node: true,
-        mocha: true
+        mocha: true,
     },
     extends: [
-        'eslint:recommended'
+        'eslint:recommended',
     ],
     plugins: [
     ],
@@ -19,8 +19,8 @@ module.exports = {
         ecmaVersion: new Date().getFullYear(),
         sourceType: 'module',
         ecmaFeatures: {
-            modules: true
-        }
+            modules: true,
+        },
     },
     rules: {
         'arrow-body-style': [IS_PROD, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)
@@ -87,10 +87,10 @@ module.exports = {
         'space-before-function-paren': [2, {
             anonymous: 'never',
             named: 'never',
-            asyncArrow: 'always'
+            asyncArrow: 'always',
         }], // 要求或禁止函数圆括号之前有一个空格
         'space-infix-ops': [2], // 要求操作符周围有空格
         'spaced-comment': [2, 'always'], // 要求或禁止在注释前有空白
-        'template-curly-spacing': [2, 'never'] // 强制模板字符串中空格的使用
-    }
+        'template-curly-spacing': [2, 'never'], // 强制模板字符串中空格的使用
+    },
 }

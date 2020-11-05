@@ -3,10 +3,10 @@ module.exports = {
     root: true,
     extends: [
         'eslint:recommended',
-        require.resolve('./js')
+        require.resolve('./js'),
     ],
     rules: {
         'no-unused-vars': 0, // 禁止出现未使用过的变量
-        'comma-dangle': [IS_PROD, 'never']
-    }
+        'comma-dangle': [2, 'always-multiline'],
+    },
 }

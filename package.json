@@ -8,7 +8,8 @@
   "files": [
     "index.js",
     "vue.js",
-    "vue3.js"
+    "vue3.js",
+    "js.js"
   ],
   "engines": {
     "node": ">=8"

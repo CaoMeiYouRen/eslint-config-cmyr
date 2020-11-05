@@ -8,16 +8,16 @@ module.exports = {
         es6: true,
         commonjs: true,
         node: true,
-        mocha: true
+        mocha: true,
     },
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
-        require.resolve('./js')
+        require.resolve('./js'),
         // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
     ],
     plugins: [
-        '@typescript-eslint'
+        '@typescript-eslint',
     ],
     parserOptions: {
         parser: '@typescript-eslint/parser',
@@ -25,8 +25,8 @@ module.exports = {
         sourceType: 'module',
         ecmaFeatures: {
             modules: true,
-            jsx: true
-        }
+            jsx: true,
+        },
     },
     parser: '@typescript-eslint/parser',
     rules: {
@@ -39,12 +39,12 @@ module.exports = {
         '@typescript-eslint/member-delimiter-style': [2, { // 接口和类型定义中禁用不必要的分号(typescript扩展支持)
             multiline: {
                 delimiter: 'none', // 多行类型定义不使用分隔符
-                requireLast: false
+                requireLast: false,
             },
             singleline: {
                 delimiter: 'comma', // 单行类型定义使用逗号分隔
-                requireLast: false
-            }
+                requireLast: false,
+            },
         }],
         '@typescript-eslint/no-empty-function': [IS_PROD], // 禁止空函数
         '@typescript-eslint/no-empty-interface': [0], // 不允许声明空接口
@@ -66,7 +66,7 @@ module.exports = {
         // '@typescript-eslint/return-await': [IS_PROD, 'never'], // 禁用不必要的 return await
         // '@typescript-eslint/restrict-template-expressions': [0], // 强制模板文字表达式为字符串类型
         // '@typescript-eslint/restrict-plus-operands': [0], // 当添加两个变量时，操作数必须类型为数字或类型为字符串
-    }
+    },
 }
 // const fs = require('fs')
 // const { rules } = module.exports

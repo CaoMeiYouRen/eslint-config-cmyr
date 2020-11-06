@@ -14,7 +14,7 @@ module.exports = {
         'vue/array-bracket-spacing': 2,
         'vue/arrow-spacing': 2,
         'vue/block-spacing': 2,
-        'vue/block-tag-newline': 2, // 在打开后和关闭块级标记之前强制换行
+        // 'vue/block-tag-newline': 2, // 在打开后和关闭块级标记之前强制换行
         'vue/brace-style': 2,
         'vue/camelcase': 2,
         'vue/comma-dangle': 2,

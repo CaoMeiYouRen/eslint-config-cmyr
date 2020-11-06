@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.0.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.0...v1.0.1) (2020-11-06)
+
+
+### 🐛 Bug Fixes
+
+* 移除 vue/block-tag-newline ([6152ace](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/6152ace))
+
 # 1.0.0 (2020-11-06)
 
 

@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.0.2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.1...v1.0.2) (2020-11-17)
+
+
+### 🐛 Bug Fixes
+
+* 回退尾拖逗号风格 ([fe92299](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/fe92299)), closes [#2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/issues/2)
+
 ## [1.0.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.0...v1.0.1) (2020-11-06)
 
 

@@ -3,7 +3,7 @@ node_js: 14
 
 install:
     - yarn
-    - yarn global add semantic-release @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/npm @semantic-release/github @semantic-release/git conventional-changelog-cmyr-config
+    - yarn global add semantic-release  @semantic-release/changelog  @semantic-release/git conventional-changelog-cmyr-config
 script:
     - npm run lint
 deploy:

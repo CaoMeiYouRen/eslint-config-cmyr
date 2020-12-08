@@ -23,8 +23,7 @@ jobs:
             **/node_modules
           key: npm-${{ runner.os }}-${{ hashFiles('package.json') }}
       - run: yarn
-      - run: yarn global add semantic-release  @semantic-release/changelog  @semantic-release/git conventional-changelog-cmyr-config
       - run: npm run lint
       - env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: semantic-release
+        run: yarn global add semantic-release  @semantic-release/changelog  @semantic-release/git conventional-changelog-cmyr-config && semantic-release

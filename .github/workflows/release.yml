@@ -26,4 +26,4 @@ jobs:
       - run: npm run lint
       - env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: yarn global add semantic-release  @semantic-release/changelog  @semantic-release/git conventional-changelog-cmyr-config && semantic-release
+        run: npm run release

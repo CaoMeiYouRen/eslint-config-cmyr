@@ -47,12 +47,23 @@ module.exports = {
         'no-console': [IS_PROD, { allow: ['warn', 'error'] }], // 禁止console
         'no-debugger': [IS_PROD], // 禁止debugger
         'no-duplicate-imports': [2], // 禁止模块重复导入
+        'no-else-return': [2, {
+            allowElseIf: false, // 禁止在 return 之后有 else if 块
+        }], // 禁止在 else 前有 return
         'no-empty': [0], // 禁止有空代码块
         'no-eval': [2], // 禁用 eval()
         'no-extend-native': [2, { exceptions: [] }], // 禁止扩展原生对象
         'no-extra-boolean-cast': [2], // 禁止不必要的布尔类型转换
-        'no-extra-parens': [0], // 禁止冗余的括号
-        'no-mixed-requires': 2, // 禁止混合常规变量声明和 require 调用
+        'no-extra-parens': [2], // 禁止冗余的括号
+        'no-lonely-if': [2], // 禁止 if 语句作为唯一语句出现在 else 语句块中
+        'no-magic-numbers': [0, {
+            ignore: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], // 指定检测中可以忽略的数字
+            ignoreArrayIndexes: true, // 指定数字用作数组的索引是否是可以的
+            enforceConst: false, // 指定是否应该在数字变量的声明中检测 const 关键
+            detectObjects: false, // 指定是否应该在设置对象属性时检测数字
+        }], // 禁用魔术数字
+        'no-mixed-requires': [2], // 禁止混合常规变量声明和 require 调用
+        'no-multi-assign': [2], // 禁止连续赋值
         'no-multi-spaces': [2, { ignoreEOLComments: true }], // 禁止出现多个空格
         'no-multiple-empty-lines': [IS_PROD, { max: 1 }], // 不允许多个空行
         'no-new-require': [2], // 禁止调用 require 时使用 new 操作符
@@ -70,6 +81,7 @@ module.exports = {
         'no-useless-constructor': [IS_PROD], // 禁用不必要的构造函数
         'no-useless-return': [IS_PROD], // 禁止多余的 return 语句
         'no-var': [2], // 要求使用 let 或 const 而不是 var
+        'max-params': [2, { max: 5 }], // 强制函数定义中最大参数个数
         'object-curly-spacing': [2, 'always'], // 强制在花括号中使用一致的空格
         'object-shorthand': [2], // 要求或禁止对象字面量中方法和属性使用简写语法
         'object-property-newline': [2, { allowAllPropertiesOnSameLine: true }], // 强制将对象的属性放在不同的行上

@@ -66,6 +66,7 @@ module.exports = {
         'no-multi-assign': [2], // 禁止连续赋值
         'no-multi-spaces': [2, { ignoreEOLComments: true }], // 禁止出现多个空格
         'no-multiple-empty-lines': [IS_PROD, { max: 1 }], // 不允许多个空行
+        'no-nested-ternary': [2], // 禁止使用嵌套的三元表达式
         'no-new-require': [2], // 禁止调用 require 时使用 new 操作符
         'no-new-wrappers': [2], // 禁止原始包装实例
         'no-path-concat': [2], // 禁止对 __dirname 和 __filename 进行字符串连接
@@ -74,6 +75,7 @@ module.exports = {
         'no-return-assign': [2], // 禁止在返回语句中赋值
         'no-return-await': [IS_PROD], // 禁用不必要的 return await
         'no-shadow': [2], // 禁止变量声明与外层作用域的变量同名
+        'no-sync': [1], // 禁止使用同步方法
         'no-trailing-spaces': [0], // 禁用行尾空格
         'no-unneeded-ternary': [2], // 禁止可以在有更简单的可替代的表达式时使用三元操作符
         'no-unused-vars': [0], // 禁止出现未使用过的变量
@@ -89,6 +91,7 @@ module.exports = {
         'padded-blocks': [0], // 要求或禁止块内填充
         'prefer-arrow-callback': [2], // 要求回调函数使用箭头函数
         'prefer-const': [IS_PROD], // 建议使用const
+        'prefer-rest-params': [2], // 要求使用剩余参数而不是 arguments
         'prefer-template': [2], // 建议使用模板字面量而非字符串连接 (prefer-template)
         'quote-props': [2, 'as-needed', { keywords: false, numbers: true }], // 当没有严格要求时，禁止对象字面量属性名称使用引号
         quotes: [2, 'single'], // 强制使用一致的反勾号、双引号或单引号double

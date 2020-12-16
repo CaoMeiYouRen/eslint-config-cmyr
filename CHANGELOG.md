@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.0.5](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.4...v1.0.5) (2020-12-16)
+
+
+### 🐛 Bug Fixes
+
+* 新增 禁止空代码块，禁止出现未使用过的变量为 warn ([0c20782](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/0c20782))
+
 ## [1.0.4](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.3...v1.0.4) (2020-12-15)
 
 

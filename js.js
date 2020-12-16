@@ -50,7 +50,7 @@ module.exports = {
         'no-else-return': [2, {
             allowElseIf: false, // 禁止在 return 之后有 else if 块
         }], // 禁止在 else 前有 return
-        'no-empty': [0], // 禁止有空代码块
+        'no-empty': [1], // 禁止有空代码块
         'no-eval': [2], // 禁用 eval()
         'no-extend-native': [2, { exceptions: [] }], // 禁止扩展原生对象
         'no-extra-boolean-cast': [2], // 禁止不必要的布尔类型转换
@@ -78,7 +78,7 @@ module.exports = {
         'no-sync': [1], // 禁止使用同步方法
         'no-trailing-spaces': [0], // 禁用行尾空格
         'no-unneeded-ternary': [2], // 禁止可以在有更简单的可替代的表达式时使用三元操作符
-        'no-unused-vars': [0], // 禁止出现未使用过的变量
+        'no-unused-vars': [1], // 禁止出现未使用过的变量
         'no-use-before-define': [0], // 禁止在变量定义之前使用它们
         'no-useless-constructor': [IS_PROD], // 禁用不必要的构造函数
         'no-useless-return': [IS_PROD], // 禁止多余的 return 语句

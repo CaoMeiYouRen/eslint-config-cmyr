@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.0.6](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.5...v1.0.6) (2020-12-19)
+
+
+### 🐛 Bug Fixes
+
+* 新增 jest 环境 ([c3404c5](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/c3404c5))
+
 ## [1.0.5](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.4...v1.0.5) (2020-12-16)
 
 

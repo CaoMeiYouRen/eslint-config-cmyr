@@ -9,6 +9,7 @@ module.exports = {
         commonjs: true,
         node: true,
         mocha: true,
+        jest: true,
     },
     extends: [
         'eslint:recommended',
@@ -20,6 +21,7 @@ module.exports = {
         sourceType: 'module',
         ecmaFeatures: {
             modules: true,
+            jsx: true,
         },
     },
     rules: {

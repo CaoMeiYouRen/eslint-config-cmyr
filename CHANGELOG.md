@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.0.7](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.6...v1.0.7) (2020-12-26)
+
+
+### 🐛 Bug Fixes
+
+* 修改 'arrow-parens'、'no-console'、'no-sync'等规则 ([c732a8c](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/c732a8c))
+
 ## [1.0.6](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.5...v1.0.6) (2020-12-19)
 
 

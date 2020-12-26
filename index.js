@@ -1,5 +1,5 @@
 'use strict'
-const IS_PROD = process.env.NODE_ENV === 'production' ? 2 : 0
+const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
 module.exports = {
     globals: {
     },
@@ -46,10 +46,10 @@ module.exports = {
                 requireLast: false,
             },
         }],
-        '@typescript-eslint/no-empty-function': [IS_PROD], // 禁止空函数
+        '@typescript-eslint/no-empty-function': [__ERROR__], // 禁止空函数
         '@typescript-eslint/no-empty-interface': [0], // 不允许声明空接口
         '@typescript-eslint/no-explicit-any': [0], // 不允许使用any类型
-        '@typescript-eslint/no-extra-parens': [IS_PROD, 'all', { enforceForArrowConditionals: false }], // 不允许不必要的括号
+        '@typescript-eslint/no-extra-parens': [__ERROR__, 'all', { enforceForArrowConditionals: false }], // 不允许不必要的括号
         '@typescript-eslint/no-inferrable-types': [0], // 对于初始化为数字、字符串或布尔值的变量或参数，不允许显式类型声明
         '@typescript-eslint/no-unused-vars': [0], // 禁止未使用的变量
         '@typescript-eslint/quotes': [2, 'single'], // 强制使用前后一致的双引号、双引号或单引号
@@ -62,8 +62,8 @@ module.exports = {
         // '@typescript-eslint/no-unsafe-member-access': [0], // 不允许成员访问 any 类型变量
         // '@typescript-eslint/no-unsafe-return': [0], // 不允许从函数返回 any
         // '@typescript-eslint/prefer-regexp-exec': [0], // 强制执行RegExp#exec被使用，而不是String#match如果没有提供全局标志
-        // '@typescript-eslint/require-await': [IS_PROD], // 不允许没有异步函数的异步函数await表达
-        // '@typescript-eslint/return-await': [IS_PROD, 'never'], // 禁用不必要的 return await
+        // '@typescript-eslint/require-await': [__ERROR__], // 不允许没有异步函数的异步函数await表达
+        // '@typescript-eslint/return-await': [__ERROR__, 'never'], // 禁用不必要的 return await
         // '@typescript-eslint/restrict-template-expressions': [0], // 强制模板文字表达式为字符串类型
         // '@typescript-eslint/restrict-plus-operands': [0], // 当添加两个变量时，操作数必须类型为数字或类型为字符串
     },

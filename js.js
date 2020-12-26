@@ -1,4 +1,6 @@
-const IS_PROD = process.env.NODE_ENV === 'production' ? 2 : 0
+const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
+const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
+
 module.exports = {
     root: true,
     globals: {// 处理全局变量
@@ -25,8 +27,8 @@ module.exports = {
         },
     },
     rules: {
-        'arrow-body-style': [IS_PROD, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)
-        'arrow-parens': [2, 'as-needed', { requireForBlockBody: false }], // 在可以省略括号的地方强制不使用括号
+        'arrow-body-style': [__ERROR__, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)
+        'arrow-parens': [1, 'always'], // 要求在所有情况下使用圆括号将参数括起来
         'arrow-spacing': [2, { before: true, after: true }], // 要求箭头函数的箭头之前或之后有空格
         'block-spacing': [2, 'always'], // 禁止或强制在代码块中开括号前和闭括号后有空格
         'brace-style': 2, // 大括号风格要求
@@ -34,7 +36,7 @@ module.exports = {
         'comma-spacing': [2, { before: false, after: true }], // 强制在逗号周围使用空格
         curly: [2, 'all'], // 要求遵循大括号约定
         'dot-notation': [0], // 强制尽可能地使用点号
-        'eol-last': [IS_PROD, 'never'], // 禁止文件末尾存在空行
+        'eol-last': [__ERROR__, 'never'], // 禁止文件末尾存在空行
         eqeqeq: [2], // 要求使用 === 和 !==
         'func-style': [2, 'declaration', { allowArrowFunctions: true }], // 强制 function 声明或表达式的一致性
         'handle-callback-err:': [0, '^(e|err|error)$'], // 强制回调错误处理
@@ -46,8 +48,8 @@ module.exports = {
         'new-cap': [0], // 要求构造函数首字母大写
         'no-buffer-constructor': [2], // 禁用 Buffer() 构造函数
         'no-confusing-arrow': [2, { allowParens: true }], // 禁止在可能与比较操作符相混淆的地方使用箭头函数
-        'no-console': [IS_PROD, { allow: ['warn', 'error'] }], // 禁止console
-        'no-debugger': [IS_PROD], // 禁止debugger
+        'no-console': [__WARN__, { allow: ['warn', 'error'] }], // 禁止console
+        'no-debugger': [__ERROR__], // 禁止debugger
         'no-duplicate-imports': [2], // 禁止模块重复导入
         'no-else-return': [2, {
             allowElseIf: false, // 禁止在 return 之后有 else if 块
@@ -67,7 +69,7 @@ module.exports = {
         'no-mixed-requires': [2], // 禁止混合常规变量声明和 require 调用
         'no-multi-assign': [2], // 禁止连续赋值
         'no-multi-spaces': [2, { ignoreEOLComments: true }], // 禁止出现多个空格
-        'no-multiple-empty-lines': [IS_PROD, { max: 1 }], // 不允许多个空行
+        'no-multiple-empty-lines': [__ERROR__, { max: 1 }], // 不允许多个空行
         'no-nested-ternary': [2], // 禁止使用嵌套的三元表达式
         'no-new-require': [2], // 禁止调用 require 时使用 new 操作符
         'no-new-wrappers': [2], // 禁止原始包装实例
@@ -75,15 +77,15 @@ module.exports = {
         'no-plusplus': [0], // 禁止++或--
         'no-redeclare': [2, { builtinGlobals: true }], // 禁止重新声明变量
         'no-return-assign': [2], // 禁止在返回语句中赋值
-        'no-return-await': [IS_PROD], // 禁用不必要的 return await
+        'no-return-await': [__ERROR__], // 禁用不必要的 return await
         'no-shadow': [2], // 禁止变量声明与外层作用域的变量同名
-        'no-sync': [1], // 禁止使用同步方法
+        'no-sync': [1, { allowAtRootLevel: true }], // 禁止使用同步方法
         'no-trailing-spaces': [0], // 禁用行尾空格
         'no-unneeded-ternary': [2], // 禁止可以在有更简单的可替代的表达式时使用三元操作符
         'no-unused-vars': [1], // 禁止出现未使用过的变量
         'no-use-before-define': [0], // 禁止在变量定义之前使用它们
-        'no-useless-constructor': [IS_PROD], // 禁用不必要的构造函数
-        'no-useless-return': [IS_PROD], // 禁止多余的 return 语句
+        'no-useless-constructor': [__ERROR__], // 禁用不必要的构造函数
+        'no-useless-return': [__ERROR__], // 禁止多余的 return 语句
         'no-var': [2], // 要求使用 let 或 const 而不是 var
         'max-params': [2, { max: 5 }], // 强制函数定义中最大参数个数
         'object-curly-spacing': [2, 'always'], // 强制在花括号中使用一致的空格
@@ -92,7 +94,7 @@ module.exports = {
         'operator-assignment': [2], // 要求或禁止尽可能地简化赋值操作
         'padded-blocks': [0], // 要求或禁止块内填充
         'prefer-arrow-callback': [2], // 要求回调函数使用箭头函数
-        'prefer-const': [IS_PROD], // 建议使用const
+        'prefer-const': [__ERROR__], // 建议使用const
         'prefer-rest-params': [2], // 要求使用剩余参数而不是 arguments
         'prefer-template': [2], // 建议使用模板字面量而非字符串连接 (prefer-template)
         'quote-props': [2, 'as-needed', { keywords: false, numbers: true }], // 当没有严格要求时，禁止对象字面量属性名称使用引号
@@ -101,7 +103,7 @@ module.exports = {
         semi: [2, 'never'], // 要求或禁止使用分号代替 ASI
         'semi-style': [2, 'last'], // 强制分号出现在句子末尾
         'sort-imports': [0], // import 排序
-        'space-before-function-paren': [2, {
+        'space-before-function-paren': [0, {
             anonymous: 'never',
             named: 'never',
             asyncArrow: 'always',

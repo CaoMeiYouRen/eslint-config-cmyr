@@ -1,10 +1,11 @@
 'use strict'
-const IS_PROD = process.env.NODE_ENV === 'production' ? 2 : 0
+const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
 module.exports = {
     extends: [
         'plugin:vue/recommended',
         '@vue/typescript/recommended',
         require.resolve('./index'),
+        require.resolve('./browser'),
     ],
     plugins: [
         'vue',
@@ -22,7 +23,7 @@ module.exports = {
         'vue/eqeqeq': 2,
         'vue/html-indent': [2, 4], // vue中缩进为4
         'vue/html-quotes': [2, 'double'], // vue中用双引号
-        'vue/html-self-closing': [IS_PROD], // 自闭合标签
+        'vue/html-self-closing': [__ERROR__], // 自闭合标签
         'vue/key-spacing': 2,
         'vue/match-component-file-name': [2, { // 要求组件名称属性与其文件名匹配
             extensions: ['jsx', 'tsx', 'vue'],
@@ -35,7 +36,7 @@ module.exports = {
                 allowFirstLine: false,
             },
         }],
-        'vue/no-unused-components': [IS_PROD], // 禁止未使用的组件
+        'vue/no-unused-components': [__ERROR__], // 禁止未使用的组件
         'vue/no-unused-vars': 0, // 禁止未使用变量
         'vue/no-reserved-component-names': [2, {
             disallowVueBuiltInComponents: true, // 禁用 vue2 的内置组件

@@ -9,7 +9,8 @@
     "index.js",
     "vue.js",
     "vue3.js",
-    "js.js"
+    "js.js",
+    "browser.js"
   ],
   "engines": {
     "node": ">=8"

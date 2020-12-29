@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.0.8](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.7...v1.0.8) (2020-12-29)
+
+
+### 🐛 Bug Fixes
+
+* 修复 browser.js bug ([53ec09a](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/53ec09a))
+
 ## [1.0.7](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.6...v1.0.7) (2020-12-26)
 
 

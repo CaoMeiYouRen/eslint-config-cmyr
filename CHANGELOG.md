@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.0.9](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.8...v1.0.9) (2020-12-31)
+
+
+### 🐛 Bug Fixes
+
+* 新增代码行数相关规则 ([40b15e4](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/40b15e4))
+
 ## [1.0.8](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.7...v1.0.8) (2020-12-29)
 
 

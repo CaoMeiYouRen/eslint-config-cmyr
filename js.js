@@ -46,6 +46,7 @@ module.exports = {
         'keyword-spacing': [2, { before: true, after: true }], // 强制关键字周围空格的一致性
         'linebreak-style': [2, 'unix'], // 强制使用一致的换行风格
         'new-cap': [0], // 要求构造函数首字母大写
+        'new-parens': [2, 'always'], // 要求调用无参构造函数时带括号
         'no-buffer-constructor': [2], // 禁用 Buffer() 构造函数
         'no-confusing-arrow': [2, { allowParens: true }], // 禁止在可能与比较操作符相混淆的地方使用箭头函数
         'no-console': [__WARN__, { allow: ['warn', 'error'] }], // 禁止console
@@ -87,6 +88,11 @@ module.exports = {
         'no-useless-constructor': [__ERROR__], // 禁用不必要的构造函数
         'no-useless-return': [__ERROR__], // 禁止多余的 return 语句
         'no-var': [2], // 要求使用 let 或 const 而不是 var
+        'no-whitespace-before-property': [2], // 禁止属性前有空白
+        'max-len': [1, { code: 200 }], // 强制行的最大长度
+        'max-lines': [1, { max: 500 }], // 强制文件的最大行数
+        'max-lines-per-function': [1, { max: 100 }], // 强制函数最大行数
+        'max-nested-callbacks': [1, { max: 5 }], // 强制回调函数最大嵌套深度
         'max-params': [2, { max: 5 }], // 强制函数定义中最大参数个数
         'object-curly-spacing': [2, 'always'], // 强制在花括号中使用一致的空格
         'object-shorthand': [2], // 要求或禁止对象字面量中方法和属性使用简写语法

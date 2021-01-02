@@ -83,7 +83,7 @@ module.exports = {
         'no-sync': [1, { allowAtRootLevel: true }], // 禁止使用同步方法
         'no-trailing-spaces': [0], // 禁用行尾空格
         'no-unneeded-ternary': [2], // 禁止可以在有更简单的可替代的表达式时使用三元操作符
-        'no-unused-vars': [1], // 禁止出现未使用过的变量
+        'no-unused-vars': [__WARN__], // 禁止出现未使用过的变量
         'no-use-before-define': [0], // 禁止在变量定义之前使用它们
         'no-useless-constructor': [__ERROR__], // 禁用不必要的构造函数
         'no-useless-return': [__ERROR__], // 禁止多余的 return 语句
@@ -91,7 +91,7 @@ module.exports = {
         'no-whitespace-before-property': [2], // 禁止属性前有空白
         'max-len': [1, { code: 200 }], // 强制行的最大长度
         'max-lines': [1, { max: 500 }], // 强制文件的最大行数
-        'max-lines-per-function': [1, { max: 100 }], // 强制函数最大行数
+        'max-lines-per-function': [1, { max: 120 }], // 强制函数最大行数
         'max-nested-callbacks': [1, { max: 5 }], // 强制回调函数最大嵌套深度
         'max-params': [2, { max: 5 }], // 强制函数定义中最大参数个数
         'object-curly-spacing': [2, 'always'], // 强制在花括号中使用一致的空格

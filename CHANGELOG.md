@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+# [1.1.0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.10...v1.1.0) (2021-01-17)
+
+
+### ✨ Features
+
+* 新增 react 支持 ([2c6f8a9](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/2c6f8a9))
+
 ## [1.0.10](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.9...v1.0.10) (2021-01-02)
 
 

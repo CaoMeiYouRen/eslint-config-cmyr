@@ -25,7 +25,7 @@ module.exports = {
         'vue/html-quotes': [2, 'double'], // vue中用双引号
         'vue/html-self-closing': [__ERROR__], // 自闭合标签
         'vue/key-spacing': 2,
-        'vue/match-component-file-name': [2, { // 要求组件名称属性与其文件名匹配
+        'vue/match-component-file-name': [1, { // 要求组件名称属性与其文件名匹配
             extensions: ['jsx', 'tsx', 'vue'],
             shouldMatchCase: false,
         }],

@@ -109,6 +109,7 @@ module.exports = {
         semi: [2, 'never'], // 要求或禁止使用分号代替 ASI
         'semi-style': [2, 'last'], // 强制分号出现在句子末尾
         'sort-imports': [0], // import 排序
+        'space-before-blocks': [1, 'always'], // 要求或禁止语句块之前的空格
         'space-before-function-paren': [0, {
             anonymous: 'never',
             named: 'never',

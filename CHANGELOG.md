@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.1...v1.1.2) (2021-02-07)
+
+
+### 🐛 Bug Fixes
+
+* 新增js规则；修改前置依赖为eslint-config-react-app ([a9410c0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/a9410c0)), closes [#5](https://github.com/CaoMeiYouRen/eslint-config-cmyr/issues/5)
+
 ## [1.1.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.0...v1.1.1) (2021-02-06)
 
 

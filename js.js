@@ -27,30 +27,35 @@ module.exports = {
         },
     },
     rules: {
-        'arrow-body-style': [__ERROR__, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)
+        'array-callback-return': [1], // 强制数组方法的回调函数中有 return 语句
+        'arrow-body-style': [__WARN__, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)
         'arrow-parens': [1, 'always'], // 要求在所有情况下使用圆括号将参数括起来
         'arrow-spacing': [2, { before: true, after: true }], // 要求箭头函数的箭头之前或之后有空格
         'block-spacing': [2, 'always'], // 禁止或强制在代码块中开括号前和闭括号后有空格
         'brace-style': 2, // 大括号风格要求
         'comma-dangle': [2, 'always-multiline'], // 要求或禁止使用拖尾逗号
         'comma-spacing': [2, { before: false, after: true }], // 强制在逗号周围使用空格
+        'consistent-this': [1], // 当获取当前执行环境的上下文时，强制使用一致的命名
         curly: [2, 'all'], // 要求遵循大括号约定
         'dot-notation': [0], // 强制尽可能地使用点号
-        'eol-last': [__ERROR__, 'never'], // 禁止文件末尾存在空行
+        'eol-last': [__WARN__, 'always'], // 禁止文件末尾存在空行
         eqeqeq: [2], // 要求使用 === 和 !==
         'func-style': [2, 'declaration', { allowArrowFunctions: true }], // 强制 function 声明或表达式的一致性
         'handle-callback-err:': [0, '^(e|err|error)$'], // 强制回调错误处理
         'implicit-arrow-linebreak': [2, 'beside'], // 禁止在箭头函数体之前出现换行
         indent: [2, 4, { SwitchCase: 1 }], // 强制使用一致的缩进// case 子句将相对于 switch 语句缩进 4 个空格，即一个tab
+        'jsx-quotes': [1, 'prefer-double'], // 强制所有不包含双引号的 JSX 属性值使用双引号
         'key-spacing': [2, { beforeColon: false, afterColon: true }], // 强制在对象字面量的键和值之间使用一致的空格
         'keyword-spacing': [2, { before: true, after: true }], // 强制关键字周围空格的一致性
         'linebreak-style': [2, 'unix'], // 强制使用一致的换行风格
         'new-cap': [0], // 要求构造函数首字母大写
         'new-parens': [2, 'always'], // 要求调用无参构造函数时带括号
+        'no-alert': [__WARN__], // 禁用 Alert
         'no-buffer-constructor': [2], // 禁用 Buffer() 构造函数
         'no-confusing-arrow': [2, { allowParens: true }], // 禁止在可能与比较操作符相混淆的地方使用箭头函数
         'no-console': [__WARN__, { allow: ['warn', 'error'] }], // 禁止console
         'no-debugger': [__ERROR__], // 禁止debugger
+        'no-div-regex': [1], // 禁止除法操作符显式的出现在正则表达式开始的位置
         'no-duplicate-imports': [2], // 禁止模块重复导入
         'no-else-return': [2, {
             allowElseIf: false, // 禁止在 return 之后有 else if 块
@@ -60,7 +65,10 @@ module.exports = {
         'no-extend-native': [2, { exceptions: [] }], // 禁止扩展原生对象
         'no-extra-boolean-cast': [2], // 禁止不必要的布尔类型转换
         'no-extra-parens': [2], // 禁止冗余的括号
+        'no-floating-decimal': [1], // 禁止数字字面量中使用前导和末尾小数点
+        'no-implied-eval': [1], // 禁用隐式的eval()
         'no-lonely-if': [2], // 禁止 if 语句作为唯一语句出现在 else 语句块中
+        'no-loop-func': [1], // 禁止在循环语句中出现包含不安全引用的函数声明
         'no-magic-numbers': [0, {
             ignore: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], // 指定检测中可以忽略的数字
             ignoreArrayIndexes: true, // 指定数字用作数组的索引是否是可以的
@@ -85,6 +93,7 @@ module.exports = {
         'no-unneeded-ternary': [2], // 禁止可以在有更简单的可替代的表达式时使用三元操作符
         'no-unused-vars': [__WARN__], // 禁止出现未使用过的变量
         'no-use-before-define': [0], // 禁止在变量定义之前使用它们
+        'no-useless-call': [1], // 禁止不必要的 .call() 和 .apply()
         'no-useless-constructor': [__ERROR__], // 禁用不必要的构造函数
         'no-useless-return': [__ERROR__], // 禁止多余的 return 语句
         'no-var': [2], // 要求使用 let 或 const 而不是 var

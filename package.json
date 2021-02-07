@@ -39,8 +39,8 @@
     "conventional-changelog-cmyr-config": "^1.2.3",
     "cross-env": "*",
     "eslint": ">=6",
+    "eslint-config-react-app": ">=5",
     "eslint-plugin-vue": ">=6",
-    "react-scripts": ">=4",
     "semantic-release": "^17.2.4",
     "typescript": ">=3"
   },
@@ -49,8 +49,8 @@
     "@typescript-eslint/eslint-plugin": ">=3",
     "@typescript-eslint/parser": ">=3",
     "eslint": ">=6",
+    "eslint-config-react-app": ">=5",
     "eslint-plugin-vue": ">=6",
-    "react-scripts": ">=4",
     "typescript": ">=3"
   }
 }

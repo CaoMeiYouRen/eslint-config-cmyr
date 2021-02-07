@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.0...v1.1.1) (2021-02-06)
+
+
+### 🐛 Bug Fixes
+
+* 新增 space-before-blocks 规则 ([c654350](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/c654350))
+
 # [1.1.0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.0.10...v1.1.0) (2021-01-17)
 
 

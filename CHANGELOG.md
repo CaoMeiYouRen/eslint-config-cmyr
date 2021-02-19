@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.3](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.2...v1.1.3) (2021-02-19)
+
+
+### 🐛 Bug Fixes
+
+* 修改缩进 rule ([d493aa2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/d493aa2))
+
 ## [1.1.2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.1...v1.1.2) (2021-02-07)
 
 

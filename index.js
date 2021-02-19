@@ -35,7 +35,9 @@ module.exports = {
         '@typescript-eslint/camelcase': [0], // 驼峰式风格
         '@typescript-eslint/comma-spacing': [2], // 在逗号前后强制使用一致的空格。
         '@typescript-eslint/explicit-function-return-type': [0], // 要求函数和类方法的显式返回类型
-        '@typescript-eslint/explicit-module-boundary-types': [0], // 要求导出函数和类的公共类方法的显式返回和参数类型
+        '@typescript-eslint/explicit-module-boundary-types': [0, {
+            allowArgumentsExplicitlyTypedAsAny: true,
+        }], // 要求导出函数和类的公共类方法的显式返回和参数类型
         '@typescript-eslint/indent': [2, 4, { SwitchCase: 1 }], // 强制使用一致的缩进// case 子句将相对于 switch 语句缩进 4 个空格，即一个tab
         '@typescript-eslint/member-delimiter-style': [2, { // 接口和类型定义中禁用不必要的分号(typescript扩展支持)
             multiline: {
@@ -67,15 +69,6 @@ module.exports = {
         // '@typescript-eslint/return-await': [__ERROR__, 'never'], // 禁用不必要的 return await
         // '@typescript-eslint/restrict-template-expressions': [0], // 强制模板文字表达式为字符串类型
         // '@typescript-eslint/restrict-plus-operands': [0], // 当添加两个变量时，操作数必须类型为数字或类型为字符串
+        indent: [0], // 强制使用一致的缩进
     },
 }
-// const fs = require('fs')
-// const { rules } = module.exports
-// const ruleList = Object.entries(rules).sort((a, b) => {
-//     return a[0].localeCompare(b[0])
-// })
-// const obj = {}
-// ruleList.forEach((e) => {
-//     obj[e[0]] = e[1]
-// })
-// fs.writeFileSync('rules.json', JSON.stringify(obj, null, 4))

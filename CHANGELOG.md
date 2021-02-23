@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.4](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.3...v1.1.4) (2021-02-23)
+
+
+### 🐛 Bug Fixes
+
+* 修改函数定义中最大参数个数 ([27fa885](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/27fa885))
+
 ## [1.1.3](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.2...v1.1.3) (2021-02-19)
 
 

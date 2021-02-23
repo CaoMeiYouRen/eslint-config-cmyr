@@ -102,7 +102,7 @@ module.exports = {
         'max-lines': [1, { max: 500 }], // 强制文件的最大行数
         'max-lines-per-function': [1, { max: 120 }], // 强制函数最大行数
         'max-nested-callbacks': [1, { max: 5 }], // 强制回调函数最大嵌套深度
-        'max-params': [2, { max: 5 }], // 强制函数定义中最大参数个数
+        'max-params': [1, { max: 3 }], // 强制函数定义中最大参数个数
         'object-curly-spacing': [2, 'always'], // 强制在花括号中使用一致的空格
         'object-shorthand': [2], // 要求或禁止对象字面量中方法和属性使用简写语法
         'object-property-newline': [2, { allowAllPropertiesOnSameLine: true }], // 强制将对象的属性放在不同的行上

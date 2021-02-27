@@ -32,7 +32,7 @@ module.exports = {
         'arrow-parens': [1, 'always'], // 要求在所有情况下使用圆括号将参数括起来
         'arrow-spacing': [2, { before: true, after: true }], // 要求箭头函数的箭头之前或之后有空格
         'block-spacing': [2, 'always'], // 禁止或强制在代码块中开括号前和闭括号后有空格
-        'brace-style': 2, // 大括号风格要求
+        'brace-style': [2], // 大括号风格要求
         'comma-dangle': [2, 'always-multiline'], // 要求或禁止使用拖尾逗号
         'comma-spacing': [2, { before: false, after: true }], // 强制在逗号周围使用空格
         'consistent-this': [1], // 当获取当前执行环境的上下文时，强制使用一致的命名

@@ -37,7 +37,7 @@ module.exports = {
         'no-shadow': [0], // 禁止变量声明与外层作用域的变量同名
         'no-unused-vars': [0], // 禁止出现未使用过的变量
         // '@typescript-eslint/await-thenable': [2], // 不允许等待一个非Thhenable的值
-        '@typescript-eslint/brace-style': [2, 'always'], // 禁止或强制在代码块中开括号前和闭括号后有空格
+        '@typescript-eslint/brace-style': [2, '1tbs'], // 大括号风格要求
         '@typescript-eslint/comma-dangle': [2, 'always-multiline'], // 要求或禁止使用拖尾逗号
         '@typescript-eslint/comma-spacing': [2, { before: false, after: true }], // 强制在逗号周围使用空格
         '@typescript-eslint/camelcase': [0], // 驼峰式风格

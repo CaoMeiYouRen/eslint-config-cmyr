@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.5](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.4...v1.1.5) (2021-02-27)
+
+
+### 🐛 Bug Fixes
+
+* 修复 typescript 下 no-shadow bug；新增规则 ([633993c](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/633993c))
+
 ## [1.1.4](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.3...v1.1.4) (2021-02-23)
 
 

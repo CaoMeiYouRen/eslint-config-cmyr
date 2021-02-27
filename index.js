@@ -1,5 +1,7 @@
 'use strict'
 const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
+const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
+
 module.exports = {
     globals: {
     },
@@ -33,6 +35,7 @@ module.exports = {
     rules: {
         indent: [0], // 强制使用一致的缩进
         'no-shadow': [0], // 禁止变量声明与外层作用域的变量同名
+        'no-unused-vars': [0], // 禁止出现未使用过的变量
         // '@typescript-eslint/await-thenable': [2], // 不允许等待一个非Thhenable的值
         '@typescript-eslint/brace-style': [2, 'always'], // 禁止或强制在代码块中开括号前和闭括号后有空格
         '@typescript-eslint/comma-dangle': [2, 'always-multiline'], // 要求或禁止使用拖尾逗号
@@ -61,7 +64,7 @@ module.exports = {
         '@typescript-eslint/no-extra-parens': [__ERROR__, 'all', { enforceForArrowConditionals: false }], // 不允许不必要的括号
         '@typescript-eslint/no-inferrable-types': [0], // 对于初始化为数字、字符串或布尔值的变量或参数，不允许显式类型声明
         '@typescript-eslint/no-shadow': [2], // 禁止变量声明与外层作用域的变量同名
-        '@typescript-eslint/no-unused-vars': [0], // 禁止未使用的变量
+        '@typescript-eslint/no-unused-vars': [__WARN__], // 禁止未使用的变量
         '@typescript-eslint/object-curly-spacing': [2, 'always'], // 强制在花括号中使用一致的空格
         '@typescript-eslint/quotes': [2, 'single'], // 强制使用前后一致的双引号、双引号或单引号
         '@typescript-eslint/semi': [2, 'never'], // 禁用不必要的分号(typescript扩展支持)

@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.6](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.5...v1.1.6) (2021-02-27)
+
+
+### 🐛 Bug Fixes
+
+* 修复 no-unused-vars ([86d057d](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/86d057d))
+
 ## [1.1.5](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.4...v1.1.5) (2021-02-27)
 
 

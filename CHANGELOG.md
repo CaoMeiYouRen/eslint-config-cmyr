@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.7](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.6...v1.1.7) (2021-02-27)
+
+
+### 🐛 Bug Fixes
+
+* fix @typescript-eslint/brace-style ([d2d3574](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/d2d3574))
+
 ## [1.1.6](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.5...v1.1.6) (2021-02-27)
 
 

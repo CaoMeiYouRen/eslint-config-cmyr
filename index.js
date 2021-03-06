@@ -34,6 +34,8 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     rules: {
         indent: [0], // 强制使用一致的缩进
+        semi: [0], // 要求或禁止使用分号代替 ASI
+        'no-extra-parens': [0], // 禁止冗余的括号
         'no-shadow': [0], // 禁止变量声明与外层作用域的变量同名
         'no-unused-vars': [0], // 禁止出现未使用过的变量
         // '@typescript-eslint/await-thenable': [2], // 不允许等待一个非Thhenable的值
@@ -62,6 +64,7 @@ module.exports = {
         '@typescript-eslint/no-empty-interface': [0], // 不允许声明空接口
         '@typescript-eslint/no-explicit-any': [0], // 不允许使用any类型
         '@typescript-eslint/no-extra-parens': [__ERROR__, 'all', { enforceForArrowConditionals: false }], // 不允许不必要的括号
+        '@typescript-eslint/no-extra-semi': [2], // 禁止冗余的分号
         '@typescript-eslint/no-inferrable-types': [0], // 对于初始化为数字、字符串或布尔值的变量或参数，不允许显式类型声明
         '@typescript-eslint/no-shadow': [2], // 禁止变量声明与外层作用域的变量同名
         '@typescript-eslint/no-unused-vars': [__WARN__], // 禁止未使用的变量

@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.8](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.7...v1.1.8) (2021-03-06)
+
+
+### 🐛 Bug Fixes
+
+* 修复 禁止冗余的括号规则 ([984fd97](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/984fd97))
+
 ## [1.1.7](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.6...v1.1.7) (2021-02-27)
 
 

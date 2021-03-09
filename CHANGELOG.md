@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.9](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.8...v1.1.9) (2021-03-09)
+
+
+### 🐛 Bug Fixes
+
+* 不允许不必要的括号 ([4aad20b](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/4aad20b))
+
 ## [1.1.8](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.7...v1.1.8) (2021-03-06)
 
 

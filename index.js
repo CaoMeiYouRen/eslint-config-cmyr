@@ -63,7 +63,7 @@ module.exports = {
         '@typescript-eslint/no-empty-function': [__ERROR__], // 禁止空函数
         '@typescript-eslint/no-empty-interface': [0], // 不允许声明空接口
         '@typescript-eslint/no-explicit-any': [0], // 不允许使用any类型
-        '@typescript-eslint/no-extra-parens': [__ERROR__, 'all', { enforceForArrowConditionals: false }], // 不允许不必要的括号
+        '@typescript-eslint/no-extra-parens': [1, 'all', { enforceForArrowConditionals: false }], // 不允许不必要的括号
         '@typescript-eslint/no-extra-semi': [2], // 禁止冗余的分号
         '@typescript-eslint/no-inferrable-types': [0], // 对于初始化为数字、字符串或布尔值的变量或参数，不允许显式类型声明
         '@typescript-eslint/no-shadow': [2], // 禁止变量声明与外层作用域的变量同名

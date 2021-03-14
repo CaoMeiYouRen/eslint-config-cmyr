@@ -19,7 +19,7 @@ module.exports = {
     plugins: [
     ],
     parserOptions: {
-        ecmaVersion: new Date().getFullYear(),
+        ecmaVersion: 2021,
         sourceType: 'module',
         ecmaFeatures: {
             modules: true,
@@ -29,6 +29,7 @@ module.exports = {
     rules: {
         'array-callback-return': [1], // 强制数组方法的回调函数中有 return 语句
         'arrow-body-style': [__WARN__, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)
+        'array-element-newline': [1, 'consistent'], //  需要一致地使用数组元素之间的换行符
         'arrow-parens': [1, 'always'], // 要求在所有情况下使用圆括号将参数括起来
         'arrow-spacing': [2, { before: true, after: true }], // 要求箭头函数的箭头之前或之后有空格
         'block-spacing': [2, 'always'], // 禁止或强制在代码块中开括号前和闭括号后有空格
@@ -57,9 +58,10 @@ module.exports = {
         'no-debugger': [__ERROR__], // 禁止debugger
         'no-div-regex': [1], // 禁止除法操作符显式的出现在正则表达式开始的位置
         'no-duplicate-imports': [2], // 禁止模块重复导入
-        'no-else-return': [2, {
-            allowElseIf: false, // 禁止在 return 之后有 else if 块
-        }], // 禁止在 else 前有 return
+        'no-else-return': [2,
+            {
+                allowElseIf: false, // 禁止在 return 之后有 else if 块
+            }], // 禁止在 else 前有 return
         'no-empty': [1], // 禁止有空代码块
         'no-eval': [2], // 禁用 eval()
         'no-extend-native': [2, { exceptions: [] }], // 禁止扩展原生对象
@@ -69,12 +71,22 @@ module.exports = {
         'no-implied-eval': [1], // 禁用隐式的eval()
         'no-lonely-if': [2], // 禁止 if 语句作为唯一语句出现在 else 语句块中
         'no-loop-func': [1], // 禁止在循环语句中出现包含不安全引用的函数声明
-        'no-magic-numbers': [0, {
-            ignore: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], // 指定检测中可以忽略的数字
-            ignoreArrayIndexes: true, // 指定数字用作数组的索引是否是可以的
-            enforceConst: false, // 指定是否应该在数字变量的声明中检测 const 关键
-            detectObjects: false, // 指定是否应该在设置对象属性时检测数字
-        }], // 禁用魔术数字
+        'no-magic-numbers': [0,
+            {
+                ignore: [0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9], // 指定检测中可以忽略的数字
+                ignoreArrayIndexes: true, // 指定数字用作数组的索引是否是可以的
+                enforceConst: false, // 指定是否应该在数字变量的声明中检测 const 关键
+                detectObjects: false, // 指定是否应该在设置对象属性时检测数字
+            }], // 禁用魔术数字
         'no-mixed-requires': [2], // 禁止混合常规变量声明和 require 调用
         'no-multi-assign': [2], // 禁止连续赋值
         'no-multi-spaces': [2, { ignoreEOLComments: true }], // 禁止出现多个空格
@@ -119,11 +131,12 @@ module.exports = {
         'semi-style': [2, 'last'], // 强制分号出现在句子末尾
         'sort-imports': [0], // import 排序
         'space-before-blocks': [1, 'always'], // 要求或禁止语句块之前的空格
-        'space-before-function-paren': [0, {
-            anonymous: 'never',
-            named: 'never',
-            asyncArrow: 'always',
-        }], // 要求或禁止函数圆括号之前有一个空格
+        'space-before-function-paren': [0,
+            {
+                anonymous: 'never',
+                named: 'never',
+                asyncArrow: 'always',
+            }], // 要求或禁止函数圆括号之前有一个空格
         'space-infix-ops': [2], // 要求操作符周围有空格
         'spaced-comment': [2, 'always'], // 要求或禁止在注释前有空白
         'template-curly-spacing': [2, 'never'], // 强制模板字符串中空格的使用

@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.10](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.9...v1.1.10) (2021-03-14)
+
+
+### 🐛 Bug Fixes
+
+* 新增规则 array-element-newline ([0668fde](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/0668fde))
+
 ## [1.1.9](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.8...v1.1.9) (2021-03-09)
 
 

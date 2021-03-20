@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.11](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.10...v1.1.11) (2021-03-20)
+
+
+### 🐛 Bug Fixes
+
+* 修改 no-redeclare 相关规则 ([f83dac9](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/f83dac9))
+
 ## [1.1.10](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.9...v1.1.10) (2021-03-14)
 
 

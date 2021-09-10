@@ -39,7 +39,7 @@ module.exports = {
         'consistent-this': [1], // 当获取当前执行环境的上下文时，强制使用一致的命名
         curly: [2, 'all'], // 要求遵循大括号约定
         'dot-notation': [0], // 强制尽可能地使用点号
-        'eol-last': [__WARN__, 'always'], // 禁止文件末尾存在空行
+        'eol-last': [__WARN__, 'always'], // 要求或禁止文件末尾存在空行
         eqeqeq: [2], // 要求使用 === 和 !==
         'func-style': [2, 'declaration', { allowArrowFunctions: true }], // 强制 function 声明或表达式的一致性
         'handle-callback-err:': [0, '^(e|err|error)$'], // 强制回调错误处理
@@ -118,6 +118,7 @@ module.exports = {
         'object-curly-spacing': [2, 'always'], // 强制在花括号中使用一致的空格
         'object-shorthand': [2], // 要求或禁止对象字面量中方法和属性使用简写语法
         'object-property-newline': [2, { allowAllPropertiesOnSameLine: true }], // 强制将对象的属性放在不同的行上
+        'one-var': [1, 'never'], // 强制函数中的变量在一起声明或分开声明
         'operator-assignment': [2], // 要求或禁止尽可能地简化赋值操作
         'padded-blocks': [0], // 要求或禁止块内填充
         'prefer-arrow-callback': [2], // 要求回调函数使用箭头函数

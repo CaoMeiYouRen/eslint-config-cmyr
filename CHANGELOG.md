@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.12](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.11...v1.1.12) (2021-09-10)
+
+
+### 🐛 Bug Fixes
+
+* add one-var rule ([f63c1a8](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/f63c1a8))
+
 ## [1.1.11](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.10...v1.1.11) (2021-03-20)
 
 

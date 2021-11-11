@@ -43,14 +43,5 @@
     "eslint-plugin-vue": ">=6",
     "semantic-release": "^17.2.4",
     "typescript": ">=3"
-  },
-  "peerDependencies": {
-    "@vue/eslint-config-typescript": ">=5",
-    "@typescript-eslint/eslint-plugin": ">=3",
-    "@typescript-eslint/parser": ">=3",
-    "eslint": ">=6",
-    "eslint-config-react-app": ">=5",
-    "eslint-plugin-vue": ">=6",
-    "typescript": ">=3"
   }
 }

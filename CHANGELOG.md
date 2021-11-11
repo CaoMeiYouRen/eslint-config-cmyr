@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.13](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.12...v1.1.13) (2021-11-11)
+
+
+### 🐛 Bug Fixes
+
+* 移除 peerDependencies ([f56d372](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/f56d372))
+
 ## [1.1.12](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.11...v1.1.12) (2021-09-10)
 
 

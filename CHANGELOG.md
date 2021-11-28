@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.14](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.13...v1.1.14) (2021-11-28)
+
+
+### 🐛 Bug Fixes
+
+* 调整部分规则，禁用 max-len 、max-lines、max-lines-per-function 等规则；修改部分规则的级别 ([d7f9b25](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/d7f9b25))
+
 ## [1.1.13](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.12...v1.1.13) (2021-11-11)
 
 

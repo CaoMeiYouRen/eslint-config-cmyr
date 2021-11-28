@@ -61,7 +61,7 @@ module.exports = {
                 requireLast: false,
             },
         }],
-        '@typescript-eslint/no-empty-function': [__ERROR__], // 禁止空函数
+        '@typescript-eslint/no-empty-function': [__WARN__], // 禁止空函数
         '@typescript-eslint/no-empty-interface': [0], // 不允许声明空接口
         '@typescript-eslint/no-explicit-any': [0], // 不允许使用any类型
         '@typescript-eslint/no-extra-parens': [1, 'all', { enforceForArrowConditionals: false }], // 不允许不必要的括号

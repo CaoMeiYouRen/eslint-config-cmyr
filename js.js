@@ -110,11 +110,11 @@ module.exports = {
         'no-useless-return': [__ERROR__], // 禁止多余的 return 语句
         'no-var': [2], // 要求使用 let 或 const 而不是 var
         'no-whitespace-before-property': [2], // 禁止属性前有空白
-        'max-len': [1, { code: 200 }], // 强制行的最大长度
-        'max-lines': [1, { max: 500 }], // 强制文件的最大行数
-        'max-lines-per-function': [1, { max: 120 }], // 强制函数最大行数
+        'max-len': [0, { code: 200 }], // 强制行的最大长度
+        'max-lines': [0, { max: 500 }], // 强制文件的最大行数
+        'max-lines-per-function': [0, { max: 120 }], // 强制函数最大行数
         'max-nested-callbacks': [1, { max: 5 }], // 强制回调函数最大嵌套深度
-        'max-params': [1, { max: 3 }], // 强制函数定义中最大参数个数
+        'max-params': [1, { max: 5 }], // 强制函数定义中最大参数个数
         'object-curly-spacing': [2, 'always'], // 强制在花括号中使用一致的空格
         'object-shorthand': [2], // 要求或禁止对象字面量中方法和属性使用简写语法
         'object-property-newline': [2, { allowAllPropertiesOnSameLine: true }], // 强制将对象的属性放在不同的行上
@@ -127,7 +127,7 @@ module.exports = {
         'prefer-template': [2], // 建议使用模板字面量而非字符串连接 (prefer-template)
         'quote-props': [2, 'as-needed', { keywords: false, numbers: true }], // 当没有严格要求时，禁止对象字面量属性名称使用引号
         quotes: [2, 'single'], // 强制使用一致的反勾号、双引号或单引号double
-        'require-await': [0], // 不允许没有异步函数的异步函数await表达
+        'require-await': [__WARN__], // 不允许没有异步函数的异步函数await表达
         semi: [2, 'never'], // 要求或禁止使用分号代替 ASI
         'semi-style': [2, 'last'], // 强制分号出现在句子末尾
         'sort-imports': [0], // import 排序

@@ -1,5 +1,7 @@
 'use strict'
 const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
+const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
+
 module.exports = {
     extends: [
         'plugin:vue/recommended',
@@ -36,7 +38,7 @@ module.exports = {
                 allowFirstLine: false,
             },
         }],
-        'vue/no-unused-components': [__ERROR__], // 禁止未使用的组件
+        'vue/no-unused-components': [__WARN__], // 禁止未使用的组件
         'vue/no-unused-vars': 0, // 禁止未使用变量
         'vue/no-reserved-component-names': [2, {
             disallowVueBuiltInComponents: true, // 禁用 vue2 的内置组件

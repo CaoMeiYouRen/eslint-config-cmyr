@@ -31,6 +31,8 @@ module.exports = {
                     'vue.js',
                     'vue3.js',
                     'js.js',
+                    'browser.js',
+                    'react.js',
                     'CHANGELOG.md',
                     'package.json',
                 ],

@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.15](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.14...v1.1.15) (2021-12-22)
+
+
+### 🐛 Bug Fixes
+
+* 更新 ES 版本为 2022；恢复 peerDependencies；更新 conventional-changelog-cmyr-config ([363770e](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/363770e))
+
 ## [1.1.14](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.13...v1.1.14) (2021-11-28)
 
 

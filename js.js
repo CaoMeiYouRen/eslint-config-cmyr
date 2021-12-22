@@ -19,7 +19,7 @@ module.exports = {
     plugins: [
     ],
     parserOptions: {
-        ecmaVersion: 2021,
+        ecmaVersion: 2022,
         sourceType: 'module',
         ecmaFeatures: {
             modules: true,

@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.16](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.15...v1.1.16) (2022-01-16)
+
+
+### 🐛 Bug Fixes
+
+* 禁用 require-await 规则 ([d2843f2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/d2843f2))
+
 ## [1.1.15](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.14...v1.1.15) (2021-12-22)
 
 

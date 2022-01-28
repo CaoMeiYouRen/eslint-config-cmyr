@@ -3,7 +3,8 @@ const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
 
 module.exports = {
     root: true,
-    globals: {// 处理全局变量
+    globals: { // 处理全局变量
+        globalThis: true,
     },
     env: {
         browser: true,

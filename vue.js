@@ -35,7 +35,6 @@ module.exports = {
             singleline: 2,
             multiline: {
                 max: 1,
-                allowFirstLine: false,
             },
         }],
         'vue/no-unused-components': [__WARN__], // 禁止未使用的组件

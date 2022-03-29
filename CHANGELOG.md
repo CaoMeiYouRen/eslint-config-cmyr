@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.17](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.16...v1.1.17) (2022-02-01)
+
+
+### 🐛 Bug Fixes
+
+* 修复 全局变量缺失 globalThis ([ae94196](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/ae94196))
+
 ## [1.1.16](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.15...v1.1.16) (2022-01-16)
 
 

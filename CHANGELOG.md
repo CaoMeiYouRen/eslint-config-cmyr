@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.18](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.17...v1.1.18) (2022-03-29)
+
+
+### 🐛 Bug Fixes
+
+* 修复 vue/max-attributes-per-line 的  allowFirstLine 错误 ([e8c4cf1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/e8c4cf1))
+
 ## [1.1.17](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.16...v1.1.17) (2022-02-01)
 
 

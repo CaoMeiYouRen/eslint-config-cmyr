@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.19](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.18...v1.1.19) (2022-05-27)
+
+
+### 🐛 Bug Fixes
+
+* 修改 部分 peerDependencies 为 optionalDependencies ([3babde4](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/3babde4))
+
 ## [1.1.18](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.17...v1.1.18) (2022-03-29)
 
 

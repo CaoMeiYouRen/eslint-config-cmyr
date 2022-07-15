@@ -37,6 +37,7 @@ module.exports = {
                 max: 1,
             },
         }],
+        'vue/multi-word-component-names': [1], // 要求组件名称始终为多个单词
         'vue/no-unused-components': [__WARN__], // 禁止未使用的组件
         'vue/no-unused-vars': 0, // 禁止未使用变量
         'vue/no-reserved-component-names': [2, {
@@ -49,7 +50,6 @@ module.exports = {
         'vue/require-name-property': [2], // 组件必须命名
         'vue/static-class-names-order': [2], // 静态 class 排序
         'vue/v-for-delimiter-style': [2, 'in'], // v-for 循环使用 in
-
     },
 }
 

@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.21](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.20...v1.1.21) (2022-07-15)
+
+
+### 🐛 Bug Fixes
+
+* 新增 vue/multi-word-component-names 配置 ([caf3098](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/caf3098))
+
 ## [1.1.20](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.19...v1.1.20) (2022-05-30)
 
 

@@ -44,6 +44,7 @@ module.exports = {
             disallowVueBuiltInComponents: true, // 禁用 vue2 的内置组件
             disallowVue3BuiltInComponents: true, // 禁用 vue3 的内置组件
         }], // 不允许在组件定义中使用保留名称
+        'vue/no-v-text-v-html-on-component': [1], // 禁止组件上的 v-text / v-html
         'vue/object-curly-spacing': 2,
         'vue/padding-line-between-blocks': [2], // 要求或不允许块之间的填充行
         'vue/require-default-prop': [0],

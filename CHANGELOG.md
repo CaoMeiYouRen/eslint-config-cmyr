@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.23](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.22...v1.1.23) (2022-07-27)
+
+
+### 🐛 Bug Fixes
+
+* 优化 vue 相关规则 ([11f5ef9](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/11f5ef9))
+
 ## [1.1.22](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.21...v1.1.22) (2022-07-27)
 
 

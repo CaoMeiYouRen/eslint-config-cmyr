@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.22](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.21...v1.1.22) (2022-07-27)
+
+
+### 🐛 Bug Fixes
+
+* 新增 vue/no-v-text-v-html-on-component 规则 ([66728f1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/66728f1))
+
 ## [1.1.21](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.20...v1.1.21) (2022-07-15)
 
 

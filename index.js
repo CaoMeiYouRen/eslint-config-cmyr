@@ -71,6 +71,7 @@ module.exports = {
         '@typescript-eslint/no-shadow': [2], // 禁止变量声明与外层作用域的变量同名
         '@typescript-eslint/no-unused-vars': [__WARN__], // 禁止未使用的变量
         '@typescript-eslint/object-curly-spacing': [2, 'always'], // 强制在花括号中使用一致的空格
+        '@typescript-eslint/prefer-as-const': [1], // 强制在文本类型上使用 as const。
         '@typescript-eslint/quotes': [2, 'single'], // 强制使用前后一致的双引号、双引号或单引号
         '@typescript-eslint/semi': [2, 'never'], // 禁用不必要的分号(typescript扩展支持)
         '@typescript-eslint/type-annotation-spacing': [2], // 需要在类型注释前后保持一致的间距。

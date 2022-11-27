@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.24](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.23...v1.1.24) (2022-11-27)
+
+
+### 🐛 Bug Fixes
+
+* 更改 @typescript-eslint/prefer-as-const 的错误级别 ([9eedc10](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/9eedc10))
+
 ## [1.1.23](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.22...v1.1.23) (2022-07-27)
 
 

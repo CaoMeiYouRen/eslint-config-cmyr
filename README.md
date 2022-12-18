@@ -4,7 +4,7 @@
     <a href="https://github.com/CaoMeiYouRen/eslint-config-cmyr" target="_blank">
         <img alt="Version" src="https://img.shields.io/github/package-json/v/CaoMeiYouRen/eslint-config-cmyr" /></a>
     <a href="https://github.com/CaoMeiYouRen/eslint-config-cmyr/actions?query=workflow%3ARelease" target="_blank">
-        <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/CaoMeiYouRen/eslint-config-cmyr/Release" /></a>
+        <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/CaoMeiYouRen/eslint-config-cmyr/release.yml?branch=master" /></a>
     <img alt="node-current"  src="https://img.shields.io/node/v/eslint-config-cmyr" />
     <a href="https://github.com/CaoMeiYouRen/eslint-config-cmyr#readme" target="_blank">
         <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" /></a>

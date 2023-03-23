@@ -6,12 +6,6 @@ module.exports = {
     globals: {
     },
     env: {
-        browser: true,
-        es6: true,
-        commonjs: true,
-        node: true,
-        mocha: true,
-        jest: true,
     },
     extends: [
         'eslint:recommended',
@@ -24,7 +18,7 @@ module.exports = {
     ],
     parserOptions: {
         parser: '@typescript-eslint/parser',
-        ecmaVersion: 2022,
+        ecmaVersion: 'latest',
         sourceType: 'module',
         ecmaFeatures: {
             modules: true,

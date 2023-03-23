@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.25](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.24...v1.1.25) (2023-03-23)
+
+
+### 🐛 Bug Fixes
+
+* 添加 test 文件 ([01b7409](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/01b7409))
+
 ## [1.1.24](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.23...v1.1.24) (2022-11-27)
 
 

@@ -13,6 +13,13 @@ module.exports = {
         node: true,
         mocha: true,
         jest: true,
+        es2016: true,
+        es2017: true,
+        es2018: true,
+        es2019: true,
+        es2020: true,
+        es2021: true,
+        es2022: true,
     },
     extends: [
         'eslint:recommended',
@@ -20,7 +27,7 @@ module.exports = {
     plugins: [
     ],
     parserOptions: {
-        ecmaVersion: 2022,
+        ecmaVersion: 'latest',
         sourceType: 'module',
         ecmaFeatures: {
             modules: true,
@@ -72,22 +79,22 @@ module.exports = {
         'no-implied-eval': [1], // 禁用隐式的eval()
         'no-lonely-if': [2], // 禁止 if 语句作为唯一语句出现在 else 语句块中
         'no-loop-func': [1], // 禁止在循环语句中出现包含不安全引用的函数声明
-        'no-magic-numbers': [0,
-            {
-                ignore: [0,
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6,
-                    7,
-                    8,
-                    9], // 指定检测中可以忽略的数字
-                ignoreArrayIndexes: true, // 指定数字用作数组的索引是否是可以的
-                enforceConst: false, // 指定是否应该在数字变量的声明中检测 const 关键
-                detectObjects: false, // 指定是否应该在设置对象属性时检测数字
-            }], // 禁用魔术数字
+        // 'no-magic-numbers': [0,
+        //     {
+        //         ignore: [0,
+        //             1,
+        //             2,
+        //             3,
+        //             4,
+        //             5,
+        //             6,
+        //             7,
+        //             8,
+        //             9], // 指定检测中可以忽略的数字
+        //         ignoreArrayIndexes: true, // 指定数字用作数组的索引是否是可以的
+        //         enforceConst: false, // 指定是否应该在数字变量的声明中检测 const 关键
+        //         detectObjects: false, // 指定是否应该在设置对象属性时检测数字
+        //     }], // 禁用魔术数字
         'no-mixed-requires': [2], // 禁止混合常规变量声明和 require 调用
         'no-multi-assign': [2], // 禁止连续赋值
         'no-multi-spaces': [2, { ignoreEOLComments: true }], // 禁止出现多个空格

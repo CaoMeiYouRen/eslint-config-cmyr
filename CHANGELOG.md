@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.26](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.25...v1.1.26) (2023-03-23)
+
+
+### 🐛 Bug Fixes
+
+* 修改 ts 默认 ecmaVersion 版本为 latest ([25bf5c0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/25bf5c0))
+
 ## [1.1.25](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.24...v1.1.25) (2023-03-23)
 
 

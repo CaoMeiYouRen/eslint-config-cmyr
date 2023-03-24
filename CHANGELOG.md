@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.27](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.26...v1.1.27) (2023-03-24)
+
+
+### 🐛 Bug Fixes
+
+* 修复 eslint 版本过低时的 env 不支持 bug；优化 vue rules 生成 ([1327e8f](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/1327e8f))
+
 ## [1.1.26](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.25...v1.1.26) (2023-03-23)
 
 

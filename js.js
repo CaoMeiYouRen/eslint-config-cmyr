@@ -1,6 +1,36 @@
 const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
 const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
 
+const { versionCompare } = require('./utils')
+
+function getExtraEnvs() {
+    const { version = '' } = require('eslint/package.json')
+    let envs = {}
+    if (versionCompare(version, '7.2.0') >= 0) {
+        envs = {
+            ...envs,
+            es2017: true,
+            es2020: true,
+        }
+    }
+    if (versionCompare(version, '7.8.0') >= 0) {
+        envs = {
+            ...envs,
+            es2021: true,
+        }
+    }
+    if (versionCompare(version, '8.9.0') >= 0) {
+        envs = {
+            ...envs,
+            es2016: true,
+            es2018: true,
+            es2019: true,
+            es2022: true,
+        }
+    }
+    return envs
+}
+
 module.exports = {
     root: true,
     globals: { // 处理全局变量
@@ -13,13 +43,7 @@ module.exports = {
         node: true,
         mocha: true,
         jest: true,
-        es2016: true,
-        es2017: true,
-        es2018: true,
-        es2019: true,
-        es2020: true,
-        es2021: true,
-        es2022: true,
+        ...getExtraEnvs(),
     },
     extends: [
         'eslint:recommended',

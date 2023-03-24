@@ -11,7 +11,8 @@
     "vue3.js",
     "js.js",
     "browser.js",
-    "react.js"
+    "react.js",
+    "utils.js"
   ],
   "engines": {
     "node": ">=12"

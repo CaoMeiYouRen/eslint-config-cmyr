@@ -61,7 +61,7 @@ module.exports = {
         '@typescript-eslint/no-extra-parens': [1, 'all', { enforceForArrowConditionals: false }], // 不允许不必要的括号
         '@typescript-eslint/no-extra-semi': [2], // 禁止冗余的分号
         '@typescript-eslint/no-inferrable-types': [0], // 对于初始化为数字、字符串或布尔值的变量或参数，不允许显式类型声明
-        '@typescript-eslint/no-redeclare': [2, { ignoreDeclarationMerge: true }], // 禁止重新声明变量
+        '@typescript-eslint/no-redeclare': [1, { ignoreDeclarationMerge: true }], // 禁止重新声明变量
         '@typescript-eslint/no-shadow': [2], // 禁止变量声明与外层作用域的变量同名
         '@typescript-eslint/no-unused-vars': [__WARN__], // 禁止未使用的变量
         '@typescript-eslint/object-curly-spacing': [2, 'always'], // 强制在花括号中使用一致的空格

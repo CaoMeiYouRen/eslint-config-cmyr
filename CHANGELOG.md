@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.28](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.27...v1.1.28) (2023-04-05)
+
+
+### 🐛 Bug Fixes
+
+* 修改 @typescript-eslint/no-redeclare 规则为 warn ([b1b1f10](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/b1b1f10))
+
 ## [1.1.27](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.26...v1.1.27) (2023-03-24)
 
 

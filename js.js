@@ -1,6 +1,5 @@
 const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
 const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
-
 const { versionCompare } = require('./utils')
 
 function getExtraEnvs() {
@@ -31,6 +30,39 @@ function getExtraEnvs() {
     return envs
 }
 
+function getImportPlugin() {
+    try {
+        require('eslint-plugin-import') // 尝试导入 eslint-plugin-import 如果能成功则为 true
+    } catch (error) {
+        // console.error(error)
+        console.warn('[可选]找不到 eslint-plugin-import 的安装路径，请安装后重试')
+        return {
+            extends: [
+            ],
+            plugins: [
+            ],
+            rules: {
+            },
+        }
+    }
+    return {
+        extends: [
+            'plugin:import/errors',
+            'plugin:import/warnings',
+            'plugin:import/typescript',
+        ],
+        plugins: [
+            'import',
+        ],
+        rules: {
+            'import/no-unresolved': 0,
+            'import/order': 1,
+        },
+    }
+}
+
+const { extends: importPluginExtends, plugins, rules } = getImportPlugin()
+
 module.exports = {
     root: true,
     globals: { // 处理全局变量
@@ -47,8 +79,10 @@ module.exports = {
     },
     extends: [
         'eslint:recommended',
+        ...importPluginExtends,
     ],
     plugins: [
+        ...plugins,
     ],
     parserOptions: {
         ecmaVersion: 'latest',
@@ -59,6 +93,7 @@ module.exports = {
         },
     },
     rules: {
+        ...rules,
         'array-callback-return': [1], // 强制数组方法的回调函数中有 return 语句
         'arrow-body-style': [__WARN__, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)
         'array-element-newline': [1, 'consistent'], //  需要一致地使用数组元素之间的换行符

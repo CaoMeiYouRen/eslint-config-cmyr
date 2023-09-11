@@ -35,7 +35,7 @@ function getImportPlugin() {
         require('eslint-plugin-import') // 尝试导入 eslint-plugin-import 如果能成功则为 true
     } catch (error) {
         // console.error(error)
-        console.warn('[可选]找不到 eslint-plugin-import 的安装路径，请安装后重试')
+        console.log('[可选]找不到 eslint-plugin-import 的安装路径，请安装后重试')
         return {
             extends: [
             ],

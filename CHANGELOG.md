@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.31](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.30...v1.1.31) (2024-05-30)
+
+
+### 🐛 Bug Fixes
+
+* 禁用 import/default ([6b63ea0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/6b63ea0))
+
 ## [1.1.30](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.29...v1.1.30) (2023-09-11)
 
 

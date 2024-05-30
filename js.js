@@ -57,6 +57,7 @@ function getImportPlugin() {
         rules: {
             'import/no-unresolved': 0,
             'import/order': 1,
+            'import/default': 0,
         },
     }
 }

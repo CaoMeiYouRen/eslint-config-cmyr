@@ -3,6 +3,9 @@
 <p>
     <a href="https://github.com/CaoMeiYouRen/eslint-config-cmyr" target="_blank">
         <img alt="Version" src="https://img.shields.io/github/package-json/v/CaoMeiYouRen/eslint-config-cmyr" /></a>
+    <a href="https://www.npmjs.com/package/eslint-config-cmyr" target="_blank">
+        <img alt="npm publish" src="https://img.shields.io/npm/dt/eslint-config-cmyr?label=npm%20downloads&color=yellow">
+    </a>
     <a href="https://github.com/CaoMeiYouRen/eslint-config-cmyr/actions?query=workflow%3ARelease" target="_blank">
         <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/CaoMeiYouRen/eslint-config-cmyr/release.yml?branch=master" /></a>
     <img alt="node-current"  src="https://img.shields.io/node/v/eslint-config-cmyr" />

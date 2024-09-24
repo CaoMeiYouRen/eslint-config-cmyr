@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.32](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.31...v1.1.32) (2024-09-24)
+
+
+### 🐛 Bug Fixes
+
+* 忽略 @typescript-eslint/indent 配置 ([66aaf69](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/66aaf69))
+
 ## [1.1.31](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.30...v1.1.31) (2024-05-30)
 
 

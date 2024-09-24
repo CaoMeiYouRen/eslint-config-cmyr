@@ -43,7 +43,7 @@ module.exports = {
         '@typescript-eslint/explicit-module-boundary-types': [0, {
             allowArgumentsExplicitlyTypedAsAny: true,
         }], // 要求导出函数和类的公共类方法的显式返回和参数类型
-        '@typescript-eslint/indent': [2, 4, { SwitchCase: 1 }], // 强制使用一致的缩进// case 子句将相对于 switch 语句缩进 4 个空格，即一个tab
+        '@typescript-eslint/indent': [0, 4, { SwitchCase: 1 }], // 强制使用一致的缩进// case 子句将相对于 switch 语句缩进 4 个空格，即一个tab
         '@typescript-eslint/keyword-spacing': [2, { before: true, after: true }], // 强制关键字周围空格的一致性
         '@typescript-eslint/member-delimiter-style': [2, { // 接口和类型定义中禁用不必要的分号(typescript扩展支持)
             multiline: {

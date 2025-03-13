@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [1.1.33](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.32...v1.1.33) (2025-03-13)
+
+
+### 🐛 Bug Fixes
+
+* 限制 eslint 版本范围为 >=6 <9 ([08715c0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/08715c0))
+
 ## [1.1.32](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.31...v1.1.32) (2024-09-24)
 
 

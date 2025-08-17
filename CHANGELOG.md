@@ -1,5 +1,15 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.1...v2.0.0-beta.2) (2025-08-17)
+
+
+### 🐛 Bug Fixes
+
+* 更新 Vue.js ESLint 规则，添加多项新规则以增强代码质量 ([6b72b44](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/6b72b44))
+* 注释掉部分 ESLint 规则以调整代码检查策略 ([5dadf88](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/5dadf88))
+* 添加 ESLint 规则以增强代码质量和一致性 ([edead76](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/edead76))
+* 添加对 TS/TSX 文件的支持，并新增测试文件 ([a39b458](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/a39b458))
+
 # [2.0.0-beta.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.33...v2.0.0-beta.1) (2025-08-17)
 
 

@@ -56,7 +56,7 @@
     "deploy-beta": "nrm use npm && npm publish --tag beta",
     "lint": "cross-env NODE_ENV=production eslint *.js --fix --ext .js",
     "release": "semantic-release",
-    "test:js": "cross-env NODE_ENV=production eslint -c js.js test/js.test.js",
+    "test:js": "cross-env NODE_ENV=production eslint -c index.js test/js.test.js",
     "test:ts": "cross-env NODE_ENV=production eslint -c index.js test/ts.test.ts",
     "test:browser": "cross-env NODE_ENV=production eslint -c js.js test/browser.test.js",
     "test:vue": "cross-env NODE_ENV=production eslint -c vue.js test/VueTest.vue",

@@ -24,27 +24,27 @@
       "import": "./index.js",
       "require": "./index.js"
     },
-    "./vue.js": {
+    "./vue": {
       "import": "./vue.js",
       "require": "./vue.js"
     },
-    "./vue3.js": {
+    "./vue3": {
       "import": "./vue3.js",
       "require": "./vue3.js"
     },
-    "./js.js": {
+    "./js": {
       "import": "./js.js",
       "require": "./js.js"
     },
-    "./browser.js": {
+    "./browser": {
       "import": "./browser.js",
       "require": "./browser.js"
     },
-    "./react.js": {
+    "./react": {
       "import": "./react.js",
       "require": "./react.js"
     },
-    "./utils.js": {
+    "./utils": {
       "import": "./utils.js",
       "require": "./utils.js"
     }
@@ -58,10 +58,10 @@
     "release": "semantic-release",
     "test:js": "cross-env NODE_ENV=production eslint -c index.js test/js.test.js",
     "test:ts": "cross-env NODE_ENV=production eslint -c index.js test/ts.test.ts",
-    "test:browser": "cross-env NODE_ENV=production eslint -c js.js test/browser.test.js",
+    "test:browser": "cross-env NODE_ENV=production eslint -c index.js test/browser.test.js",
     "test:vue": "cross-env NODE_ENV=production eslint -c vue.js test/VueTest.vue",
     "test:vue3": "cross-env NODE_ENV=production eslint -c vue3.js test/Vue3Test.vue",
-    "test:react": "cross-env NODE_ENV=production eslint -c react.js test/react.test.jsx",
+    "test:react": "cross-env NODE_ENV=production eslint -c index.js test/react.test.jsx",
     "test": "npm run test:js && npm run test:ts && npm run test:browser && npm run test:vue && npm run test:vue3 && npm run test:react"
   },
   "keywords": [

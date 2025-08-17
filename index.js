@@ -2,12 +2,23 @@ import stylistic from '@stylistic/eslint-plugin'
 import js from '@eslint/js'
 import { defineConfig } from 'eslint/config'
 import globals from 'globals'
+import tseslint from 'typescript-eslint'
 
 const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
 const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
 
 export default defineConfig([
+    // 基础规则
     {
+        ignores: [
+            '**/coverage',
+            '**/.vscode',
+            '**/docker-compose.yml',
+            '!.github',
+            'node_modules',
+            'dist',
+            'public',
+        ],
         plugins: {
             js,
         },
@@ -26,11 +37,17 @@ export default defineConfig([
                 ...globals.jquery, // 包含 jQuery 环境的全局变量
                 ...globals.es2026, // 包含最新的 ECMAScript 全局变量
             },
+            parserOptions: {
+                ecmaFeatures: {
+                    jsx: true, // 启用 JSX 语法
+                }
+            }
         },
         rules: {
             'no-unused-vars': [__WARN__], // 禁止出现未使用过的变量
         },
     },
+    // 代码风格规则
     stylistic.configs.customize({
         indent: 4, // 缩进空格数
         quotes: 'single', // 使用单引号
@@ -43,4 +60,16 @@ export default defineConfig([
         commaDangle: 'always-multiline', // 多行时逗号尾随
         severity: 'error', // 设置错误级别为error
     }),
+    {
+        files: ['**/*.jsx'], // 添加对 JSX 文件的支持
+    },
+    /**
+   * typescript 规则
+   */
+    {
+        files: ['**/*.{ts,tsx,mts,cts}'],
+        extends: [tseslint.configs.recommended],
+        rules: {
+        },
+    },
 ])

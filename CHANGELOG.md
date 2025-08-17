@@ -1,5 +1,30 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.33...v2.0.0-beta.1) (2025-08-17)
+
+
+### ✨ Features
+
+* 更新 ESLint 版本到 v9 ([2bb2aa7](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/2bb2aa7))
+* 更新 ESLint 配置，添加 js 插件和全局变量支持；更新依赖项 ([cacd73c](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/cacd73c))
+* 更新 ESLint 配置，添加对 JSX 和 TypeScript 文件的支持；优化文件路径配置 ([270afbf](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/270afbf))
+* 添加 stylistic 相关配置 ([e9d79fd](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/e9d79fd))
+* 添加 Vue.js ESLint 配置文件，支持 TypeScript 和 JSX 语法 ([d4a6f8d](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/d4a6f8d))
+* 添加浏览器、React 和 Vue.js 的 ESLint 配置文件，优化规则和插件支持 ([a47063e](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/a47063e))
+
+
+### 🐛 Bug Fixes
+
+* 修复测试脚本中的 ESLint 配置文件路径；更新 ts.test.ts 中的函数返回类型 ([aeda299](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/aeda299))
+* 更新 Node.js 版本要求至 >=16 ([e27c337](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/e27c337))
+* 移除未使用的依赖，修改 peerDependencies 要求 ([5e9d8b0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/5e9d8b0))
+* 统一 ESLint 配置中的规则格式，确保一致性；添加 stylistic 自定义配置 ([b2ab496](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/b2ab496))
+
+
+### 💥 BREAKING CHANGES
+
+* 更新 ESLint 版本到 v9，不再支持低版本 ESLint
+
 ## [1.1.33](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.32...v1.1.33) (2025-03-13)
 
 

@@ -122,7 +122,7 @@ export default defineConfig([
         severity: 'error', // 设置错误级别为error
     }),
     {
-        files: ['**/*.jsx'], // 添加对 JSX 文件的支持
+        files: ['**/*.{jsx,ts,tsx,mts,cts}'], // 添加对 JSX/TS/TSX 文件的支持
     },
     /**
    * typescript 规则

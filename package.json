@@ -45,7 +45,8 @@
     "test:browser": "cross-env NODE_ENV=production eslint -c browser.js test/browser.test.js",
     "test:vue": "cross-env NODE_ENV=production eslint -c vue.js test/Vue3Test.vue",
     "test:react": "cross-env NODE_ENV=production eslint -c react.js test/react.test.jsx",
-    "test": "npm run test:js && npm run test:ts && npm run test:browser && npm run test:vue && npm run test:react"
+    "test:tsx": "cross-env NODE_ENV=production eslint -c react.js test/react.test.tsx",
+    "test": "npm run test:js && npm run test:ts && npm run test:browser && npm run test:vue && npm run test:react && npm run test:tsx"
   },
   "keywords": [
     "code",

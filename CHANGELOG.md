@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.3](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.2...v2.0.0-beta.3) (2025-08-17)
+
+
+### ✨ Features
+
+* 添加 Nuxt.js 配置支持，并更新 package.json 以包含相关文件和测试命令 ([5792ca2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/5792ca2))
+
 # [2.0.0-beta.2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.1...v2.0.0-beta.2) (2025-08-17)
 
 

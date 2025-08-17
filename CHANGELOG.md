@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.4](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.3...v2.0.0-beta.4) (2025-08-17)
+
+
+### ✨ Features
+
+* 更新 Nuxt.js ESLint 配置，新增支持的文件类型，并替换测试文件 ([58da0b1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/58da0b1))
+
 # [2.0.0-beta.3](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.2...v2.0.0-beta.3) (2025-08-17)
 
 

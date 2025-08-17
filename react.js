@@ -1,0 +1,23 @@
+import { defineConfig } from 'eslint/config'
+import browserConfig from './browser.js'
+import react from 'eslint-plugin-react'
+
+const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
+
+export default defineConfig([
+    {
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+        plugins: {
+            react,
+        },
+        extends: [browserConfig, react.configs.flat.recommended, react.configs.flat['jsx-runtime']],
+        rules: {
+        },
+        settings: {
+            react: {
+                version: 'detect',
+                defaultVersion: '18',
+            },
+        },
+    },
+])

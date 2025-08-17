@@ -22,7 +22,7 @@ export default defineConfig([
         plugins: {
             js,
         },
-        extends: ['js/recommended'],
+        extends: [js.configs.recommended],
         languageOptions: {
             ecmaVersion: 'latest', // 使用最新的 ECMAScript 版本
             sourceType: 'module', // 使用模块化语法
@@ -42,8 +42,8 @@ export default defineConfig([
                 ecmaVersion: 'latest',
                 ecmaFeatures: {
                     jsx: true, // 启用 JSX 语法
-                }
-            }
+                },
+            },
         },
         rules: {
             'no-unused-vars': [__WARN__], // 禁止出现未使用过的变量

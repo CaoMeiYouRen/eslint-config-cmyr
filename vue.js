@@ -1,11 +1,12 @@
 import eslintPluginVue from 'eslint-plugin-vue'
 import { defineConfig } from 'eslint/config'
 import tseslint from 'typescript-eslint'
+import browserConfig from './browser.js'
 
 export default defineConfig([
     // Vue.js 规则
     {
-        extends: [eslintPluginVue.configs['flat/recommended']],
+        extends: [browserConfig, eslintPluginVue.configs['flat/recommended']],
         files: ['**/*.vue'],
         languageOptions: {
             parserOptions: {
@@ -22,5 +23,5 @@ export default defineConfig([
             'vue/html-indent': [1, 4], // vue中缩进为4
             'vue/html-quotes': [1, 'double'], // vue中用双引号
         },
-    }
+    },
 ])

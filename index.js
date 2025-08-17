@@ -49,7 +49,7 @@ export default defineConfig([
             },
         },
         rules: {
-            'no-unused-vars': [__WARN__], // 禁止出现未使用过的变量
+            // 'no-unused-vars': [__WARN__], // 禁止出现未使用过的变量
             'array-callback-return': [1], // 强制数组方法的回调函数中有 return 语句
             'arrow-body-style': [__WARN__, 'as-needed'], // 要求箭头函数体使用大括号,当大括号是可以省略的，强制不使用它们 (默认)
             'consistent-this': [1], // 当获取当前执行环境的上下文时，强制使用一致的命名
@@ -79,9 +79,9 @@ export default defineConfig([
             'no-nested-ternary': [2], // 禁止使用嵌套的三元表达式
             'no-new-wrappers': [2], // 禁止原始包装实例
             'no-plusplus': [0], // 禁止++或--
-            'no-redeclare': [2, { builtinGlobals: true }], // 禁止重新声明变量
+            // 'no-redeclare': [2, { builtinGlobals: true }], // 禁止重新声明变量
             'no-return-assign': [2], // 禁止在返回语句中赋值
-            'no-shadow': [2], // 禁止变量声明与外层作用域的变量同名
+            // 'no-shadow': [2], // 禁止变量声明与外层作用域的变量同名
             'no-unneeded-ternary': [2], // 禁止可以在有更简单的可替代的表达式时使用三元操作符
             'no-use-before-define': [0], // 禁止在变量定义之前使用它们
             'no-useless-call': [1], // 禁止不必要的 .call() 和 .apply()
@@ -101,6 +101,11 @@ export default defineConfig([
             'prefer-template': [2], // 建议使用模板字面量而非字符串连接 (prefer-template)
             'require-await': [0], // 不允许没有异步函数的异步函数await表达
             'sort-imports': [0], // import 排序
+
+            'no-redeclare': [0], // 禁止重新声明变量
+            'no-shadow': [0], // 禁止变量声明与外层作用域的变量同名
+            'no-unused-vars': [0], // 禁止出现未使用过的变量
+
         },
     },
     // 代码风格规则
@@ -126,6 +131,19 @@ export default defineConfig([
         files: ['**/*.{ts,tsx,mts,cts}'],
         extends: [tseslint.configs.recommended],
         rules: {
+            '@typescript-eslint/camelcase': [0], // 驼峰式风格
+            '@typescript-eslint/default-param-last': [2], // 最后执行缺省参数
+            '@typescript-eslint/explicit-function-return-type': [0], // 要求函数和类方法的显式返回类型
+            '@typescript-eslint/explicit-module-boundary-types': [0, {
+                allowArgumentsExplicitlyTypedAsAny: true,
+            }], // 要求导出函数和类的公共类方法的显式返回和参数类型
+            '@typescript-eslint/no-empty-function': [__WARN__], // 禁止空函数
+            '@typescript-eslint/no-explicit-any': [0], // 不允许使用any类型
+            '@typescript-eslint/no-inferrable-types': [0], // 对于初始化为数字、字符串或布尔值的变量或参数，不允许显式类型声明
+            '@typescript-eslint/no-redeclare': [1, { ignoreDeclarationMerge: true }], // 禁止重新声明变量
+            '@typescript-eslint/no-shadow': [2], // 禁止变量声明与外层作用域的变量同名
+            '@typescript-eslint/no-unused-vars': [__WARN__], // 禁止未使用的变量
+            '@typescript-eslint/prefer-as-const': [1], // 强制在文本类型上使用 as const。
         },
     },
 ])

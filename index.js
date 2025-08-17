@@ -38,6 +38,8 @@ export default defineConfig([
                 ...globals.es2026, // 包含最新的 ECMAScript 全局变量
             },
             parserOptions: {
+                parser: tseslint.parser,
+                ecmaVersion: 'latest',
                 ecmaFeatures: {
                     jsx: true, // 启用 JSX 语法
                 }

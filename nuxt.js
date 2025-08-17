@@ -1,4 +1,3 @@
-import { createConfigForNuxt, defineFlatConfigs } from '@nuxt/eslint-config'
 import { defineConfig } from 'eslint/config'
 import vueConfig from './vue.js'
 // Nuxt.js 规则

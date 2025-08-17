@@ -29,8 +29,6 @@ module.exports = {
                 assets: [
                     'index.js',
                     'vue.js',
-                    'vue3.js',
-                    'js.js',
                     'browser.js',
                     'react.js',
                     'CHANGELOG.md',

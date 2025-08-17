@@ -15,6 +15,40 @@
     "react.js",
     "utils.js"
   ],
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.js"
+    },
+    "./index": {
+      "import": "./index.js",
+      "require": "./index.js"
+    },
+    "./vue.js": {
+      "import": "./vue.js",
+      "require": "./vue.js"
+    },
+    "./vue3.js": {
+      "import": "./vue3.js",
+      "require": "./vue3.js"
+    },
+    "./js.js": {
+      "import": "./js.js",
+      "require": "./js.js"
+    },
+    "./browser.js": {
+      "import": "./browser.js",
+      "require": "./browser.js"
+    },
+    "./react.js": {
+      "import": "./react.js",
+      "require": "./react.js"
+    },
+    "./utils.js": {
+      "import": "./utils.js",
+      "require": "./utils.js"
+    }
+  },
   "engines": {
     "node": ">=12"
   },
@@ -38,8 +72,10 @@
     "code style"
   ],
   "devDependencies": {
+    "@eslint/js": "^9.33.0",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.2.3",
     "@types/node": "^18.6.1",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",

@@ -1,5 +1,7 @@
-//eslint.config.js
-export default [
+// eslint.config.js
+import indexConfig from './index.js'
+import { defineConfig } from 'eslint/config'
+export default defineConfig([
     {
         ignores: [
             'node_modules',
@@ -7,4 +9,5 @@ export default [
             'public',
         ],
     },
-]
+    ...indexConfig,
+])

@@ -11,7 +11,7 @@ module.exports = {
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
         require.resolve('./js'),
-        // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
     ],
     plugins: [
         '@typescript-eslint',
@@ -27,8 +27,8 @@ module.exports = {
     },
     parser: '@typescript-eslint/parser',
     rules: {
-        indent: [0], // 强制使用一致的缩进
-        semi: [0], // 要求或禁止使用分号代替 ASI
+        'indent': [0], // 强制使用一致的缩进
+        'semi': [0], // 要求或禁止使用分号代替 ASI
         'no-extra-parens': [0], // 禁止冗余的括号
         'no-redeclare': [0], // 禁止重新声明变量
         'no-shadow': [0], // 禁止变量声明与外层作用域的变量同名

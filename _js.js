@@ -33,8 +33,9 @@ function getExtraEnvs() {
 function getImportPlugin() {
     try {
         require('eslint-plugin-import') // 尝试导入 eslint-plugin-import 如果能成功则为 true
-    } catch (error) {
-        // console.error(error)
+    }
+    catch (error) {
+    // console.error(error)
         console.log('[可选]找不到 eslint-plugin-import 的安装路径，请安装后重试')
         return {
             extends: [
@@ -105,14 +106,14 @@ module.exports = {
         'comma-dangle': [2, 'always-multiline'], // 要求或禁止使用拖尾逗号
         'comma-spacing': [2, { before: false, after: true }], // 强制在逗号周围使用空格
         'consistent-this': [1], // 当获取当前执行环境的上下文时，强制使用一致的命名
-        curly: [2, 'all'], // 要求遵循大括号约定
+        'curly': [2, 'all'], // 要求遵循大括号约定
         'dot-notation': [0], // 强制尽可能地使用点号
         'eol-last': [__WARN__, 'always'], // 要求或禁止文件末尾存在空行
-        eqeqeq: [2], // 要求使用 === 和 !==
+        'eqeqeq': [2], // 要求使用 === 和 !==
         'func-style': [2, 'declaration', { allowArrowFunctions: true }], // 强制 function 声明或表达式的一致性
         'handle-callback-err:': [0, '^(e|err|error)$'], // 强制回调错误处理
         'implicit-arrow-linebreak': [2, 'beside'], // 禁止在箭头函数体之前出现换行
-        indent: [2, 4, { SwitchCase: 1 }], // 强制使用一致的缩进// case 子句将相对于 switch 语句缩进 4 个空格，即一个tab
+        'indent': [2, 4, { SwitchCase: 1 }], // 强制使用一致的缩进// case 子句将相对于 switch 语句缩进 4 个空格，即一个tab
         'jsx-quotes': [1, 'prefer-double'], // 强制所有不包含双引号的 JSX 属性值使用双引号
         'key-spacing': [2, { beforeColon: false, afterColon: true }], // 强制在对象字面量的键和值之间使用一致的空格
         'keyword-spacing': [2, { before: true, after: true }], // 强制关键字周围空格的一致性
@@ -194,9 +195,9 @@ module.exports = {
         'prefer-rest-params': [2], // 要求使用剩余参数而不是 arguments
         'prefer-template': [2], // 建议使用模板字面量而非字符串连接 (prefer-template)
         'quote-props': [2, 'as-needed', { keywords: false, numbers: true }], // 当没有严格要求时，禁止对象字面量属性名称使用引号
-        quotes: [2, 'single'], // 强制使用一致的反勾号、双引号或单引号double
+        'quotes': [2, 'single'], // 强制使用一致的反勾号、双引号或单引号double
         'require-await': [0], // 不允许没有异步函数的异步函数await表达
-        semi: [2, 'never'], // 要求或禁止使用分号代替 ASI
+        'semi': [2, 'never'], // 要求或禁止使用分号代替 ASI
         'semi-style': [2, 'last'], // 强制分号出现在句子末尾
         'sort-imports': [0], // import 排序
         'space-before-blocks': [1, 'always'], // 要求或禁止语句块之前的空格

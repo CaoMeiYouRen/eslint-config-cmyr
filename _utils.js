@@ -18,8 +18,8 @@ function versionCompare(str1, str2) {
     nStr1 = nStr1.match(req)[0] // match出来的是一个数组，这个匹配出来在第0个
     nStr2 = nStr2.match(req)[0]
     // 第四步：版本比较，先把版本号字符串切割成数组，[主版本号，次版本号，修订号]
-    const arr1 = nStr1.split('.').map((e) => parseInt(e)) // [**,**,**]
-    const arr2 = nStr2.split('.').map((e) => parseInt(e))
+    const arr1 = nStr1.split('.').map(e => parseInt(e)) // [**,**,**]
+    const arr2 = nStr2.split('.').map(e => parseInt(e))
     // 第五步：分别开始分情况比较版本号
     const n = Math.min(arr1.length, arr2.length)
     for (let i = 0; i < n; i++) {

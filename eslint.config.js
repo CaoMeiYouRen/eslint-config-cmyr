@@ -1,6 +1,6 @@
 // eslint.config.js
-import indexConfig from './index.js'
 import { defineConfig } from 'eslint/config'
+import indexConfig from './index.js'
 export default defineConfig([
     {
         extends: [indexConfig],

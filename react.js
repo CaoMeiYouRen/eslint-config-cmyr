@@ -1,6 +1,6 @@
 import { defineConfig } from 'eslint/config'
-import browserConfig from './browser.js'
 import react from 'eslint-plugin-react'
+import browserConfig from './browser.js'
 
 const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
 

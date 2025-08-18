@@ -128,6 +128,9 @@ export default defineConfig([
                     'import/no-unresolved': 0,
                     'import/order': 1,
                     'import/default': 0,
+                    'import/namespace': 0,
+                    'import/no-named-as-default': 0,
+                    'import/no-named-as-default-member': 0,
                 },
             }]
         : []),

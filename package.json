@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cmyr",
-  "version": "2.0.0-beta.4",
+  "version": "2.0.0-beta.5",
   "author": "CaoMeiYouRen",
   "description": "草梅友仁个人使用的 eslint 检测规范",
   "license": "MIT",

@@ -1,5 +1,18 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.5](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.4...v2.0.0-beta.5) (2025-08-18)
+
+
+### ✨ Features
+
+* 优化 import 插件配置，添加条件加载并更新依赖项 ([0c5a2bd](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/0c5a2bd))
+* 新增 import 相关规则支持 ([3c9601b](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/3c9601b))
+
+
+### 🐛 Bug Fixes
+
+* 调整 import 顺序，确保依赖项正确加载 ([d51c155](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/d51c155))
+
 # [2.0.0-beta.4](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.3...v2.0.0-beta.4) (2025-08-17)
 
 

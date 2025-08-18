@@ -116,18 +116,21 @@ export default defineConfig([
 
         },
     },
-    {
-        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
-        extends: [
-            importPlugin.flatConfigs.recommended,
-            importPlugin.flatConfigs.typescript,
-        ],
-        rules: {
-            'import/no-unresolved': 0,
-            'import/order': 1,
-            'import/default': 0,
-        },
-    },
+    // import 插件配置（如果可用）
+    ...(importPlugin
+        ? [{
+                files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
+                extends: [
+                    importPlugin.flatConfigs.recommended,
+                    importPlugin.flatConfigs.typescript,
+                ],
+                rules: {
+                    'import/no-unresolved': 0,
+                    'import/order': 1,
+                    'import/default': 0,
+                },
+            }]
+        : []),
     // 代码风格规则
     stylistic.configs.customize({
         indent: 4, // 缩进空格数

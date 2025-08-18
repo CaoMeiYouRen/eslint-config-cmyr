@@ -6,7 +6,7 @@ const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
 
 export default defineConfig([
     {
-        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
         plugins: {
             react,
         },

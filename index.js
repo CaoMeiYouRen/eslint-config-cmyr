@@ -3,6 +3,7 @@ import js from '@eslint/js'
 import { defineConfig } from 'eslint/config'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
+import importPlugin from 'eslint-plugin-import'
 
 const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
 const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
@@ -13,10 +14,17 @@ export default defineConfig([
             '**/coverage',
             '**/.vscode',
             '**/docker-compose.yml',
-            '!.github',
+            '.github',
             'node_modules',
             'dist',
             'public',
+            'build',
+            'coverage',
+            'out',
+            'temp',
+            'tmp',
+            'logs',
+            'log',
         ],
     },
     // 基础规则
@@ -106,6 +114,18 @@ export default defineConfig([
             'no-shadow': [0], // 禁止变量声明与外层作用域的变量同名
             'no-unused-vars': [0], // 禁止出现未使用过的变量
 
+        },
+    },
+    {
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
+        extends: [
+            importPlugin.flatConfigs.recommended,
+            importPlugin.flatConfigs.typescript,
+        ],
+        rules: {
+            'import/no-unresolved': 0,
+            'import/order': 1,
+            'import/default': 0,
         },
     },
     // 代码风格规则

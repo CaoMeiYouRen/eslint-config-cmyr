@@ -30,7 +30,7 @@ export default defineConfig([
             'handle-callback-err:': [0, '^(e|err|error)$'], // 强制回调错误处理
             'new-cap': [0], // 要求构造函数首字母大写
             'no-alert': [__WARN__], // 禁用 Alert
-            'no-console': [__WARN__, { allow: ['warn', 'error', 'info'] }], // 禁止console
+            'no-console': [0, { allow: ['warn', 'error', 'info'] }], // 禁止console
             'no-debugger': [__ERROR__], // 禁止debugger
             'no-div-regex': [1], // 禁止除法操作符显式的出现在正则表达式开始的位置
             'no-duplicate-imports': [2], // 禁止模块重复导入

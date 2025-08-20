@@ -1,5 +1,19 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.6](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.5...v2.0.0-beta.6) (2025-08-20)
+
+
+### ✨ Features
+
+* 更新 ESLint 配置，添加对 JS、TS 和 Vue 文件的支持，优化全局变量设置 ([4cfce9b](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/4cfce9b))
+* 重构 ESLint 配置，提取公共变量和选项到 utils.js，简化各个配置文件 ([e17d5a9](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/e17d5a9))
+
+
+### 🐛 Bug Fixes
+
+* 更新 ESLint 配置，添加对 Vue 文件的支持 ([b09cd16](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/b09cd16))
+* 添加项目主页、仓库和问题跟踪链接到 package.json ([ee809c3](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/ee809c3))
+
 # [2.0.0-beta.5](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.4...v2.0.0-beta.5) (2025-08-18)
 
 

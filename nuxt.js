@@ -6,7 +6,7 @@ import vueConfig from './vue.js'
 export default defineConfig([
     vueConfig,
     {
-        files: ['**/*.{js,cjs,mjs,jsx,ts,tsx,mts,cts,vue}'],
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue}'],
         languageOptions: createLanguageOptions(nuxtGlobals),
     },
 ])

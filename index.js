@@ -13,7 +13,7 @@ export default defineConfig([
     js.configs.recommended,
     // 基础规则
     {
-        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue}'],
         plugins: {
             js,
         },
@@ -93,7 +93,7 @@ export default defineConfig([
     }),
     // import 插件配置
     {
-        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue}'],
         extends: [
             importPlugin.flatConfigs.recommended,
             importPlugin.flatConfigs.typescript,

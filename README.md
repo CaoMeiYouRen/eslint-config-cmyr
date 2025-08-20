@@ -34,6 +34,9 @@
 ## 安装
 
 ```bash
+# 前置依赖
+npm install typescript eslint --save-dev
+# 安装 eslint-config-cmyr
 npm install eslint-config-cmyr --save-dev
 ```
 
@@ -65,6 +68,10 @@ export default defineConfig([cmyr]);
 
 #### Vue 项目
 
+```bash
+npm install typescript eslint eslint-plugin-vue eslint-config-cmyr --save-dev
+```
+
 ```js
 // eslint.config.js
 import { defineConfig } from "eslint/config";
@@ -74,6 +81,10 @@ export default defineConfig([cmyr]);
 ```
 
 #### React 项目
+
+```bash
+npm install typescript eslint eslint-plugin-react eslint-config-cmyr --save-dev
+```
 
 ```js
 // eslint.config.js
@@ -94,6 +105,10 @@ export default defineConfig([cmyr]);
 ```
 
 #### Nuxt 项目
+
+```bash
+npm install typescript eslint eslint-plugin-vue eslint-config-cmyr --save-dev
+```
 
 ```js
 // eslint.config.js

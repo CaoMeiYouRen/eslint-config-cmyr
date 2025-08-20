@@ -129,6 +129,7 @@ export default defineConfig([
             '@typescript-eslint/no-unused-vars': [__WARN__], // 禁止未使用的变量
             '@typescript-eslint/prefer-as-const': [1], // 强制在文本类型上使用 as const。
             '@typescript-eslint/no-require-imports': 1, // 禁止使用 require 导入
+            '@typescript-eslint/no-empty-object-type': 1, // 禁止空对象类型
         },
     },
 ])

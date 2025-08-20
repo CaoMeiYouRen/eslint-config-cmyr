@@ -27,12 +27,14 @@ export default defineConfig([
             'log',
         ],
     },
+    // js 规则
+    js.configs.recommended,
     // 基础规则
     {
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
         plugins: {
             js,
         },
-        extends: [js.configs.recommended],
         languageOptions: {
             ecmaVersion: 'latest', // 使用最新的 ECMAScript 版本
             sourceType: 'module', // 使用模块化语法
@@ -116,24 +118,24 @@ export default defineConfig([
 
         },
     },
-    // import 插件配置（如果可用）
-    ...(importPlugin
-        ? [{
-                files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
-                extends: [
-                    importPlugin.flatConfigs.recommended,
-                    importPlugin.flatConfigs.typescript,
-                ],
-                rules: {
-                    'import/no-unresolved': 0,
-                    'import/order': 1,
-                    'import/default': 0,
-                    'import/namespace': 0,
-                    'import/no-named-as-default': 0,
-                    'import/no-named-as-default-member': 0,
-                },
-            }]
-        : []),
+    // tseslint 规则
+    tseslint.configs.recommended,
+    // import 插件配置
+    {
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
+        extends: [
+            importPlugin.flatConfigs.recommended,
+            importPlugin.flatConfigs.typescript,
+        ],
+        rules: {
+            'import/no-unresolved': 0,
+            'import/order': 1,
+            'import/default': 0,
+            'import/namespace': 0,
+            'import/no-named-as-default': 0,
+            'import/no-named-as-default-member': 0,
+        },
+    },
     // 代码风格规则
     stylistic.configs.customize({
         indent: 4, // 缩进空格数
@@ -147,15 +149,11 @@ export default defineConfig([
         commaDangle: 'always-multiline', // 多行时逗号尾随
         severity: 'error', // 设置错误级别为error
     }),
-    {
-        files: ['**/*.{jsx,ts,tsx,mts,cts}'], // 添加对 JSX/TS/TSX 文件的支持
-    },
     /**
    * typescript 规则
    */
     {
-        files: ['**/*.{ts,tsx,mts,cts}'],
-        extends: [tseslint.configs.recommended],
+        files: ['**/*.{ts,tsx,mts,cts,vue}'],
         rules: {
             '@typescript-eslint/camelcase': [0], // 驼峰式风格
             '@typescript-eslint/default-param-last': [2], // 最后执行缺省参数

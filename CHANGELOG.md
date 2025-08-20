@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.8](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.7...v2.0.0-beta.8) (2025-08-20)
+
+
+### 🐛 Bug Fixes
+
+* 添加规则以禁止空对象类型 ([1e7fa6f](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/1e7fa6f))
+
 # [2.0.0-beta.7](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.6...v2.0.0-beta.7) (2025-08-20)
 
 

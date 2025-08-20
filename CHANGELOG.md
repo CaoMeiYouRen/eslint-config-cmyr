@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.7](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.6...v2.0.0-beta.7) (2025-08-20)
+
+
+### 🐛 Bug Fixes
+
+* 修改 no-console 的条件 ([731cc48](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/731cc48))
+
 # [2.0.0-beta.6](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.5...v2.0.0-beta.6) (2025-08-20)
 
 

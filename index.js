@@ -1,31 +1,13 @@
 import stylistic from '@stylistic/eslint-plugin'
 import js from '@eslint/js'
 import { defineConfig } from 'eslint/config'
-import globals from 'globals'
 import tseslint from 'typescript-eslint'
 import importPlugin from 'eslint-plugin-import'
-
-const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
-const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
+import { __ERROR__, __WARN__, languageOptions, commonIgnores } from './utils.js'
 
 export default defineConfig([
     {
-        ignores: [
-            '**/coverage',
-            '**/.vscode',
-            '**/docker-compose.yml',
-            '.github',
-            'node_modules',
-            'dist',
-            'public',
-            'build',
-            'coverage',
-            'out',
-            'temp',
-            'tmp',
-            'logs',
-            'log',
-        ],
+        ignores: commonIgnores,
     },
     // js 规则
     js.configs.recommended,
@@ -35,29 +17,7 @@ export default defineConfig([
         plugins: {
             js,
         },
-        languageOptions: {
-            ecmaVersion: 'latest', // 使用最新的 ECMAScript 版本
-            sourceType: 'module', // 使用模块化语法
-            globals: {
-                ...globals.browser, // 包含浏览器环境的全局变量
-                ...globals.node, // 包含 Node.js 环境的全局变量
-                ...globals.commonjs, // 包含 CommonJS 环境的全局变量
-                ...globals.amd, // 包含 AMD 环境的全局变量
-                ...globals.jest, // 包含 Jest 测试框架的全局变量
-                ...globals.vitest, // 包含 Vitest 环境的全局变量
-                ...globals.mocha, // 包含 Mocha 测试框架的全局变量
-                ...globals.jquery, // 包含 jQuery 环境的全局变量
-                ...globals.es2026, // 包含最新的 ECMAScript 全局变量
-            },
-            parserOptions: {
-                parser: tseslint.parser,
-                ecmaVersion: 'latest',
-                ecmaFeatures: {
-                    modules: true, // 启用模块化语法
-                    jsx: true, // 启用 JSX 语法
-                },
-            },
-        },
+        languageOptions,
         rules: {
             // 'no-unused-vars': [__WARN__], // 禁止出现未使用过的变量
             'array-callback-return': [1], // 强制数组方法的回调函数中有 return 语句
@@ -70,7 +30,7 @@ export default defineConfig([
             'handle-callback-err:': [0, '^(e|err|error)$'], // 强制回调错误处理
             'new-cap': [0], // 要求构造函数首字母大写
             'no-alert': [__WARN__], // 禁用 Alert
-            'no-console': [__WARN__, { allow: ['warn', 'error'] }], // 禁止console
+            'no-console': [__WARN__, { allow: ['warn', 'error', 'info'] }], // 禁止console
             'no-debugger': [__ERROR__], // 禁止debugger
             'no-div-regex': [1], // 禁止除法操作符显式的出现在正则表达式开始的位置
             'no-duplicate-imports': [2], // 禁止模块重复导入
@@ -118,8 +78,19 @@ export default defineConfig([
 
         },
     },
-    // tseslint 规则
-    tseslint.configs.recommended,
+    // 代码风格规则
+    stylistic.configs.customize({
+        indent: 4, // 缩进空格数
+        quotes: 'single', // 使用单引号
+        semi: false, // 不使用分号
+        jsx: true, // 支持 JSX 语法
+        arrowParens: 'always', // 箭头函数参数总是使用括号
+        braceStyle: '1tbs', // 大括号风格为 1TBS
+        blockSpacing: true, // 块内空格
+        quoteProps: 'as-needed', // 属性名引号按需使用
+        commaDangle: 'always-multiline', // 多行时逗号尾随
+        severity: 'error', // 设置错误级别为error
+    }),
     // import 插件配置
     {
         files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
@@ -136,24 +107,13 @@ export default defineConfig([
             'import/no-named-as-default-member': 0,
         },
     },
-    // 代码风格规则
-    stylistic.configs.customize({
-        indent: 4, // 缩进空格数
-        quotes: 'single', // 使用单引号
-        semi: false, // 不使用分号
-        jsx: true, // 支持 JSX 语法
-        arrowParens: 'always', // 箭头函数参数总是使用括号
-        braceStyle: '1tbs', // 大括号风格为 1TBS
-        blockSpacing: true, // 块内空格
-        quoteProps: 'as-needed', // 属性名引号按需使用
-        commaDangle: 'always-multiline', // 多行时逗号尾随
-        severity: 'error', // 设置错误级别为error
-    }),
+    // tseslint 规则
+    tseslint.configs.recommended,
     /**
    * typescript 规则
    */
     {
-        files: ['**/*.{ts,tsx,mts,cts,vue}'],
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue}'],
         rules: {
             '@typescript-eslint/camelcase': [0], // 驼峰式风格
             '@typescript-eslint/default-param-last': [2], // 最后执行缺省参数
@@ -168,6 +128,7 @@ export default defineConfig([
             '@typescript-eslint/no-shadow': [2], // 禁止变量声明与外层作用域的变量同名
             '@typescript-eslint/no-unused-vars': [__WARN__], // 禁止未使用的变量
             '@typescript-eslint/prefer-as-const': [1], // 强制在文本类型上使用 as const。
+            '@typescript-eslint/no-require-imports': 1, // 禁止使用 require 导入
         },
     },
 ])

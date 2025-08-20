@@ -1,10 +1,7 @@
 import eslintPluginVue from 'eslint-plugin-vue'
 import { defineConfig } from 'eslint/config'
-import tseslint from 'typescript-eslint'
-import globals from 'globals'
+import { __ERROR__, __WARN__, languageOptions, commonIgnores } from './utils.js'
 import browserConfig from './browser.js'
-const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
-const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
 
 export default defineConfig([
     browserConfig,
@@ -12,29 +9,7 @@ export default defineConfig([
     {
         extends: [eslintPluginVue.configs['flat/recommended']],
         files: ['**/*.vue'],
-        languageOptions: {
-            ecmaVersion: 'latest', // 使用最新的 ECMAScript 版本
-            sourceType: 'module', // 使用模块化语法
-            globals: {
-                ...globals.browser, // 包含浏览器环境的全局变量
-                ...globals.node, // 包含 Node.js 环境的全局变量
-                ...globals.commonjs, // 包含 CommonJS 环境的全局变量
-                ...globals.amd, // 包含 AMD 环境的全局变量
-                ...globals.jest, // 包含 Jest 测试框架的全局变量
-                ...globals.vitest, // 包含 Vitest 环境的全局变量
-                ...globals.mocha, // 包含 Mocha 测试框架的全局变量
-                ...globals.jquery, // 包含 jQuery 环境的全局变量
-                ...globals.es2026, // 包含最新的 ECMAScript 全局变量
-            },
-            parserOptions: {
-                parser: tseslint.parser,
-                ecmaVersion: 'latest',
-                ecmaFeatures: {
-                    modules: true, // 启用模块化语法
-                    jsx: true, // 启用 JSX 语法
-                },
-            },
-        },
+        languageOptions,
         rules: {
             'vue/html-indent': [1, 4], // vue中缩进为4
             'vue/html-quotes': [1, 'double'], // vue中用双引号
@@ -77,15 +52,9 @@ export default defineConfig([
     },
     {
         ignores: [
-            '**/coverage',
-            '**/.vscode',
-            'node_modules',
-            'dist',
-            'public',
+            ...commonIgnores,
             '.nuxt',
-            'coverage',
             '.output',
-            'build',
         ],
     },
 ])

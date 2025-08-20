@@ -11,7 +11,8 @@
     "vue.js",
     "browser.js",
     "react.js",
-    "nuxt.js"
+    "nuxt.js",
+    "utils.js"
   ],
   "exports": {
     ".": {
@@ -37,7 +38,12 @@
     "./react": {
       "import": "./react.js",
       "require": "./react.js"
-    }
+    },
+    "./utils": {
+      "import": "./utils.js",
+      "require": "./utils.js"
+    },
+    "./package.json": "./package.json"
   },
   "engines": {
     "node": ">=16"

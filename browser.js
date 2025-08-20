@@ -1,6 +1,6 @@
 import { defineConfig } from 'eslint/config'
+import { __ERROR__ } from './utils.js'
 import indexConfig from './index.js'
-const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
 
 export default defineConfig([
     {

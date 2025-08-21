@@ -107,13 +107,27 @@ export default defineConfig([cmyr]);
 #### Nuxt 项目
 
 ```bash
-npm install typescript eslint eslint-plugin-vue eslint-config-cmyr --save-dev
+npm install typescript eslint eslint-plugin-vue eslint-config-cmyr @nuxt/eslint --save-dev
+```
+
+```ts
+// nuxt.config.ts;
+export default defineNuxtConfig({
+    modules: ["@nuxt/eslint"],
+    eslint: {
+        config: {
+            standalone: false,
+        },
+    },
+});
 ```
 
 ```js
 // eslint.config.js
-import { defineConfig } from "eslint/config";
-import cmyr from "eslint-config-cmyr/nuxt";
+import cmyrConfig from "eslint-config-cmyr/nuxt";
+import withNuxt from "./.nuxt/eslint.config.mjs";
 
-export default defineConfig([cmyr]);
+export default withNuxt(cmyrConfig, {
+    rules: {},
+});
 ```

@@ -12,36 +12,37 @@
     "browser.js",
     "react.js",
     "nuxt.js",
-    "utils.js"
+    "utils.js",
+    "dist"
   ],
   "exports": {
     ".": {
       "import": "./index.js",
-      "require": "./index.js"
+      "require": "./dist/index.cjs"
     },
     "./index": {
       "import": "./index.js",
-      "require": "./index.js"
+      "require": "./dist/index.cjs"
     },
     "./vue": {
       "import": "./vue.js",
-      "require": "./vue.js"
+      "require": "./dist/vue.cjs"
     },
     "./nuxt": {
       "import": "./nuxt.js",
-      "require": "./nuxt.js"
+      "require": "./dist/nuxt.cjs"
     },
     "./browser": {
       "import": "./browser.js",
-      "require": "./browser.js"
+      "require": "./dist/browser.cjs"
     },
     "./react": {
       "import": "./react.js",
-      "require": "./react.js"
+      "require": "./dist/react.cjs"
     },
     "./utils": {
       "import": "./utils.js",
-      "require": "./utils.js"
+      "require": "./dist/eslint-config-cmyr.cjs"
     },
     "./package.json": "./package.json"
   },
@@ -52,6 +53,7 @@
     "deploy-beta": "nrm use npm && npm publish --tag beta",
     "lint": "cross-env NODE_ENV=production eslint *.js --fix --ext .js",
     "release": "semantic-release",
+    "build": "cross-env NODE_ENV=production tsdown",
     "test:js": "cross-env NODE_ENV=production eslint -c index.js test/js.test.js",
     "test:ts": "cross-env NODE_ENV=production eslint -c index.js test/ts.test.ts",
     "test:browser": "cross-env NODE_ENV=production eslint -c browser.js test/browser.test.js",
@@ -86,6 +88,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-vue": "^10.4.0",
     "semantic-release": "^19.0.5",
+    "tsdown": "^0.14.1",
     "typescript": "^5.9.2"
   },
   "peerDependencies": {

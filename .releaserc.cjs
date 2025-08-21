@@ -27,13 +27,6 @@ module.exports = {
             '@semantic-release/git',
             {
                 assets: [
-                    'index.js',
-                    'vue.js',
-                    'browser.js',
-                    'react.js',
-                    'nuxt.js',
-                    'utils.js',
-                    'README.md',
                     'CHANGELOG.md',
                     'package.json',
                 ],

@@ -1,5 +1,13 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.13](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.12...v2.0.0-beta.13) (2025-08-21)
+
+
+### 🐛 Bug Fixes
+
+* 更新通用忽略配置以支持目录匹配 ([e8cb5d8](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/e8cb5d8))
+* 禁用代码块中的空行填充规则 ([c944ee1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/c944ee1))
+
 # [2.0.0-beta.12](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.11...v2.0.0-beta.12) (2025-08-21)
 
 

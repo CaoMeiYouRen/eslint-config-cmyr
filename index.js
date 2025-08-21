@@ -95,7 +95,7 @@ export default defineConfig([
         rules: {
             '@stylistic/quote-props': [1, 'as-needed', { keywords: false, numbers: true }], // 当没有严格要求时，禁止对象字面量属性名称使用引号
             '@stylistic/no-multiple-empty-lines': [1, { max: 2, maxBOF: 0, maxEOF: 1 }], // 禁止多余的空行
-            '@stylistic/padded-blocks': [1, { blocks: 'always', classes: 'always', switches: 'never' }], // 强制在代码块中保持一致的空行填充
+            '@stylistic/padded-blocks': [0, { blocks: 'always', classes: 'always', switches: 'never' }], // 强制在代码块中保持一致的空行填充
             '@stylistic/no-mixed-operators': [1], // 允许混合使用不同的操作符
             '@stylistic/multiline-ternary': [1, 'always-multiline'], // 在三元表达式跨越多行时，强制操作符之间的换行。
         },

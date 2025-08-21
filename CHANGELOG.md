@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.11](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.10...v2.0.0-beta.11) (2025-08-21)
+
+
+### 🐛 Bug Fixes
+
+* 修改 @stylistic/padded-blocks 规则，强制在代码块中保持一致的空行填充 ([6dceaaa](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/6dceaaa))
+
 # [2.0.0-beta.10](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.9...v2.0.0-beta.10) (2025-08-21)
 
 

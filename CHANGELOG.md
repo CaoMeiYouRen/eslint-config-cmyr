@@ -1,5 +1,14 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.10](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.9...v2.0.0-beta.10) (2025-08-21)
+
+
+### 🐛 Bug Fixes
+
+* 将错误级别从 error 修改为 warn，并添加禁止多余空行的规则 ([555e473](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/555e473))
+* 添加 @stylistic/quote-props 规则，优化对象字面量属性名称的引号使用 ([1bf9879](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/1bf9879))
+* 添加多个 [@stylistic](https://github.com/stylistic) 规则以优化代码风格，包括填充块、混合操作符和多行三元表达式的处理 ([a369f0d](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/a369f0d))
+
 # [2.0.0-beta.9](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.8...v2.0.0-beta.9) (2025-08-21)
 
 

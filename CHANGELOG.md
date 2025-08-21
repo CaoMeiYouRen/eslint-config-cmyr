@@ -1,5 +1,18 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.9](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.8...v2.0.0-beta.9) (2025-08-21)
+
+
+### ✨ Features
+
+* 更新构建配置，添加 tsdown 配置文件并调整 package.json 导出路径 ([75425be](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/75425be))
+
+
+### 🐛 Bug Fixes
+
+* 修复 ESLint 规则，确保 props 类型检查的正确性 ([ac1471b](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/ac1471b))
+* 更新 ESLint 规则，添加禁止使用 Function 类型和原始类型的规则 ([e077c68](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/e077c68))
+
 # [2.0.0-beta.8](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.7...v2.0.0-beta.8) (2025-08-20)
 
 

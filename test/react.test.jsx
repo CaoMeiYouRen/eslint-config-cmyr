@@ -65,7 +65,7 @@ function FragmentComponent() {
 // 主测试组件
 export function Test() {
     const testItems = ['Item 1', 'Item 2', 'Item 3']
-    
+
     return (
         <div>
             <SimpleComponent />

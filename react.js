@@ -13,6 +13,7 @@ export default defineConfig([
         extends: [react.configs.flat.recommended, react.configs.flat['jsx-runtime']],
         languageOptions,
         rules: {
+            'react/prop-types': 1, // props 类型检查
         },
         settings: {
             react: {

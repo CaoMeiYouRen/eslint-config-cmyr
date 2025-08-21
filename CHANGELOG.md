@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.12](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.11...v2.0.0-beta.12) (2025-08-21)
+
+
+### 🐛 Bug Fixes
+
+* 添加更多通用忽略配置以排除特定目录和文件 ([57fd704](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/57fd704))
+
 # [2.0.0-beta.11](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.10...v2.0.0-beta.11) (2025-08-21)
 
 

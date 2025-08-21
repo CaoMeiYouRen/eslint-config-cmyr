@@ -90,6 +90,12 @@ export default defineConfig([
         commaDangle: 'always-multiline', // 多行时逗号尾随
         severity: 'error', // 设置错误级别为error
     }),
+    {
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
+        rules: {
+            '@stylistic/quote-props': [1, 'as-needed', { keywords: false, numbers: true }], // 当没有严格要求时，禁止对象字面量属性名称使用引号
+        },
+    },
     // import 插件配置
     {
         files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],

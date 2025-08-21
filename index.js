@@ -10,10 +10,10 @@ export default defineConfig([
         ignores: commonIgnores,
     },
     // js 规则
-    js.configs.recommended,
     // 基础规则
     {
-        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue}'],
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
+        extends: [js.configs.recommended],
         plugins: {
             js,
         },
@@ -75,7 +75,6 @@ export default defineConfig([
             'no-redeclare': [0], // 禁止重新声明变量
             'no-shadow': [0], // 禁止变量声明与外层作用域的变量同名
             'no-unused-vars': [0], // 禁止出现未使用过的变量
-
         },
     },
     // 代码风格规则
@@ -93,7 +92,7 @@ export default defineConfig([
     }),
     // import 插件配置
     {
-        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue}'],
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
         extends: [
             importPlugin.flatConfigs.recommended,
             importPlugin.flatConfigs.typescript,
@@ -108,12 +107,12 @@ export default defineConfig([
         },
     },
     // tseslint 规则
-    tseslint.configs.recommended,
     /**
    * typescript 规则
    */
     {
-        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue}'],
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
+        extends: [tseslint.configs.recommended],
         rules: {
             '@typescript-eslint/camelcase': [0], // 驼峰式风格
             '@typescript-eslint/default-param-last': [2], // 最后执行缺省参数
@@ -130,6 +129,8 @@ export default defineConfig([
             '@typescript-eslint/prefer-as-const': [1], // 强制在文本类型上使用 as const。
             '@typescript-eslint/no-require-imports': 1, // 禁止使用 require 导入
             '@typescript-eslint/no-empty-object-type': 1, // 禁止空对象类型
+            '@typescript-eslint/no-unsafe-function-type': 1, // 禁止使用 Function 类型
+            '@typescript-eslint/no-wrapper-object-types': 1, // 禁止使用 原始类型
         },
     },
 ])

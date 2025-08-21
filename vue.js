@@ -7,7 +7,7 @@ export default defineConfig([
     browserConfig,
     // Vue.js 规则
     {
-        extends: [eslintPluginVue.configs['flat/recommended']],
+        extends: [browserConfig, eslintPluginVue.configs['flat/recommended']],
         files: ['**/*.vue'],
         languageOptions,
         rules: {
@@ -45,9 +45,11 @@ export default defineConfig([
             'vue/object-curly-spacing': 2,
             'vue/padding-line-between-blocks': [2], // 要求或不允许块之间的填充行
             'vue/require-default-prop': [0],
-            'vue/require-name-property': [2], // 组件必须命名
+            'vue/require-name-property': [1], // 组件必须命名
             'vue/static-class-names-order': [2], // 静态 class 排序
             'vue/v-for-delimiter-style': [2, 'in'], // v-for 循环使用 in
+            'vue/no-v-model-arguments': [0], //
+            'vue/no-v-model-argument': [0], //
         },
     },
     {

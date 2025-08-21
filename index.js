@@ -88,12 +88,13 @@ export default defineConfig([
         blockSpacing: true, // 块内空格
         quoteProps: 'as-needed', // 属性名引号按需使用
         commaDangle: 'always-multiline', // 多行时逗号尾随
-        severity: 'error', // 设置错误级别为error
+        severity: 'warn', // 设置错误级别为 warn
     }),
     {
         files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
         rules: {
             '@stylistic/quote-props': [1, 'as-needed', { keywords: false, numbers: true }], // 当没有严格要求时，禁止对象字面量属性名称使用引号
+            '@stylistic/no-multiple-empty-lines': [1, { max: 2, maxBOF: 0, maxEOF: 1 }], // 禁止多余的空行
         },
     },
     // import 插件配置

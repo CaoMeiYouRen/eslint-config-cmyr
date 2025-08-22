@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.15](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.14...v2.0.0-beta.15) (2025-08-22)
+
+
+### 🐛 Bug Fixes
+
+* 添加一致的缩进风格配置以增强代码可读性 ([8efd1f1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/8efd1f1))
+
 # [2.0.0-beta.14](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.13...v2.0.0-beta.14) (2025-08-22)
 
 

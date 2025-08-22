@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.14](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.13...v2.0.0-beta.14) (2025-08-22)
+
+
+### 🐛 Bug Fixes
+
+* 添加运算符换行风格配置以增强代码一致性 ([9cec556](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/9cec556))
+
 # [2.0.0-beta.13](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.12...v2.0.0-beta.13) (2025-08-21)
 
 

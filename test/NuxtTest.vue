@@ -29,22 +29,28 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'NuxtTest',
-    data() {
-        return {
-            title: 'Nuxt Test Page',
-            pending: false,
-            error: null,
-            posts: [
-                { id: 1, title: 'Post 1' },
-                { id: 2, title: 'Post 2' },
-                { id: 3, title: 'Post 3' },
-            ],
-        }
-    },
+<script setup lang="ts">
+// 这是一个用于测试ESLint Nuxt规则的TypeScript测试文件
+// 使用Vue 3 Composition API with TypeScript
+
+// 模拟Vue API，用于ESLint测试
+declare function ref<T>(value: T): { value: T }
+
+// 定义数据类型接口
+interface Post {
+    id: number
+    title: string
 }
+
+// 响应式数据 - 使用明确的类型注解
+const title = ref<string>('Nuxt Test Page')
+const pending = ref<boolean>(false)
+const error = ref<Error | null>(null)
+const posts = ref<Post[]>([
+    { id: 1, title: 'Post 1' },
+    { id: 2, title: 'Post 2' },
+    { id: 3, title: 'Post 3' },
+])
 </script>
 
 <style lang="scss" scoped>

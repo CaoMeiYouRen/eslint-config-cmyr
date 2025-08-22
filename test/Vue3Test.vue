@@ -30,36 +30,47 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'Vue3Test',
-    props: {
-        initialTitle: {
-            type: String,
-            default: 'Default Title',
-        },
-        items: {
-            type: Array,
-            default: () => [],
-        },
-    },
-    emits: ['custom-event'],
-    data() {
-        return {
-            title: this.initialTitle,
-            subtitle: 'Test subtitle',
-            isVisible: true,
-            inputValue: '',
-            showElement: true,
-            isActive: false,
-        }
-    },
-    methods: {
-        handleClick() {
-            this.isActive = !this.isActive
-            this.$emit('custom-event', { type: 'click', timestamp: Date.now() })
-        },
-    },
+<script setup lang="ts">
+// 这是一个用于测试ESLint Vue规则的TypeScript测试文件
+// 使用Vue 3 Composition API with TypeScript
+
+// 模拟Vue API，用于ESLint测试
+declare function ref<T>(value: T): { value: T }
+declare function defineProps<T>(): T
+declare function withDefaults<T, D>(props: T, defaults: D): T & D
+declare function defineEmits<T = Record<string, any[]>>(): (event: keyof T, ...args: any[]) => void
+
+// 定义 props 类型接口
+interface Props {
+    initialTitle?: string
+    items?: Array<{ id: number; name: string }>
+}
+
+// 使用 withDefaults 和 defineProps 的 TypeScript 语法
+const props = withDefaults(defineProps<Props>(), {
+    initialTitle: 'Default Title',
+    items: () => [],
+})
+
+// 定义 emits 事件类型
+interface EmitEvents {
+    'custom-event': [payload: { type: string; timestamp: number }]
+}
+
+const emit = defineEmits<EmitEvents>()
+
+// 响应式数据 - 使用明确的类型注解
+const title = ref<string>(props.initialTitle ?? 'Default Title')
+const subtitle = ref<string>('Test subtitle')
+const isVisible = ref<boolean>(true)
+const inputValue = ref<string>('')
+const showElement = ref<boolean>(true)
+const isActive = ref<boolean>(false)
+
+// 方法定义 - 使用明确的返回类型
+const handleClick = (): void => {
+    isActive.value = !isActive.value
+    emit('custom-event', { type: 'click', timestamp: Date.now() })
 }
 </script>
 

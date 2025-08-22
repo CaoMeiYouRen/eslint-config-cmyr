@@ -122,5 +122,8 @@
     "onlyBuiltDependencies": [
       "unrs-resolver"
     ]
+  },
+  "changelog": {
+    "language": "zh"
   }
 }

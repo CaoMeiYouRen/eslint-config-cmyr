@@ -98,6 +98,7 @@ export default defineConfig([
             '@stylistic/padded-blocks': [0, { blocks: 'always', classes: 'always', switches: 'never' }], // 强制在代码块中保持一致的空行填充
             '@stylistic/no-mixed-operators': [1], // 允许混合使用不同的操作符
             '@stylistic/multiline-ternary': [1, 'always-multiline'], // 在三元表达式跨越多行时，强制操作符之间的换行。
+            '@stylistic/operator-linebreak': [1, 'before', { overrides: { '=': 'after' } }], // 强制执行运算符的一致换行风格。
         },
     },
     // import 插件配置

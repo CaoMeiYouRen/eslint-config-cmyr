@@ -50,6 +50,7 @@
     "node": ">=16"
   },
   "scripts": {
+    "prepare": "husky install",
     "deploy-beta": "nrm use npm && npm publish --tag beta",
     "lint": "cross-env NODE_ENV=production eslint *.js --fix --ext .js",
     "release": "semantic-release",
@@ -90,6 +91,8 @@
     "eslint": "^9.33.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-vue": "^10.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
     "semantic-release": "^19.0.5",
     "tsdown": "^0.14.1",
     "typescript": "^5.9.2"
@@ -128,5 +131,16 @@
   },
   "changelog": {
     "language": "zh"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog-cmyr"
+    }
   }
 }

@@ -8,6 +8,7 @@ export default defineConfig({
         'browser.js',
         'react.js',
         'nuxt.js',
+        'utils.js',
     ],
     outDir: 'dist', // 输出目录
     format: ['cjs'],

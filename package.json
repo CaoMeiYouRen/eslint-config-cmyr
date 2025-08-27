@@ -42,7 +42,7 @@
     },
     "./utils": {
       "import": "./utils.js",
-      "require": "./dist/eslint-config-cmyr.cjs"
+      "require": "./dist/utils.cjs"
     },
     "./package.json": "./package.json"
   },

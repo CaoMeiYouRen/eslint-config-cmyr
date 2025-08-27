@@ -4,10 +4,13 @@ import { __ERROR__, __WARN__, languageOptions, commonIgnores } from './utils.js'
 import browserConfig from './browser.js'
 
 export default defineConfig([
-    browserConfig,
+    {
+        extends: [browserConfig],
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue}'],
+    },
     // Vue.js 规则
     {
-        extends: [browserConfig, eslintPluginVue.configs['flat/recommended']],
+        extends: [eslintPluginVue.configs['flat/recommended']],
         files: ['**/*.vue'],
         languageOptions,
         rules: {

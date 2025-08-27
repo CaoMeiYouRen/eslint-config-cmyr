@@ -52,7 +52,7 @@
   "scripts": {
     "prepare": "husky install",
     "deploy-beta": "nrm use npm && npm publish --tag beta",
-    "lint": "cross-env NODE_ENV=production eslint *.js --fix --ext .js",
+    "lint": "cross-env NODE_ENV=production eslint . --fix",
     "release": "semantic-release",
     "build": "cross-env NODE_ENV=production tsdown",
     "test:js": "cross-env NODE_ENV=production eslint -c index.js test/js.test.js",

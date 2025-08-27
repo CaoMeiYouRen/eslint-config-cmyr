@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.16](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.15...v2.0.0-beta.16) (2025-08-27)
+
+
+### 🐛 Bug 修复
+
+* 更新 ESLint 配置以使用当前目录进行检查，并调整相关规则警告级别 ([649480f](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/649480f))
+
 # [2.0.0-beta.15](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.14...v2.0.0-beta.15) (2025-08-22)
 
 

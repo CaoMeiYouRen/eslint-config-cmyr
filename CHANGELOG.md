@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+# [2.0.0-beta.17](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.16...v2.0.0-beta.17) (2025-08-27)
+
+
+### 🐛 Bug 修复
+
+* 修复 utils.js 的导入路径并更新 Vue.js 配置 ([90c5ac5](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/90c5ac5))
+
 # [2.0.0-beta.16](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0-beta.15...v2.0.0-beta.16) (2025-08-27)
 
 

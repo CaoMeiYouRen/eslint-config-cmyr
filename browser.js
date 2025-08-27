@@ -1,6 +1,12 @@
-const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
-module.exports = {
-    rules: {
-        'no-console': [__ERROR__, { allow: ['warn', 'error'] }], // 禁止console
+import { defineConfig } from 'eslint/config'
+import { __ERROR__ } from './utils.js'
+import indexConfig from './index.js'
+
+export default defineConfig([
+    {
+        extends: [indexConfig],
+        rules: {
+            'no-console': [__ERROR__, { allow: ['warn', 'error', 'info'] }], // 禁止console
+        },
     },
-}
+])

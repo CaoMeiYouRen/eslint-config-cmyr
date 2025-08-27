@@ -1,44 +1,93 @@
-/**
- * str1 比 str2 大则返回 1 ； str1 比 str2 小则返回 -1；相等返回 0
- *
- * @author CaoMeiYouRen
- * @date 2022-07-27
- * @param str1 {string}
- * @param str2 {string}
- */
-function versionCompare(str1, str2) {
-    if (typeof str1 !== 'string' || typeof str2 !== 'string') {
-        throw new Error('传入的版本号必须为字符串')
-    }
-    // 第一步：使用正则，先把传参进来的两个版本号中空格给替换成空。
-    let nStr1 = str1.replace(/(^\s+)|(\s+$)/gi, '')
-    let nStr2 = str2.replace(/(^\s+)|(\s+$)/gi, '')
-    // 第三步：使用正则来匹配截取两个传进来的版本号中的版本数字
-    const req = /\d(\.|\d)*\d/gi // 这个是匹配**.**.**数字的正则
-    nStr1 = nStr1.match(req)[0] // match出来的是一个数组，这个匹配出来在第0个
-    nStr2 = nStr2.match(req)[0]
-    // 第四步：版本比较，先把版本号字符串切割成数组，[主版本号，次版本号，修订号]
-    const arr1 = nStr1.split('.').map((e) => parseInt(e)) // [**,**,**]
-    const arr2 = nStr2.split('.').map((e) => parseInt(e))
-    // 第五步：分别开始分情况比较版本号
-    const n = Math.min(arr1.length, arr2.length)
-    for (let i = 0; i < n; i++) {
-        if (arr1[i] > arr2[i]) {
-            return 1
-        }
-        if (arr1[i] < arr2[i]) {
-            return -1
-        }
-    }
-    if (arr1.length > arr2.length && arr1[n] > 0) {
-        return 1
-    }
-    if (arr1.length < arr2.length && arr2[n] > 0) {
-        return -1
-    }
-    return 0
+import tseslint from 'typescript-eslint'
+import globals from 'globals'
+
+export const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
+export const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
+
+// 通用的全局变量配置
+export const commonGlobals = {
+    ...globals.browser, // 包含浏览器环境的全局变量
+    ...globals.node, // 包含 Node.js 环境的全局变量
+    ...globals.commonjs, // 包含 CommonJS 环境的全局变量
+    ...globals.amd, // 包含 AMD 环境的全局变量
+    ...globals.jest, // 包含 Jest 测试框架的全局变量
+    ...globals.vitest, // 包含 Vitest 环境的全局变量
+    ...globals.mocha, // 包含 Mocha 测试框架的全局变量
+    ...globals.jquery, // 包含 jQuery 环境的全局变量
+    ...globals.es2026, // 包含最新的 ECMAScript 全局变量
 }
 
-module.exports = {
-    versionCompare,
+// 通用的解析器选项
+export const commonParserOptions = {
+    parser: tseslint.parser,
+    ecmaVersion: 'latest',
+    ecmaFeatures: {
+        modules: true, // 启用模块化语法
+        jsx: true, // 启用 JSX 语法
+    },
+}
+
+// 基础语言选项配置
+export const languageOptions = {
+    ecmaVersion: 'latest', // 使用最新的 ECMAScript 版本
+    sourceType: 'module', // 使用模块化语法
+    globals: commonGlobals,
+    parserOptions: commonParserOptions,
+}
+
+// 创建自定义语言选项的工具函数
+export function createLanguageOptions(customGlobals = {}, customParserOptions = {}) {
+    return {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        globals: {
+            ...commonGlobals,
+            ...customGlobals,
+        },
+        parserOptions: {
+            ...commonParserOptions,
+            ...customParserOptions,
+        },
+    }
+}
+
+// 通用的忽略配置
+export const commonIgnores = [
+    '**/coverage',
+    '**/.vscode',
+    '**/docker-compose.yml',
+    '.github/**',
+    '.husky/**',
+    '.nuxt/**',
+    '.output/**',
+    '.vercel/**',
+    '.vitepress/**',
+    'node_modules',
+    'dist',
+    'public',
+    'build',
+    'coverage',
+    'out',
+    'temp',
+    'tmp',
+    'logs',
+    'log',
+]
+
+// Nuxt 专用的全局变量
+export const nuxtGlobals = {
+    useFetch: false,
+    useAsyncData: false,
+    useCookie: false,
+    useError: false,
+    useHead: false,
+    useLazyAsyncData: false,
+    useLazyFetch: false,
+    useNuxtApp: false,
+    useNuxtData: false,
+    useRoute: false,
+    useRouter: false,
+    useState: false,
+    useRuntimeConfig: false,
+    useSeoMeta: false,
 }

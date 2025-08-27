@@ -1,17 +1,25 @@
-const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
-const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
-module.exports = {
-    extends: [
-        'react-app',
-        'react-app/jest',
-        require.resolve('./index'),
-        require.resolve('./browser'),
-    ],
-    rules: {
-    },
-    settings: {
-        react: {
-            version: 'detect',
+import { defineConfig } from 'eslint/config'
+import react from 'eslint-plugin-react'
+import { languageOptions } from './utils.js'
+import browserConfig from './browser.js'
+
+export default defineConfig([
+    browserConfig,
+    {
+        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
+        plugins: {
+            react,
+        },
+        extends: [react.configs.flat.recommended, react.configs.flat['jsx-runtime']],
+        languageOptions,
+        rules: {
+            'react/prop-types': 1, // props 类型检查
+        },
+        settings: {
+            react: {
+                version: 'detect',
+                defaultVersion: '18',
+            },
         },
     },
-}
+])

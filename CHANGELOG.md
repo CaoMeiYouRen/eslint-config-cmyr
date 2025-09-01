@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [2.0.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.0...v2.0.1) (2025-09-01)
+
+
+### 🐛 Bug 修复
+
+* **eslint:** 添加禁止行尾空格的规则 ([959186c](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/959186c))
+
 # [2.0.0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v1.1.33...v2.0.0) (2025-08-27)
 
 

@@ -1,5 +1,17 @@
 # eslint-config-cmyr
 
+# [2.1.0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.1...v2.1.0) (2026-01-12)
+
+
+### ✨ 新功能
+
+* 更新 ESLint 配置，添加 TypeScript 支持和语言选项 ([dddf71e](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/dddf71e))
+
+
+### 🐛 Bug 修复
+
+* 移除不必要的导入，优化解析器选项的类型注释 ([4aec252](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/4aec252))
+
 # [2.1.0-beta.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.1...v2.1.0-beta.1) (2026-01-12)
 
 

@@ -125,7 +125,10 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "unrs-resolver"
-    ]
+    ],
+    "overrides": {
+      "tmp": "^0.2.4"
+    }
   },
   "changelog": {
     "language": "zh"

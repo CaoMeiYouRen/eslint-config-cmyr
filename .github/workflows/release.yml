@@ -27,5 +27,4 @@ jobs:
       - run: pnpm run build
       - env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm run release

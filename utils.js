@@ -1,5 +1,3 @@
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
 import tseslint from 'typescript-eslint'
 import globals from 'globals'
 
@@ -21,6 +19,7 @@ export const commonGlobals = {
 }
 
 // 通用的解析器选项
+/** @type {any} */
 export const commonParserOptions = {
     parser: tseslint.parser,
     ecmaVersion: 'latest',
@@ -39,6 +38,11 @@ export const languageOptions = {
 }
 
 // 创建自定义语言选项的工具函数
+/**
+ * @param {any} customGlobals
+ * @param {any} customParserOptions
+ * @returns {any}
+ */
 export function createLanguageOptions(customGlobals = {}, customParserOptions = {}) {
     return {
         ecmaVersion: 'latest',

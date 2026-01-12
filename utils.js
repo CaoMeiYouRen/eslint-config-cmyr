@@ -1,5 +1,8 @@
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import tseslint from 'typescript-eslint'
 import globals from 'globals'
+
 
 export const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
 export const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0

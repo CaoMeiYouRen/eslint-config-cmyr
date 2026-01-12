@@ -43,7 +43,7 @@ interface ExtendedInterface extends TestInterface {
     email: string
 }
 
-type TestType = {
+interface TestType {
     title: string
     count: number
 }

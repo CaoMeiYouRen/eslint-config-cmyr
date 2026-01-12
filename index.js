@@ -3,7 +3,7 @@ import js from '@eslint/js'
 import { defineConfig } from 'eslint/config'
 import tseslint from 'typescript-eslint'
 import importPlugin from 'eslint-plugin-import'
-import { __ERROR__, __WARN__, languageOptions, commonIgnores } from './utils.js'
+import { __ERROR__, __WARN__, languageOptions, commonIgnores, createLanguageOptions } from './utils.js'
 
 export default defineConfig([
     {
@@ -125,7 +125,22 @@ export default defineConfig([
    */
     {
         files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
-        extends: [tseslint.configs.recommended],
+        extends: [
+            tseslint.configs.recommended,
+            // tseslint.configs.recommendedTypeChecked,
+            // tseslint.configs.stylisticTypeChecked,
+        ],
+        plugins: {
+            tseslint,
+        },
+        // projectService
+        languageOptions: createLanguageOptions({}, {
+            projectService: {
+                defaultProject: 'tsconfig.json',
+                allowDefaultProject: ['test/*.test.jsx'],
+            },
+            tsconfigRootDir: process.cwd(),
+        }),
         rules: {
             '@typescript-eslint/camelcase': [0], // 驼峰式风格
             '@typescript-eslint/default-param-last': [2], // 最后执行缺省参数
@@ -133,6 +148,7 @@ export default defineConfig([
             '@typescript-eslint/explicit-module-boundary-types': [0, {
                 allowArgumentsExplicitlyTypedAsAny: true,
             }], // 要求导出函数和类的公共类方法的显式返回和参数类型
+            '@typescript-eslint/no-deprecated': 1, // 开启弃用检测
             '@typescript-eslint/no-empty-function': [__WARN__], // 禁止空函数
             '@typescript-eslint/no-explicit-any': [0], // 不允许使用any类型
             '@typescript-eslint/no-inferrable-types': [0], // 对于初始化为数字、字符串或布尔值的变量或参数，不允许显式类型声明

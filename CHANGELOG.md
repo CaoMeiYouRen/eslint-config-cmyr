@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [2.1.1-beta.2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.1-beta.1...v2.1.1-beta.2) (2026-02-05)
+
+
+### 🐛 Bug 修复
+
+* 更新 TypeScript ESLint 规则以增强类型检查和代码质量 ([3d24b2d](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/3d24b2d))
+
 ## [2.1.1-beta.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.0...v2.1.1-beta.1) (2026-02-05)
 
 

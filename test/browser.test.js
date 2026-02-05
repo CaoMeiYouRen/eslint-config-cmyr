@@ -80,7 +80,7 @@ function testFormHandling() {
 
             // 表单验证
             const email = formData.get('email')
-            if (!email || !email.includes('@')) {
+            if (!email?.includes('@')) {
                 console.error('Invalid email')
                 return false
             }

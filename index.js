@@ -127,8 +127,8 @@ export default defineConfig([
         files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
         extends: [
             tseslint.configs.recommended,
-            // tseslint.configs.recommendedTypeChecked,
-            // tseslint.configs.stylisticTypeChecked,
+            tseslint.configs.recommendedTypeChecked,
+            tseslint.configs.stylisticTypeChecked,
         ],
         plugins: {
             tseslint,
@@ -137,7 +137,7 @@ export default defineConfig([
         languageOptions: createLanguageOptions({}, {
             projectService: {
                 defaultProject: 'tsconfig.json',
-                allowDefaultProject: ['test/*.test.jsx'],
+                // allowDefaultProject: ['test/*.test.jsx'],
             },
             tsconfigRootDir: process.cwd(),
         }),
@@ -160,6 +160,12 @@ export default defineConfig([
             '@typescript-eslint/no-empty-object-type': 1, // 禁止空对象类型
             '@typescript-eslint/no-unsafe-function-type': 1, // 禁止使用 Function 类型
             '@typescript-eslint/no-wrapper-object-types': 1, // 禁止使用 原始类型
+            '@typescript-eslint/no-unsafe-assignment': 0, // 禁止对 any 类型的变量进行赋值操作
+            '@typescript-eslint/no-unsafe-call': 0, // 禁止对 any 类型的变量进行调用操作
+            '@typescript-eslint/no-floating-promises': 0, // 禁止悬空的 Promise
+            '@typescript-eslint/no-unsafe-return': 0, // 禁止从函数中返回 any 类型的值
+            '@typescript-eslint/no-unsafe-member-access': 0, // 禁止对 any 类型的变量进行成员访问
+            '@typescript-eslint/prefer-nullish-coalescing': 0, // 建议使用空值合并运算符 (??) 替代逻辑或 (||) 来处理 null 或 undefined
         },
     },
 ])

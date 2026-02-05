@@ -176,6 +176,7 @@ export default defineConfig([
             '@typescript-eslint/no-base-to-string': [1], // 建议避免将对象隐式转换为字符串
             '@typescript-eslint/prefer-for-of': [1], // 建议使用 for...of 循环代替传统的 for 循环
             '@typescript-eslint/prefer-nullish-coalescing': [0], // 建议使用空值合并运算符 (??) 替代逻辑或 (||) 来处理 null 或 undefined
+            '@typescript-eslint/non-nullable-type-assertion-style': [0], // 允许使用非空断言操作符 (!) 来断言非空类型
         },
     },
 ])

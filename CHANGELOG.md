@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [2.1.2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.1...v2.1.2) (2026-02-05)
+
+
+### 🐛 Bug 修复
+
+* 允许使用非空断言操作符 (!) 来断言非空类型 ([a2ec8ea](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/a2ec8ea))
+
 ## [2.1.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.0...v2.1.1) (2026-02-05)
 
 

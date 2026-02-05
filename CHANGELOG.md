@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [2.1.1-beta.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.0...v2.1.1-beta.1) (2026-02-05)
+
+
+### 🐛 Bug 修复
+
+* 启用推荐的类型检查配置并调整 ESLint 规则 ([1a96907](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/1a96907))
+
 # [2.1.0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.0.1...v2.1.0) (2026-01-12)
 
 

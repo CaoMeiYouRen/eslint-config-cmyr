@@ -156,16 +156,26 @@ export default defineConfig([
             '@typescript-eslint/no-shadow': [2], // 禁止变量声明与外层作用域的变量同名
             '@typescript-eslint/no-unused-vars': [__WARN__], // 禁止未使用的变量
             '@typescript-eslint/prefer-as-const': [__WARN__], // 强制在文本类型上使用 as const。
-            '@typescript-eslint/no-require-imports': 1, // 禁止使用 require 导入
-            '@typescript-eslint/no-empty-object-type': 1, // 禁止空对象类型
-            '@typescript-eslint/no-unsafe-function-type': 1, // 禁止使用 Function 类型
-            '@typescript-eslint/no-wrapper-object-types': 1, // 禁止使用 原始类型
-            '@typescript-eslint/no-unsafe-assignment': 0, // 禁止对 any 类型的变量进行赋值操作
-            '@typescript-eslint/no-unsafe-call': 0, // 禁止对 any 类型的变量进行调用操作
-            '@typescript-eslint/no-floating-promises': 0, // 禁止悬空的 Promise
-            '@typescript-eslint/no-unsafe-return': 0, // 禁止从函数中返回 any 类型的值
-            '@typescript-eslint/no-unsafe-member-access': 0, // 禁止对 any 类型的变量进行成员访问
-            '@typescript-eslint/prefer-nullish-coalescing': 0, // 建议使用空值合并运算符 (??) 替代逻辑或 (||) 来处理 null 或 undefined
+            '@typescript-eslint/no-require-imports': [1], // 禁止使用 require 导入
+            '@typescript-eslint/no-empty-object-type': [1], // 禁止空对象类型
+            '@typescript-eslint/no-unsafe-function-type': [1], // 禁止使用 Function 类型
+            '@typescript-eslint/no-wrapper-object-types': [1], // 禁止使用 原始类型
+            '@typescript-eslint/no-floating-promises': [1], // 禁止悬空的 Promise
+            '@typescript-eslint/no-unsafe-argument': [0], // 允许传递 any 类型的值作为参数
+            '@typescript-eslint/no-unsafe-assignment': [0], // 允许将 any 类型的值分配给其他类型
+            '@typescript-eslint/no-unsafe-member-access': [0], // 允许对 any 类型的值进行成员访问
+            '@typescript-eslint/no-unsafe-return': [0], // 允许从函数返回 any 类型的值
+            '@typescript-eslint/no-unsafe-call': [0], // 允许对 any 类型的值进行调用
+            '@typescript-eslint/require-await': [1], // 允许在 async 函数中不使用 await 关键字
+            '@typescript-eslint/prefer-optional-chain': [1], // 建议使用可选链操作符
+            '@typescript-eslint/no-redundant-type-constituents': [1], // 建议删除冗余的联合类型成员
+            '@typescript-eslint/unbound-method': [0], // 允许不绑定上下文的类方法引用
+            '@typescript-eslint/restrict-template-expressions': [0], // 允许在模板字符串中使用非字符串类型的表达式
+            '@typescript-eslint/await-thenable': [1], // 建议在 await 表达式中使用可等待的值
+            '@typescript-eslint/no-misused-promises': [1], // 建议避免在不适当的地方使用 Promise
+            '@typescript-eslint/no-base-to-string': [1], // 建议避免将对象隐式转换为字符串
+            '@typescript-eslint/prefer-for-of': [1], // 建议使用 for...of 循环代替传统的 for 循环
+            '@typescript-eslint/prefer-nullish-coalescing': [0], // 建议使用空值合并运算符 (??) 替代逻辑或 (||) 来处理 null 或 undefined
         },
     },
 ])

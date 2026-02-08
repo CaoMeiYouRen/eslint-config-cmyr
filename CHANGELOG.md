@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [2.1.3](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.2...v2.1.3) (2026-02-08)
+
+
+### 🐛 Bug 修复
+
+* 添加 TypeScript ESLint 规则以禁止枚举与非枚举成员的比较 ([e56a958](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/e56a958))
+
 ## [2.1.2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.1...v2.1.2) (2026-02-05)
 
 

@@ -166,6 +166,7 @@ export default defineConfig([
             '@typescript-eslint/no-unsafe-member-access': [0], // 允许对 any 类型的值进行成员访问
             '@typescript-eslint/no-unsafe-return': [0], // 允许从函数返回 any 类型的值
             '@typescript-eslint/no-unsafe-call': [0], // 允许对 any 类型的值进行调用
+            '@typescript-eslint/no-unsafe-enum-comparison': [1], // 禁止将枚举成员与非枚举成员进行比较
             '@typescript-eslint/require-await': [1], // 允许在 async 函数中不使用 await 关键字
             '@typescript-eslint/prefer-optional-chain': [1], // 建议使用可选链操作符
             '@typescript-eslint/no-redundant-type-constituents': [1], // 建议删除冗余的联合类型成员
@@ -177,6 +178,7 @@ export default defineConfig([
             '@typescript-eslint/prefer-for-of': [1], // 建议使用 for...of 循环代替传统的 for 循环
             '@typescript-eslint/prefer-nullish-coalescing': [0], // 建议使用空值合并运算符 (??) 替代逻辑或 (||) 来处理 null 或 undefined
             '@typescript-eslint/non-nullable-type-assertion-style': [0], // 允许使用非空断言操作符 (!) 来断言非空类型
+            '@typescript-eslint/only-throw-error': [1], // 禁止不做任何处理就再次向上抛出相同的 error
         },
     },
 ])

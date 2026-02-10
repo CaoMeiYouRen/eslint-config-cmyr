@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [2.1.4](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.3...v2.1.4) (2026-02-10)
+
+
+### 🐛 Bug 修复
+
+* 更新 TypeScript ESLint 规则以启用不必要的类型断言检查 ([b99a33f](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/b99a33f))
+
 ## [2.1.3](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.2...v2.1.3) (2026-02-08)
 
 

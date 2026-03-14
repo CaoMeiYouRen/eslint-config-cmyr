@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [2.1.5](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.4...v2.1.5) (2026-03-14)
+
+
+### 🐛 Bug 修复
+
+* **index:** 更新文件匹配规则以仅包含 TypeScript 文件 ([31a4a74](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/31a4a74))
+
 ## [2.1.4](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.3...v2.1.4) (2026-02-10)
 
 

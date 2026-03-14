@@ -124,7 +124,7 @@ export default defineConfig([
    * typescript 规则
    */
     {
-        files: ['**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}'],
+        files: ['**/*.{ts,tsx,mts,cts}'],
         extends: [
             tseslint.configs.recommended,
             tseslint.configs.recommendedTypeChecked,

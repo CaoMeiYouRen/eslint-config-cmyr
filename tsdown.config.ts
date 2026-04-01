@@ -4,6 +4,7 @@ export default defineConfig({
     platform: 'node', // 目标平台
     entry: [
         'index.js',
+        'strict.js',
         'vue.js',
         'browser.js',
         'react.js',

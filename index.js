@@ -3,7 +3,7 @@ import js from '@eslint/js'
 import { defineConfig } from 'eslint/config'
 import tseslint from 'typescript-eslint'
 import importPlugin from 'eslint-plugin-import'
-import { __ERROR__, __WARN__, languageOptions, commonIgnores, createLanguageOptions } from './utils.js'
+import { __ERROR__, __WARN__, languageOptions, commonIgnores } from './utils.js'
 
 export default defineConfig([
     {
@@ -127,20 +127,10 @@ export default defineConfig([
         files: ['**/*.{ts,tsx,mts,cts}'],
         extends: [
             tseslint.configs.recommended,
-            tseslint.configs.recommendedTypeChecked,
-            tseslint.configs.stylisticTypeChecked,
         ],
         plugins: {
             tseslint,
         },
-        // projectService
-        languageOptions: createLanguageOptions({}, {
-            projectService: {
-                defaultProject: 'tsconfig.json',
-                // allowDefaultProject: ['test/*.test.jsx'],
-            },
-            tsconfigRootDir: process.cwd(),
-        }),
         rules: {
             '@typescript-eslint/camelcase': [0], // 驼峰式风格
             '@typescript-eslint/default-param-last': [2], // 最后执行缺省参数
@@ -148,7 +138,6 @@ export default defineConfig([
             '@typescript-eslint/explicit-module-boundary-types': [0, {
                 allowArgumentsExplicitlyTypedAsAny: true,
             }], // 要求导出函数和类的公共类方法的显式返回和参数类型
-            '@typescript-eslint/no-deprecated': 1, // 开启弃用检测
             '@typescript-eslint/no-empty-function': [__WARN__], // 禁止空函数
             '@typescript-eslint/no-explicit-any': [0], // 不允许使用any类型
             '@typescript-eslint/no-inferrable-types': [0], // 对于初始化为数字、字符串或布尔值的变量或参数，不允许显式类型声明
@@ -160,26 +149,15 @@ export default defineConfig([
             '@typescript-eslint/no-empty-object-type': [1], // 禁止空对象类型
             '@typescript-eslint/no-unsafe-function-type': [1], // 禁止使用 Function 类型
             '@typescript-eslint/no-wrapper-object-types': [1], // 禁止使用 原始类型
-            '@typescript-eslint/no-floating-promises': [1], // 禁止悬空的 Promise
             '@typescript-eslint/no-unsafe-argument': [0], // 允许传递 any 类型的值作为参数
             '@typescript-eslint/no-unsafe-assignment': [0], // 允许将 any 类型的值分配给其他类型
             '@typescript-eslint/no-unsafe-member-access': [0], // 允许对 any 类型的值进行成员访问
             '@typescript-eslint/no-unsafe-return': [0], // 允许从函数返回 any 类型的值
             '@typescript-eslint/no-unsafe-call': [0], // 允许对 any 类型的值进行调用
-            '@typescript-eslint/no-unsafe-enum-comparison': [1], // 禁止将枚举成员与非枚举成员进行比较
-            '@typescript-eslint/require-await': [1], // 允许在 async 函数中不使用 await 关键字
-            '@typescript-eslint/prefer-optional-chain': [1], // 建议使用可选链操作符
-            '@typescript-eslint/no-redundant-type-constituents': [1], // 建议删除冗余的联合类型成员
             '@typescript-eslint/unbound-method': [0], // 允许不绑定上下文的类方法引用
             '@typescript-eslint/restrict-template-expressions': [0], // 允许在模板字符串中使用非字符串类型的表达式
-            '@typescript-eslint/await-thenable': [1], // 建议在 await 表达式中使用可等待的值
-            '@typescript-eslint/no-misused-promises': [1], // 建议避免在不适当的地方使用 Promise
-            '@typescript-eslint/no-base-to-string': [1], // 建议避免将对象隐式转换为字符串
             '@typescript-eslint/prefer-for-of': [1], // 建议使用 for...of 循环代替传统的 for 循环
             '@typescript-eslint/prefer-nullish-coalescing': [0], // 建议使用空值合并运算符 (??) 替代逻辑或 (||) 来处理 null 或 undefined
-            '@typescript-eslint/non-nullable-type-assertion-style': [1], // 允许使用非空断言操作符 (!) 来断言非空类型
-            '@typescript-eslint/only-throw-error': [1], // 禁止不做任何处理就再次向上抛出相同的 error
-            '@typescript-eslint/no-unnecessary-type-assertion': [1], // 允许不必要的类型断言
         },
     },
 ])

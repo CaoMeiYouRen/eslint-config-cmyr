@@ -8,6 +8,7 @@
   "main": "index.js",
   "files": [
     "index.js",
+    "strict.js",
     "vue.js",
     "browser.js",
     "react.js",
@@ -23,6 +24,10 @@
     "./index": {
       "import": "./index.js",
       "require": "./dist/index.cjs"
+    },
+    "./strict": {
+      "import": "./strict.js",
+      "require": "./dist/strict.cjs"
     },
     "./vue": {
       "import": "./vue.js",
@@ -57,11 +62,12 @@
     "build": "cross-env NODE_ENV=production tsdown",
     "test:js": "cross-env NODE_ENV=production eslint -c index.js test/js.test.js",
     "test:ts": "cross-env NODE_ENV=production eslint -c index.js test/ts.test.ts",
+    "test:strict": "cross-env NODE_ENV=production eslint -c strict.js test/strict.test.ts",
     "test:browser": "cross-env NODE_ENV=production eslint -c browser.js test/browser.test.js",
     "test:vue": "cross-env NODE_ENV=production eslint -c vue.js test/Vue3Test.vue",
     "test:nuxt": "cross-env NODE_ENV=production eslint -c nuxt.js test/NuxtTest.vue",
     "test:tsx": "cross-env NODE_ENV=production eslint -c react.js test/react.test.tsx",
-    "test": "npm run test:js && npm run test:ts && npm run test:browser && npm run test:vue && npm run test:nuxt && npm run test:tsx"
+    "test": "npm run test:js && npm run test:ts && npm run test:strict && npm run test:browser && npm run test:vue && npm run test:nuxt && npm run test:tsx"
   },
   "keywords": [
     "code",

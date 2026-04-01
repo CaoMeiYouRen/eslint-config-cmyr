@@ -66,6 +66,24 @@ import cmyr from "eslint-config-cmyr";
 export default defineConfig([cmyr]);
 ```
 
+#### TypeScript 项目（严格模式）
+
+严格模式入口适用于对类型安全和代码质量要求更高的项目。该入口会启用基于类型信息的 TypeScript 检查，并对 `any`、不安全调用、不安全赋值等问题给出提示。
+
+```js
+// eslint.config.js
+import { defineConfig } from "eslint/config";
+import cmyrStrict from "eslint-config-cmyr/strict";
+
+export default defineConfig([cmyrStrict]);
+```
+
+默认入口与严格模式的区别：
+
+1. 默认入口保留通用且必要的规则，兼容性优先。
+2. 严格模式会启用 `typescript-eslint` 的类型感知严格规则。
+3. 严格模式下新增规则以 `warning` 为主，便于存量项目渐进治理。
+
 #### Vue 项目
 
 ```bash

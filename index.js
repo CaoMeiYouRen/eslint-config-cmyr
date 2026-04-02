@@ -58,8 +58,8 @@ export default defineConfig([
             'no-useless-constructor': [__ERROR__], // 禁用不必要的构造函数
             'no-useless-return': [__ERROR__], // 禁止多余的 return 语句
             'no-var': [2], // 要求使用 let 或 const 而不是 var
-            'max-lines': [0, { max: 500 }], // 强制文件的最大行数
-            'max-lines-per-function': [0, { max: 120 }], // 强制函数最大行数
+            'max-lines': [__WARN__, { max: 1000 }], // 强制文件的最大行数
+            'max-lines-per-function': [__WARN__, { max: 600 }], // 强制函数最大行数
             'max-nested-callbacks': [1, { max: 5 }], // 强制回调函数最大嵌套深度
             'max-params': [1, { max: 5 }], // 强制函数定义中最大参数个数
             'object-shorthand': [2], // 要求或禁止对象字面量中方法和属性使用简写语法

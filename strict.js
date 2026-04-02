@@ -22,24 +22,35 @@ export default defineConfig([
             tsconfigRootDir: process.cwd(),
         }),
         rules: {
-            '@typescript-eslint/no-deprecated': [__WARN__],
-            '@typescript-eslint/no-explicit-any': [__WARN__],
-            '@typescript-eslint/no-floating-promises': [__WARN__],
-            '@typescript-eslint/no-misused-promises': [__WARN__],
-            '@typescript-eslint/await-thenable': [__WARN__],
-            '@typescript-eslint/no-base-to-string': [__WARN__],
-            '@typescript-eslint/no-unnecessary-type-assertion': [__WARN__],
-            '@typescript-eslint/no-unsafe-enum-comparison': [__WARN__],
-            '@typescript-eslint/no-unsafe-argument': [__WARN__],
-            '@typescript-eslint/no-unsafe-assignment': [__WARN__],
-            '@typescript-eslint/no-unsafe-call': [__WARN__],
-            '@typescript-eslint/no-unsafe-member-access': [__WARN__],
-            '@typescript-eslint/no-unsafe-return': [__WARN__],
-            '@typescript-eslint/no-redundant-type-constituents': [__WARN__],
-            '@typescript-eslint/only-throw-error': [__WARN__],
-            '@typescript-eslint/prefer-optional-chain': [__WARN__],
-            '@typescript-eslint/require-await': [__WARN__],
-            '@typescript-eslint/non-nullable-type-assertion-style': [__WARN__],
+
+            '@typescript-eslint/no-deprecated': [1], // 禁止使用已废弃的 API
+            '@typescript-eslint/no-floating-promises': [1], // 禁止忽略 Promise 返回值
+            '@typescript-eslint/no-misused-promises': [1], // 禁止将 Promise 误用为条件表达式
+            '@typescript-eslint/await-thenable': [1], // 禁止等待非 Promise 类型的值
+            '@typescript-eslint/no-base-to-string': [1], // 禁止将对象直接转换为字符串
+            '@typescript-eslint/no-unnecessary-type-assertion': [0], // 禁止不必要的类型断言
+            '@typescript-eslint/no-unsafe-enum-comparison': [1], // 禁止将枚举与非枚举类型进行比较
+            '@typescript-eslint/no-redundant-type-constituents': [1], // 禁止联合类型中包含冗余的成员
+            '@typescript-eslint/only-throw-error': [1], // 禁止抛出非 Error 类型的值
+            '@typescript-eslint/prefer-optional-chain': [1], // 建议使用可选链 (?.) 替代逻辑与 (&&) 来访问深层嵌套的属性
+            '@typescript-eslint/require-await': [1], // 禁止在 async 函数中不使用 await 表达式
+            '@typescript-eslint/non-nullable-type-assertion-style': [0], // 建议使用非空断言 (postfix !) 替代类型断言来消除 null 和 undefined
+
+            '@typescript-eslint/explicit-function-return-type': [0], // 要求函数和类方法的显式返回类型
+            '@typescript-eslint/explicit-module-boundary-types': [1, {
+                allowArgumentsExplicitlyTypedAsAny: true,
+            }], // 要求导出函数和类的公共类方法的显式返回和参数类型
+            '@typescript-eslint/no-explicit-any': [1], // 不允许使用any类型
+            '@typescript-eslint/no-unsafe-argument': [1], // 不允许传递 any 类型的值作为参数
+            '@typescript-eslint/no-unsafe-assignment': [1], // 不允许将 any 类型的值分配给其他类型
+            '@typescript-eslint/no-unsafe-member-access': [1], // 不允许对 any 类型的值进行成员访问
+            '@typescript-eslint/no-unsafe-return': [1], // 不允许从函数返回 any 类型的值
+            '@typescript-eslint/no-unsafe-call': [1], // 不允许对 any 类型的值进行调用
+            '@typescript-eslint/unbound-method': [1], // 不允许不绑定上下文的类方法引用
+            '@typescript-eslint/restrict-template-expressions': [0], // 允许在模板字符串中使用非字符串类型的表达式
+            '@typescript-eslint/prefer-nullish-coalescing': [1], // 建议使用空值合并运算符 (??) 替代逻辑或 (||) 来处理 null 或 undefined
+
+
         },
     },
 ])

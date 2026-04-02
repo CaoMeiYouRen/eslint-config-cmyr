@@ -1,5 +1,13 @@
 # eslint-config-cmyr
 
+## [2.2.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.2.0...v2.2.1) (2026-04-02)
+
+
+### 🐛 Bug 修复
+
+* **config:** 调整最大行数限制 ([d5fc1de](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/d5fc1de))
+* **strict:** 更新 TypeScript 规则配置 ([502f3be](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/502f3be))
+
 # [2.2.0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.5...v2.2.0) (2026-04-01)
 
 

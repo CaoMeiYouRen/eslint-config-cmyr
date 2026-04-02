@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [2.2.2](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.2.1...v2.2.2) (2026-04-02)
+
+
+### 🐛 Bug 修复
+
+* **strict:** 更新 TypeScript 规则配置 ([37c994e](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/37c994e))
+
 ## [2.2.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.2.0...v2.2.1) (2026-04-02)
 
 

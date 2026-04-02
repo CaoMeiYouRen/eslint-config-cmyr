@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+# [2.2.0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.5...v2.2.0) (2026-04-01)
+
+
+### ✨ 新功能
+
+* 新增严格模式入口及相关文档 ([a1f8d21](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/a1f8d21))
+
 ## [2.1.5](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.1.4...v2.1.5) (2026-03-14)
 
 

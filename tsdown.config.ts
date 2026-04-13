@@ -5,6 +5,9 @@ export default defineConfig({
     entry: [
         'index.js',
         'strict.js',
+        'react-strict.js',
+        'vue-strict.js',
+        'nuxt-strict.js',
         'vue.js',
         'browser.js',
         'react.js',

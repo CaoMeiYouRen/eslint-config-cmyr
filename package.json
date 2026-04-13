@@ -9,6 +9,10 @@
   "files": [
     "index.js",
     "strict.js",
+    "strict-type-checked.js",
+    "react-strict.js",
+    "vue-strict.js",
+    "nuxt-strict.js",
     "vue.js",
     "browser.js",
     "react.js",
@@ -28,6 +32,18 @@
     "./strict": {
       "import": "./strict.js",
       "require": "./dist/strict.cjs"
+    },
+    "./react/strict": {
+      "import": "./react-strict.js",
+      "require": "./dist/react-strict.cjs"
+    },
+    "./vue/strict": {
+      "import": "./vue-strict.js",
+      "require": "./dist/vue-strict.cjs"
+    },
+    "./nuxt/strict": {
+      "import": "./nuxt-strict.js",
+      "require": "./dist/nuxt-strict.cjs"
     },
     "./vue": {
       "import": "./vue.js",
@@ -65,9 +81,12 @@
     "test:strict": "cross-env NODE_ENV=production eslint -c strict.js test/strict.test.ts",
     "test:browser": "cross-env NODE_ENV=production eslint -c browser.js test/browser.test.js",
     "test:vue": "cross-env NODE_ENV=production eslint -c vue.js test/Vue3Test.vue",
+    "test:vue:strict": "cross-env NODE_ENV=production eslint -c vue-strict.js test/Vue3StrictTest.vue",
     "test:nuxt": "cross-env NODE_ENV=production eslint -c nuxt.js test/NuxtTest.vue",
+    "test:nuxt:strict": "cross-env NODE_ENV=production eslint -c nuxt-strict.js test/NuxtStrictTest.vue",
     "test:tsx": "cross-env NODE_ENV=production eslint -c react.js test/react.test.tsx",
-    "test": "npm run test:js && npm run test:ts && npm run test:strict && npm run test:browser && npm run test:vue && npm run test:nuxt && npm run test:tsx"
+    "test:react:strict": "cross-env NODE_ENV=production eslint -c react-strict.js test/react-strict.test.tsx",
+    "test": "npm run test:js && npm run test:ts && npm run test:strict && npm run test:browser && npm run test:vue && npm run test:vue:strict && npm run test:nuxt && npm run test:nuxt:strict && npm run test:tsx && npm run test:react:strict"
   },
   "keywords": [
     "code",
@@ -125,7 +144,8 @@
     "@stylistic/eslint-plugin": "^5.2.3",
     "eslint-plugin-import": "^2.32.0",
     "globals": "^17.2.0",
-    "typescript-eslint": "^8.39.1"
+    "typescript-eslint": "^8.39.1",
+    "vue-eslint-parser": "^10.2.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

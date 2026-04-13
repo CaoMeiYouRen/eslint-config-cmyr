@@ -3,7 +3,7 @@ import js from '@eslint/js'
 import { defineConfig } from 'eslint/config'
 import tseslint from 'typescript-eslint'
 import importPlugin from 'eslint-plugin-import'
-import { __ERROR__, __WARN__, languageOptions, commonIgnores } from './utils.js'
+import { __ERROR__, __PROD_ERROR__, __PROD_WARN__, __WARN__, languageOptions, commonIgnores } from './utils.js'
 
 export default defineConfig([
     {
@@ -30,8 +30,8 @@ export default defineConfig([
             'handle-callback-err:': [0, '^(e|err|error)$'], // 强制回调错误处理
             'new-cap': [0], // 要求构造函数首字母大写
             'no-alert': [__WARN__], // 禁用 Alert
-            'no-console': [0, { allow: ['warn', 'error', 'info'] }], // 禁止console
-            'no-debugger': [__ERROR__], // 禁止debugger
+            'no-console': [__PROD_WARN__, { allow: ['warn', 'error', 'info'] }], // 禁止console
+            'no-debugger': [__PROD_ERROR__], // 禁止debugger
             'no-div-regex': [1], // 禁止除法操作符显式的出现在正则表达式开始的位置
             'no-duplicate-imports': [2], // 禁止模块重复导入
             'no-else-return': [2,
@@ -58,8 +58,8 @@ export default defineConfig([
             'no-useless-constructor': [__ERROR__], // 禁用不必要的构造函数
             'no-useless-return': [__ERROR__], // 禁止多余的 return 语句
             'no-var': [2], // 要求使用 let 或 const 而不是 var
-            'max-lines': [__WARN__, { max: 1000 }], // 强制文件的最大行数
-            'max-lines-per-function': [__WARN__, { max: 600 }], // 强制函数最大行数
+            'max-lines': [__PROD_WARN__, { max: 1000 }], // 强制文件的最大行数
+            'max-lines-per-function': [__PROD_WARN__, { max: 600 }], // 强制函数最大行数
             'max-nested-callbacks': [1, { max: 5 }], // 强制回调函数最大嵌套深度
             'max-params': [1, { max: 5 }], // 强制函数定义中最大参数个数
             'object-shorthand': [2], // 要求或禁止对象字面量中方法和属性使用简写语法

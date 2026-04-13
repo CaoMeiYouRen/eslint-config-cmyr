@@ -83,6 +83,7 @@ export default defineConfig([cmyrStrict]);
 1. 默认入口保留通用且必要的规则，兼容性优先。
 2. 严格模式会启用 `typescript-eslint` 的类型感知严格规则。
 3. 严格模式下新增规则以 `warning` 为主，便于存量项目渐进治理。
+4. 只有少量开发期噪音较高的规则会按 `NODE_ENV` 在 production 中启用，例如 `no-console`、`no-debugger` 与行数限制。
 
 #### Vue 项目
 
@@ -98,6 +99,16 @@ import cmyr from "eslint-config-cmyr/vue";
 export default defineConfig([cmyr]);
 ```
 
+#### Vue 项目（严格模式）
+
+```js
+// eslint.config.js
+import { defineConfig } from "eslint/config";
+import cmyrVueStrict from "eslint-config-cmyr/vue/strict";
+
+export default defineConfig([cmyrVueStrict]);
+```
+
 #### React 项目
 
 ```bash
@@ -110,6 +121,16 @@ import { defineConfig } from "eslint/config";
 import cmyr from "eslint-config-cmyr/react";
 
 export default defineConfig([cmyr]);
+```
+
+#### React 项目（严格模式）
+
+```js
+// eslint.config.js
+import { defineConfig } from "eslint/config";
+import cmyrReactStrict from "eslint-config-cmyr/react/strict";
+
+export default defineConfig([cmyrReactStrict]);
 ```
 
 #### Browser 项目
@@ -149,3 +170,24 @@ export default withNuxt(cmyrConfig, {
     rules: {},
 });
 ```
+
+#### Nuxt 项目（严格模式）
+
+```js
+// eslint.config.js
+import cmyrNuxtStrict from "eslint-config-cmyr/nuxt/strict";
+import withNuxt from "./.nuxt/eslint.config.mjs";
+
+export default withNuxt(cmyrNuxtStrict, {
+    rules: {},
+});
+```
+
+## 严格模式入口一览
+
+1. `eslint-config-cmyr/strict`
+2. `eslint-config-cmyr/react/strict`
+3. `eslint-config-cmyr/vue/strict`
+4. `eslint-config-cmyr/nuxt/strict`
+
+这些入口都会在对应环境规则之上，额外启用类型感知的 TypeScript 严格检查；新增规则以 `warning` 为主，适合渐进式治理。

@@ -2,8 +2,10 @@ import tseslint from 'typescript-eslint'
 import globals from 'globals'
 
 
-export const __ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
-export const __WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
+export const __ERROR__ = 2
+export const __WARN__ = 1
+export const __PROD_ERROR__ = process.env.NODE_ENV === 'production' ? 2 : 0
+export const __PROD_WARN__ = process.env.NODE_ENV === 'production' ? 1 : 0
 
 // 通用的全局变量配置
 export const commonGlobals = {

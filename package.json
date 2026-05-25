@@ -145,7 +145,7 @@
     "eslint-plugin-import": "^2.32.0",
     "globals": "^17.6.0",
     "typescript-eslint": "^8.59.4",
-    "vue-eslint-parser": "^10.2.0"
+    "vue-eslint-parser": "^10.3.0"
   },
   "changelog": {
     "language": "zh"

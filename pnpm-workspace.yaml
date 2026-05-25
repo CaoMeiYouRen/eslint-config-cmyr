@@ -11,3 +11,5 @@ overrides:
   tmp: ^0.2.4
 strictPeerDependencies: false
 packageLock: true
+minimumReleaseAgeExclude:
+  - commitlint-config-cmyr@1.0.1

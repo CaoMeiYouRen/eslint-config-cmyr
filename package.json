@@ -104,20 +104,20 @@
     "url": "https://github.com/CaoMeiYouRen/eslint-config-cmyr/issues"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.1.0",
-    "@types/node": "^25.0.3",
-    "commitlint-config-cmyr": "1.0.0",
+    "@commitlint/cli": "^21.0.1",
+    "@types/node": "^25.9.1",
+    "commitlint-config-cmyr": "1.0.1",
     "cross-env": "^10.0.0",
     "cz-conventional-changelog-cmyr": "2.0.0",
     "eslint": "^9.33.0",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-vue": "^10.4.0",
+    "eslint-plugin-vue": "10.9.1",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.5",
+    "lint-staged": "^17.0.5",
     "semantic-release": "^25.0.1",
     "semantic-release-cmyr-config": "1.0.2",
-    "tsdown": "^0.20.1",
-    "typescript": "^5.9.2"
+    "tsdown": "^0.22.0",
+    "typescript": "6.0.3"
   },
   "peerDependencies": {
     "eslint": ">=9",
@@ -141,10 +141,10 @@
   },
   "dependencies": {
     "@eslint/js": "^9.33.0",
-    "@stylistic/eslint-plugin": "^5.2.3",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "eslint-plugin-import": "^2.32.0",
-    "globals": "^17.2.0",
-    "typescript-eslint": "^8.39.1",
+    "globals": "^17.6.0",
+    "typescript-eslint": "^8.59.4",
     "vue-eslint-parser": "^10.2.0"
   },
   "changelog": {

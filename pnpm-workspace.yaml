@@ -1,0 +1,6 @@
+onlyBuiltDependencies:
+  - unrs-resolver
+overrides:
+  tmp: ^0.2.4
+strictPeerDependencies: false
+packageLock: true

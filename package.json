@@ -147,14 +147,6 @@
     "typescript-eslint": "^8.39.1",
     "vue-eslint-parser": "^10.2.0"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "unrs-resolver"
-    ],
-    "overrides": {
-      "tmp": "^0.2.4"
-    }
-  },
   "changelog": {
     "language": "zh"
   },

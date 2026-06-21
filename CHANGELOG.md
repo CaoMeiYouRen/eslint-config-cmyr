@@ -1,5 +1,12 @@
 # eslint-config-cmyr
 
+## [2.3.1](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.3.0...v2.3.1) (2026-06-21)
+
+
+### 🐛 Bug 修复
+
+* **deps:** add overrides for high-severity transitive deps ([ae402c8](https://github.com/CaoMeiYouRen/eslint-config-cmyr/commit/ae402c8)), closes [hi#severity](https://github.com/hi/issues/severity)
+
 # [2.3.0](https://github.com/CaoMeiYouRen/eslint-config-cmyr/compare/v2.2.2...v2.3.0) (2026-04-13)
 
 
